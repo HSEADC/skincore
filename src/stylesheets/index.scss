@@ -1,38 +1,206 @@
-body::before {
+body {
        content: "";
        position: absolute;
        top: 0;
        left: 0;
        width:100%;
        height: 100%;
-       background: url(images/maket.png);
-       background-size:cover;
-       opacity: .6;
+       background: url(images/background.svg);
+       background-size: cover;
+       opacity: 1;
      }
 h1 {
   font-family: 'Source Serif Pro';
   font-weight: 400;
   font-size: 3.7vw;
+  margin: 0 auto;
+  text-align: center;
+}
+h2 {
+  font-family: 'Source Serif Pro';
+  font-weight: 400;
+  font-size: 2.5vw;
+  letter-spacing: -0.06vw;
 }
 p {
   font-family: 'IBM Plex Sans';
   font-weight: 400;
   font-size: 1.5vw;
+  margin: 0 auto;
+  text-align: center;
 }
-@media all and (min-width: 1280px) {
+.form {
+  margin: 0 auto;
+  background: url(images/form.svg);
+  background-size: cover;
+}
+input {
+  font-family: 'IBM Plex Sans';
+}
+button {
+  font-family: 'Source Serif Pro';
+  background: #000000;
+  border-radius: 10vw;
+  border: none;
+  color: #ffffff;
+}
+.tg {
+  background: url(images/tg.svg);
+  background-size: cover;
+}
+.vk {
+  background: url(images/vk.svg);
+  background-size: cover;
+}
+.dzen {
+  background: url(images/dzen.svg);
+  background-size: cover;
+}
+.tg, .vk, .dzen {
+  display: inline-block;
+  margin-right: 2vw;
+}
+@media all and (min-width: 415px) {
   body.index {
-    div:nth-of-type(1) {
-      padding: 18.3vw 0;
-      h1 {
-        margin: 0 auto;
-        text-align: center;
-      }
+    .text {
+      padding: 15vw 0;
+
       p {
-        width: 34vw;
-        margin: 0 auto;
-        text-align: center;
+        width: 31vw;
+        margin-top: 1.4vw;
+        line-height: 120%;
+      }
+    }
+    form {
+      display: flex;
+    }
+    .form {
+      width: 84.66vw;
+      height: 13.5vw;
+      padding: 2.8vw 0;
+      height: 7.8vw;
+      margin-top: -1.6vw;
+      h2, form {
+        margin-left: 4.5vw;
+      }
+      form {
+        margin-top: 2.2vw;
+        display: flex;
+      }
+      input {
+        width: 20.3vw;
+        height: 2.7vw;
+        border-radius: 10vw;
+        border: 0.1vw solid #000000;
+        padding: 0.1vw 1.6vw;
+        font-size: 1.5vw;
+        letter-spacing: -0.03vw;
+
+      }
+      button {
+        width: 12.2vw;
+        height: 3.1vw;
+        border-radius: 10vw;
+        margin-left: 1.5vw;
+        font-size: 1.4vw;
+      }
+      .tg {
+        margin-top: 0.6vw;
+        padding: 0 0;
+        width: 2.4vw;
+        height: 2.4vw;
+        
+      }
+      .vk {
+        width: 2.4vw;
+        height: 1.6vw;
+        margin-bottom: 0.4vw;
+      }
+      .dzen {
+        width: 2.35vw;
+        height: 2.35vw;
+      }
+      #my-form-status {
+        margin-top: 0.9vw;
       }
     }
   }
 }
-
+@media all and (max-width: 414px) {
+  .text {
+    padding: 45.4vw 0;
+  }
+  h1 {
+    font-size: 9.4vw;
+  }
+  p {
+    width: 66vw;
+    font-size: 4.9vw;
+    margin-top: 8.4vw;
+    letter-spacing: -0.09vw;
+    line-height: 119%;
+  }
+  h2 {
+    font-size: 6.2vw;
+    letter-spacing: -0.06vw;
+    line-height: 111%;
+  }
+  h2, form {
+    margin-left: 10vw;
+  }
+  input, button {
+    display: block;
+  }
+  .form{
+    background: url(images/form_mobile.svg);
+    background-size: cover;
+    width: 87.7vw;
+    height: 53.7vw;
+    padding: 7vw 0;
+    margin-top: -4vw;
+  }
+  input {
+    width: 56vw;
+    height: 8.3vw;
+    border-radius: 10vw;
+    margin-top: 4vw;
+    border: 0.5vw solid #000000;
+    padding: 0 6vw;
+    font-size: 4.5vw;
+  }
+  button {
+    font-size: 4.6vw;
+    margin-top: 5vw;
+    width: 69vw;
+    height: 9vw;
+  }
+  .tg {
+    width: 6.5vw;
+    margin-top: -22vw;
+    height: 6.5vw;
+    margin-left: 16vw;
+  }
+  .vk {
+    width: 7vw;
+    height: 4.5vw;
+    margin-bottom: 1vw;
+  }
+  .dzen {
+    height: 6.5vw;
+    width: 6.5vw;
+    margin-top: -16vw;
+  }
+  .dzen, .vk {
+    margin-left: 5vw;
+  }
+  #my-form-status {
+    font-family: 'IBM Plex Sans';
+    font-size: 4vw;
+    margin-top: 1vw;
+    margin-left: -5vw;
+    width: 80vw;
+  }
+  .socialmedia {
+    margin-top: 4vw;
+  }
+}

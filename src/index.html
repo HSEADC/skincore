@@ -6,9 +6,55 @@
     <title>Stay true</title>
 </head>
 <body class = "index">
-    <div>
+    <div class="text">
       <h1>Stay true</h1>
-      <p>Stay true — инфосистема об уходе за кожей. Пока тут ничего нет, но скоро вы найдете здесь полезные советы, а также разберетесь во всех тонкостях ухода</p>
+      <p>Stay true — инфосистема об уходе за кожей. Пока тут ничего нет, но скоро вы найдете здесь полезные советы, а также разберетесь во всех тонкостях ухода</p>
     </div>
+    <div class="form">
+      <h2>Не пропустите запуск проекта!</h2>
+      <form id="my-form" action="https://formspree.io/f/xpzgbeeq" method="POST">
+        <input type="email" name="email" value = "e-mail"/>
+        <button id="my-form-button">подписаться</button>
+        <p id="my-form-status"></p>
+        <div class = "socialmedia">
+          <a href="https://t.me/staytrueofficial" class = "tg"></a>
+          <a href="https://vk.com/staytrueofficial" class = "vk"></a>
+          <a href="https://dzen.ru/sstaytrue" class = "dzen"></a>
+        </div>
+      </form>
+    </div>
+    a
+   
+    <script>
+        var form = document.getElementById("my-form");
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("my-form-status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+              status.innerHTML = "Спасибо за проявленный интерес!";
+              form.reset()
+            } else {
+              response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                  status.innerHTML = "Ой! Что-то пошло не так :("
+                }
+              })
+            }
+          }).catch(error => {
+            status.innerHTML = "Ой! Что-то пошло не так :("
+          });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
 </body>
 </html>
