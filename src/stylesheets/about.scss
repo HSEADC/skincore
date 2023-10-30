@@ -1,0 +1,423 @@
+body.about {
+       content: "";
+       position: absolute;
+       top: 0;
+       left: 0;
+       width:100%;
+       height: 100%;
+       background: url(images/background_about.svg);
+       background-size: cover;
+       opacity: 1;
+}
+h2 {
+  font-family: "Source Serif Pro";
+  font-weight: 400;
+  font-size: 3vw;
+  letter-spacing: 0.09vw;
+  margin-top: 0.9vw;
+  line-height: 130%;
+}
+.number {
+  border-radius: 100%;
+  text-align: center;
+  h2 {
+    margin: 0 auto;
+  }
+}
+h3, .number {
+  font-size: 2.4vw;
+  font-family: 'Source Serif Pro';
+}
+.title, .cards {
+  margin: 0 auto;
+  display: flex;
+}
+.new, .old {
+  display: inline-block;
+}
+.number {
+  border: 0.1vw solid #000000;
+}
+
+
+.bubble {
+  border: 0.1vw solid #000000;
+  border-radius: 10vw;
+  height: 1.5vw;
+  width: 14.8vw;
+  text-align: center;
+  font-size: 1.5vw;
+  font-family: "Source Serif Pro";
+  padding: 0.8vw 0;
+  letter-spacing: -0.023vw;
+}
+.old {
+  margin-left: 26.3vw;
+}
+.new > div:nth-of-type(1), .old > div:nth-of-type(1) {
+  margin-top: 2.2vw;
+}
+.new > div:nth-of-type(2), .new > div:nth-of-type(3), .old > div:nth-of-type(2), .old > div:nth-of-type(3)  {
+  margin-top: 1vw;
+  width: 22.3vw;
+}
+.new > div:nth-of-type(3) {
+  width: 22.7vw;
+}
+.people {
+  margin-top: 9.4vw;
+}
+h4 {
+  font-family: 'Source Serif Pro';
+  font-size: 1.76vw;
+  color: #000000;
+}
+.old > div:nth-of-type(1) {
+  width: 13vw;
+}
+.old > div:nth-of-type(2),.old > div:nth-of-type(3) {
+  width: 20.5vw;
+}
+
+.s3 {
+  width: 23.48vw;
+}
+.s01 {
+  width: 100%;
+  height: 8.92vw;
+  background: url(images/article_about1.svg);
+  background-size: cover;
+  padding: 1vw 0;
+  
+  h5 {
+    width: 10vw;
+    font-size: 1.4vw;
+    line-height: 112%;
+   
+  }
+  h5, .bubble {
+    margin-left: 1vw;
+  }
+}
+.mini {
+  height: 1vw;
+  width: 6.6vw;
+  font-size: 1vw;
+  padding: 0.5vw 0;
+  margin-top: 2.2vw;
+}
+.s02 {
+  margin-top: 0.4vw;
+  width: 100%;
+  height: 8.96vw;
+  background: url(images/article_about2.svg);
+  background-size: cover;
+  padding: 2vw 0;
+  h5 {
+    width: 15vw;
+    font-size: 1.4vw;
+    line-height: 112%;
+    margin-left: 1vw;
+  }
+  p {
+    margin-top: 0.7vw;
+    margin-left: 1vw;
+    font-size: 0.9vw;
+  }
+  .mini {
+    background: #000000;
+    color: #ffffff;
+    margin-top: 1.7vw;
+    margin-left: 1vw;
+    width: 7.2vw;
+  }
+}
+// десктоп
+@media all and (min-width: 415px) {
+  .text > p {
+    text-align: center;
+  }
+  p {
+    line-height: 117%;
+    text-align: left;
+   }
+  body.about {
+    .text {
+      padding: 20vw 0;
+    }
+  }
+  .number_0 {
+    width: 32vw;
+  }
+  .number {
+    width: 4.3vw;
+    height: 2.4vw;
+    border: 0.1vw solid #000000;
+    padding: 1vw 0;
+  }
+  .text_about {
+    margin-left: 16.5vw;
+    margin-top: 1.4vw;
+    width: 26vw;
+    p {
+      margin-top: 1.3vw;
+    }
+  }
+  .rectangle {
+    margin: 0 auto;
+    width: 74.41vw;
+    height: 39.95vw;
+    background: url(images/rectangle.svg);
+    background-size: cover;
+    margin-top: 12vw;
+  }
+  .mockup {
+    margin: 0 auto;
+    width: 81.37vw;
+    height: 53.31vw;
+    background: url(images/mockup.svg);
+    background-size: cover;
+    margin-top: -40vw;
+  }
+  .title, .auditory, .people, .cards {
+    margin: 0 auto;
+    margin-top: 12.8vw;
+    width: 74.3vw;
+    height: 10vw;
+  }
+  .line {
+    width: 100%;
+    margin-top: 0.8vw;
+    height: 0.2vw;
+    background: #000000;
+  }
+  .auditory {
+    margin: 0 auto;
+    margin-top: 2.7vw;
+    display: flex;
+  }
+  .section {
+    margin-top: 20.5vw;
+  }
+  .cards {
+    margin-top: 7.25vw;
+    h4 {
+      font-size: 2.1vw;
+    }
+    h4, p{
+      margin-left: 1.4vw;
+    }
+  .s1 {
+    width: 22.8vw;
+    height: 21.1vw;
+    background-color: #DAE3FF;
+    padding: 1.5vw 0;
+    border: 0.1vw solid #000000;
+    p{
+      margin-top: 7vw;
+    }
+  }
+  .s2, .s3 {
+    margin-left: 1.5vw;
+  }
+  .s2 {
+    width: 24.67vw;
+    background: url(images/article_about.svg);
+    background-size: cover;
+    height: 2.1742vw;
+    padding-top: 17.6vw;
+    padding-bottom: 4.5vw;
+  }
+  }
+  .old > h4, .new > h4 {
+    color: #9E9E9E;
+  }
+  .realization {
+    margin-top: 26.5vw;
+  }
+  .podval {
+    margin-top: 18vw;
+  }
+}
+// телефон
+@media all and (max-width: 414px) {
+  body.about {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: url(images/background_mobile.svg);
+    background-size: cover;
+    opacity: 1;
+}
+  .title {
+    display: block;
+    margin-left: 2vw;
+
+    p{ 
+      text-align: left;
+      margin-top: 3vw;
+      margin-left: 4vw;
+      width:88vw;
+    }
+  }
+  .rectangle {
+    margin: 0 auto;
+    width: 100%;
+    height: 223vw;
+    background: url(images/about_mobile.svg);
+    background-size: cover;
+    margin-top: 28vw;
+  }
+  .mockup {
+    margin: 0 auto;
+    width: 75.37vw;
+    height: 150.8vw;
+    background: url(images/mockup_mobile.svg);
+    background-size: cover;
+    margin-top: -187vw;
+  }
+  .auditory {
+    margin-top: 56.3vw;
+  }
+  .text {
+    padding: 82.4vw 0;
+    p {
+      text-align: center;
+    }
+  }
+  .new {
+    margin-left: 2vw;
+    margin-top: -3vw;
+  }
+  .new > div:nth-of-type(1), .old > div:nth-of-type(1) {
+    margin-top: 4.6vw;
+  }
+  .bubble {
+    border: 0.3vw solid #000000;
+    border-radius: 10vw;
+    height: 4.4vw;
+    width: 54.8vw;
+    text-align: center;
+    font-size: 4.8vw;
+    margin-left: 4vw;
+    font-family: "Source Serif Pro";
+    padding: 2.6vw 0;
+    letter-spacing: -0.023vw;
+  }
+  .number_0 {
+    width: 22vw;
+    margin-left: 4vw;
+    margin-top: 19vw;
+  }
+  .number {
+    width: 8.8vw;
+    height: 4.6vw;
+    padding: 2vw 0;
+    font-size: 4.5vw;
+    border: 0.3vw solid #000000;
+  }
+  .line {
+    width: 87.6vw;
+    height: 0.5vw;
+    margin-left: 4vw;
+    margin-top: 1.5vw;
+    background: #000000;
+  }
+  h2 {
+      width: 45vw;
+      font-size: 6.1vw;
+      margin-left: 0vw;
+      margin-top: 3vw;
+  }
+  h3 {
+    margin-top: 6.5vw;
+    margin-left: 4vw;
+    font-size: 5.1vw;
+    }
+  
+  .new > div:nth-of-type(2), .new > div:nth-of-type(3), .old > div:nth-of-type(2), .old > div:nth-of-type(3) {
+    margin-top: 2vw;
+    width: 77.3vw;
+}
+  .old {
+    margin-left: 2vw;
+    margin-top: 10vw;
+    div:nth-of-type(1) {
+      width: 48vw;
+    }
+  }
+  .old, .new {
+    display: block;
+    h3 {
+      margin-top: -3vw;
+      margin-left: 4vw;
+      font-size: 5.2vw;
+    }
+    h4 {
+      margin-left: 4vw;
+      font-size: 5vw;
+      color: #9E9E9E;
+    }
+    
+  }
+  .s1, .s2 {
+    display: none;
+  }
+  .s3 {
+    margin: 0 auto;
+    margin-top: 7vw;
+    width: 87.7vw;
+  }
+  .s01 {
+    width: 100%;
+    height: 38.31vw;
+    background: url(images/article_about_mobile1.svg);
+    background-size: cover;
+    padding: 2vw 0;
+    margin: 0 auto;
+  }
+  .s01 > h5, .s01 > .bubble {
+    margin-left: 7vw;
+  } 
+  .s02 {
+    margin-top: 4.4vw;
+    width: 100%;
+    height: 46.36vw;
+    background: url(images/article_about_mobile2.svg);
+    background-size: cover;
+    padding: 2vw 0;
+}
+  .s01 > h5, .s02 >h5 {
+    margin-top: 2vw;
+    width: 57vw;
+    font-size: 6vw;
+  }
+  .s02 > h5 {
+    margin-left: 9vw;
+  }
+  .s02 > p {
+    margin-top: 0.7vw;
+    margin-left: 9vw;
+    font-size: 4vw;
+    text-align: left;
+  }
+  .s02 .mini {
+    background: #000000;
+    color: #ffffff;
+    margin-top: 3.7vw;
+    margin-left: 8vw;
+    width: 40.2vw;
+  }
+  .text_1 {
+    margin-left: 10vw;
+  }
+  .podval {
+    margin-top: 10vw;
+  }
+  .empty {
+    height: 6vw;
+  }
+}

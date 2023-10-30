@@ -1,4 +1,4 @@
-body {
+body.index {
        content: "";
        position: absolute;
        top: 0;
@@ -16,11 +16,12 @@ h1 {
   margin: 0 auto;
   text-align: center;
 }
-h2 {
+body.index {
+  h2 {
   font-family: 'Source Serif Pro';
   font-weight: 400;
-  font-size: 2.5vw;
   letter-spacing: -0.06vw;
+}
 }
 p {
   font-family: 'IBM Plex Sans';
@@ -29,8 +30,15 @@ p {
   margin: 0 auto;
   text-align: center;
 }
+.empty {
+  width:100%;
+  height: 2vw;
+}
 .form {
   margin: 0 auto;
+  padding-bottom: 2vw;
+  margin-top: -1.6vw;
+  border: 0.1vw solid #000000;
   background: url(images/form.svg);
   background-size: cover;
 }
@@ -60,72 +68,73 @@ button {
   display: inline-block;
   margin-right: 2vw;
 }
+// десктоп
 @media all and (min-width: 415px) {
-  body.index {
-    .text {
-      padding: 15vw 0;
-
-      p {
-        width: 31vw;
-        margin-top: 1.4vw;
-        line-height: 120%;
-      }
-    }
-    form {
-      display: flex;
-    }
-    .form {
-      width: 84.66vw;
-      height: 13.5vw;
-      padding: 2.8vw 0;
-      height: 7.8vw;
-      margin-top: -1.6vw;
-      h2, form {
-        margin-left: 4.5vw;
-      }
-      form {
-        margin-top: 2.2vw;
-        display: flex;
-      }
-      input {
-        width: 20.3vw;
-        height: 2.7vw;
-        border-radius: 10vw;
-        border: 0.1vw solid #000000;
-        padding: 0.1vw 1.6vw;
-        font-size: 1.5vw;
-        letter-spacing: -0.03vw;
-
-      }
-      button {
-        width: 12.2vw;
-        height: 3.1vw;
-        border-radius: 10vw;
-        margin-left: 1.5vw;
-        font-size: 1.4vw;
-      }
-      .tg {
-        margin-top: 0.6vw;
-        padding: 0 0;
-        width: 2.4vw;
-        height: 2.4vw;
-        
-      }
-      .vk {
-        width: 2.4vw;
-        height: 1.6vw;
-        margin-bottom: 0.4vw;
-      }
-      .dzen {
-        width: 2.35vw;
-        height: 2.35vw;
-      }
-      #my-form-status {
-        margin-top: 0.9vw;
-      }
+  h2 {
+    font-size: 2.5vw;
+  }
+  .text {
+    padding: 15vw 0;
+    p {
+      width: 31vw;
+      margin-top: 1.4vw;
+      line-height: 120%;
     }
   }
-}
+  form {
+    display: flex;
+  }
+  .form {
+    width: 84.66vw;
+    // height: 13.5vw;
+    // padding: 2.8vw 0;
+    // height: 7.8vw;
+    margin-top: -1.6vw;
+    h2, form {
+      margin-left: 4.5vw;
+    }
+    form {
+      margin-top: 2.2vw;
+      display: flex;
+    }
+    input {
+      width: 20.3vw;
+      height: 2.7vw;
+      border-radius: 10vw;
+      border: 0.1vw solid #000000;
+      padding: 0.1vw 1.6vw;
+      font-size: 1.5vw;
+      letter-spacing: -0.03vw;
+    }
+    button {
+      width: 12.2vw;
+      height: 3.1vw;
+      border-radius: 10vw;
+      margin-left: 1.5vw;
+      font-size: 1.4vw;
+    }
+    .tg {
+      margin-top: 0.6vw;
+      padding: 0 0;
+      width: 2.4vw;
+      height: 2.4vw;
+      
+    }
+    .vk {
+      width: 2.4vw;
+      height: 1.6vw;
+      margin-bottom: 0.4vw;
+    }
+    .dzen {
+      width: 2.35vw;
+      height: 2.35vw;
+    }
+    #my-form-status {
+      margin-top: 0.9vw;
+    }
+  }
+  }
+// телефон
 @media all and (max-width: 414px) {
   .text {
     padding: 45.4vw 0;
