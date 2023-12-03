@@ -6,21 +6,21 @@
 // }
 
 @font-face {
-  font-family: 'IBM Plex Sans';
+  font-family: 'TT Firs Neue Regular';
   src: 
-    url('fonts/ibm_plex_sans.woff') format('woff'),
-    url('fonts/ibm_plex_sans.woff2') format('woff2');
-  font-weight: normal;
+    url('fonts/TTFirsNeue-Regular.woff') format('woff'),
+    url('fonts/TTFirsNeue-Regular.woff2') format('woff2');
+  font-weight: 400;
   font-style: normal;
 }
-@font-face {
-  font-family: 'Source Serif Pro';
-  src: 
-    url('fonts/SourceSerifPro-Regular.woff2') format('woff2'),
-    url('fonts/SourceSerifPro-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'Source Serif Pro';
+//   src: 
+//     url('fonts/SourceSerifPro-Regular.woff2') format('woff2'),
+//     url('fonts/SourceSerifPro-Regular.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 // @font-face {
 //   font-family: 'Source Serif Pro';
 //   src: 
