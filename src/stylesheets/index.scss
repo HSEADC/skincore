@@ -5,205 +5,123 @@ body.index {
       left: 0;
       width:100%;
       height: 100%;
-      background: url(images/maket.png);
+      // background: url('images/maket.png');
       background-size: cover;
-      opacity: 0.6;
-    }
-h1: {
+      // opacity: 0.3;
 
-}
-body.index {
-  h2 {
-  font-family: 'TT Firs Neue Regular';
-  letter-spacing: -0.06vw;
-}
-}
-p {
-  font-family: 'TT Firs Neue Regular';
-  font-size: 1.5vw;
-  margin: 0 auto;
-  text-align: center;
-}
-.empty {
-  width:100%;
-  height: 2vw;
-}
-.form {
-  margin: 0 auto;
-  padding-bottom: 2vw;
-  margin-top: -1.6vw;
-  border: 0.1vw solid #000000;
-  background: url(images/form.svg);
-  background-size: cover;
-}
-input {
-  font-family: 'TT Firs Neue Regular';
-}
-button {
-  font-family: 'TT Firs Neue Regular';
-  background: #000000;
-  border-radius: 10vw;
-  border: none;
-  color: #ffffff;
-}
-.tg {
-  background: url(images/tg.svg);
-  background-size: cover;
-}
-.vk {
-  background: url(images/vk.svg);
-  background-size: cover;
-}
-.dzen {
-  background: url(images/dzen.svg);
-  background-size: cover;
-}
-.tg, .vk, .dzen {
-  display: inline-block;
-  margin-right: 2vw;
-}
-// десктоп
-@media all and (min-width: 415px) {
-  h2 {
-    font-size: 2.5vw;
-  }
-  .text {
-    padding: 15vw 0;
-    p {
-      width: 31vw;
-      margin-top: 1.4vw;
-      line-height: 120%;
+      .firstscreen {
+        width: 100%;
+        height: 57vw;
+        background-color: var(--darkblue);
+        padding-top: 3vw;
+      }
+
+      .logo {
+        width: 10vw;
+        height: 3vw;
+        margin: 0 auto;
+        background-image: url('images/logo.png');
+        // background-size: contain;
+        // background-repeat: no-repeat;
+      }
+
+      .bubble1 {
+        width: 5.8vw;
+        height: 2.8vw;
+        background-image: url('images/bubble1.png');
+        margin-top: 2.4vw;
+        margin-left: 9.2vw;
+      }
+
+      .bubble2 {
+        width: 6vw;
+        height: 2.8vw;
+        background-image: url('images/bubble2.png');
+        margin-top: -1.3vw;
+        margin-left: 57.5vw;
+      }
+
+      .circle-1 {
+        width: 13.5vw;
+        height: 13.5vw;
+        background-image: url('images/circle-1.png');
+        margin-top: -5.7vw;
+        margin-left: 73vw;
+      }
+
+      .circle-2 {
+        width: 13.5vw;
+        height: 13.5vw;
+        background-image: url('images/circle-2.png');
+        margin-top: -6.7vw;
+        margin-left: 6vw;
+      }
+
+      .circle-3 {
+        width: 21vw;
+        height: 21vw;
+        background-image: url('images/circle-3.png');
+        margin-top: 1.7vw;
+        margin-left: 73vw;
+      }
+
+      .circle-4 {
+        width: 13.5vw;
+        height: 13.5vw;
+        background-image: url('images/circle-4.png');
+        margin-top: -13.5vw;
+        margin-left: 21vw;
+      }
+
+      .bubble3 {
+        width: 8.8vw;
+        height: 5.8vw;
+        background-image: url('images/bubble3.png');
+        margin-top: -9vw;
+        margin-left: 8.7vw;
+      }
+
+      .bubble4 {
+        width: 6.8vw;
+        height: 5.8vw;
+        background-image: url('images/bubble4.png');
+        margin-top: 3vw;
+        margin-left: 70vw;
+      }
+
+      h1 {
+        color: var(--white);
+      }
+
+      h1:nth-of-type(1) {
+        margin-top: -41vw;
+        margin-left: 16vw;
+      }
+
+      .splash1 {
+        width: 7vw;
+        height: 7vw;
+        background-image: url('images/splash1.png');
+        margin-top: -0.5vw;
+        margin-left: 21vw;
+      }
+
+      h1:nth-of-type(2) {
+        margin-top: -6.8vw;
+        margin-left: 30vw;
+      }
+
+      h1:nth-of-type(3) {
+        margin-top: 0.2vw;
+        margin-left: 17.2vw;
+      }
+
+      .btn {
+        width: 21vw;
+        height: 4vw;
+        margin: 0 auto;
+        margin-top: 2vw;
+      }
     }
-  }
-  form {
-    display: flex;
-  }
-  .form {
-    width: 84.66vw;
-    // height: 13.5vw;
-    // padding: 2.8vw 0;
-    // height: 7.8vw;
-    margin-top: -1.6vw;
-    h2, form {
-      margin-left: 4.5vw;
-    }
-    form {
-      margin-top: 2.2vw;
-      display: flex;
-    }
-    input {
-      width: 20.3vw;
-      height: 2.7vw;
-      border-radius: 10vw;
-      border: 0.1vw solid #000000;
-      padding: 0.1vw 1.6vw;
-      font-size: 1.5vw;
-      letter-spacing: -0.03vw;
-    }
-    button {
-      width: 12.2vw;
-      height: 3.1vw;
-      border-radius: 10vw;
-      margin-left: 1.5vw;
-      font-size: 1.4vw;
-    }
-    .tg {
-      margin-top: 0.6vw;
-      padding: 0 0;
-      width: 2.4vw;
-      height: 2.4vw;
-      
-    }
-    .vk {
-      width: 2.4vw;
-      height: 1.6vw;
-      margin-bottom: 0.4vw;
-    }
-    .dzen {
-      width: 2.35vw;
-      height: 2.35vw;
-    }
-    #my-form-status {
-      margin-top: 0.9vw;
-    }
-  }
-  }
-// телефон
-@media all and (max-width: 414px) {
-  .text {
-    padding: 45.4vw 0;
-  }
-  h1 {
-    font-size: 9.4vw;
-  }
-  p {
-    width: 66vw;
-    font-size: 4.9vw;
-    margin-top: 8.4vw;
-    letter-spacing: -0.09vw;
-    line-height: 119%;
-  }
-  h2 {
-    font-size: 6.2vw;
-    letter-spacing: -0.06vw;
-    line-height: 111%;
-  }
-  h2, form {
-    margin-left: 10vw;
-  }
-  input, button {
-    display: block;
-  }
-  .form{
-    background: url(images/form_mobile.svg);
-    background-size: cover;
-    width: 87.7vw;
-    height: 53.7vw;
-    padding: 7vw 0;
-    margin-top: -4vw;
-  }
-  input {
-    width: 56vw;
-    height: 8.3vw;
-    border-radius: 10vw;
-    margin-top: 4vw;
-    border: 0.5vw solid #000000;
-    padding: 0 6vw;
-    font-size: 4.5vw;
-  }
-  button {
-    font-size: 4.6vw;
-    margin-top: 5vw;
-    width: 69vw;
-    height: 9vw;
-  }
-  .tg {
-    width: 6.5vw;
-    margin-top: -22vw;
-    height: 6.5vw;
-    margin-left: 16vw;
-  }
-  .vk {
-    width: 7vw;
-    height: 4.5vw;
-    margin-bottom: 1vw;
-  }
-  .dzen {
-    height: 6.5vw;
-    width: 6.5vw;
-    margin-top: -16vw;
-  }
-  .dzen, .vk {
-    margin-left: 5vw;
-  }
-  #my-form-status {
-    font-family: 'TT Firs Neue Regular';
-    font-size: 4vw;
-    margin-top: 1vw;
-    margin-left: -5vw;
-    width: 80vw;
-  }
-  .socialmedia {
-    margin-top: 4vw;
-  }
-}
+    
+

@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 html,
@@ -15,5 +17,49 @@ body {
 
 h1 {
   font-family: 'TT Firs Neue Regular';
-  font-size: 7vw;
+  font-size: 7.3vw;
 }
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // padding-top: 0.3vw;
+  // padding-left: 0.3vw;
+  padding-right: 0.3vw;
+  padding-left: 2vw;
+  background-color: none;
+  border: 0.2vw solid var(--pinky);
+  border-radius: 8vw;
+  font-family: 'TT Firs Neue';
+  text-decoration: none;
+  font-size: 1.6vw;
+  color: var(--pinky)
+}
+
+.btn:hover {
+  background-color: var(--pinky);
+  color: var(--darkblue);
+}
+
+.btn img {
+  display: inline-block;
+  width: 3vw;
+  height: 3vw;
+}
+
+.btn img:hover {
+  content: url('images/btn-icon2.png')
+}
+// .btn {
+//   width: 10vw;
+//   height: 3vw; 
+//   background-color: none;
+//   border: 3px solid;
+//   border-color: var(--pinky);
+// }
+
+// .btn p {
+//   font-size: 3vw;
+//   text-decoration: none;
+// }
