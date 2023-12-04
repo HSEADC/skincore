@@ -42,43 +42,103 @@ body.index {
         margin-left: 57.5vw;
       }
 
+      .circle-1, .circle-2, .circle-3, .circle-4 {
+        position: absolute;
+      }
+
       .circle-1 {
         width: 13.5vw;
         height: 13.5vw;
+        top: 7vw;
+        left: 74vw;
         background-image: url('images/circle-1.png');
-        margin-top: -5.7vw;
-        margin-left: 73vw;
+        animation: circle-1 linear 1s;
       }
 
       .circle-2 {
         width: 13.5vw;
         height: 13.5vw;
+        top: 16vw;
+        left: 2vw;
         background-image: url('images/circle-2.png');
-        margin-top: -6.7vw;
-        margin-left: 6vw;
+        animation: circle-2 linear 1s;
       }
 
       .circle-3 {
         width: 21vw;
         height: 21vw;
+        top: 29vw;
+        left: 76vw;
         background-image: url('images/circle-3.png');
-        margin-top: 1.7vw;
-        margin-left: 73vw;
+        animation: circle-3 linear 1s;
       }
 
       .circle-4 {
         width: 13.5vw;
         height: 13.5vw;
+        top: 37vw;
+        left: 21vw;
         background-image: url('images/circle-4.png');
-        margin-top: -13.5vw;
-        margin-left: 21vw;
+        animation: circle-4 linear 1s;
+      }
+
+      @keyframes circle-1 {
+        0% {
+          top: -2vw;
+          left: 64vw;
+          transform: scale(0.8);
+        }
+        100% {
+          top: 7vw;
+          left: 74vw;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes circle-2 {
+        0% {
+          top: 15vw;
+          left: -5vw;
+          transform: scale(0.8);
+        }
+        100% {
+          top: 16vw;
+          left: 2vw;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes circle-3 {
+        0% {
+          top: 22vw;
+          left: 99vw;
+          transform: scale(0.8);
+        }
+        100% {
+          top: 29vw;
+          left: 76vw;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes circle-4 {
+        0% {
+          top: 39vw;
+          left: -2vw;
+          transform: scale(0.8);
+        }
+        100% {
+          top: 37vw;
+          left: 21vw;
+          transform: scale(1);
+        }
       }
 
       .bubble3 {
         width: 8.8vw;
         height: 5.8vw;
         background-image: url('images/bubble3.png');
-        margin-top: -9vw;
+        margin-top: 4vw;
         margin-left: 8.7vw;
       }
 
@@ -95,7 +155,7 @@ body.index {
       }
 
       h1:nth-of-type(1) {
-        margin-top: -41vw;
+        margin-top: 2vw;
         margin-left: 16vw;
       }
 
@@ -103,12 +163,11 @@ body.index {
         width: 7vw;
         height: 7vw;
         background-image: url('images/splash1.png');
-        margin-top: -0.5vw;
+        margin-top: -34vw;
         margin-left: 21vw;
       }
 
       h1:nth-of-type(2) {
-        margin-top: -6.8vw;
         margin-left: 30vw;
       }
 
@@ -121,7 +180,7 @@ body.index {
         width: 21vw;
         height: 4vw;
         margin: 0 auto;
-        margin-top: 2vw;
+        margin-top: 10vw;
       }
 
       // Розовый второй экран
@@ -136,8 +195,20 @@ body.index {
               height: 40vw;
               margin-left: 49vw;
               background-image: url('images/circles_pink.png');
+              animation: pictures 3s linear infinite;
             }
 
+            // @keyframes pictures {
+            //   0% {
+            //     background-image: url('images/circles_pink.png');
+            //   }
+            //   50% {
+            //     background-image: url('images/circles_pink.png');
+            //   }
+            //   100% {
+            //     background-image: url('images/circles_pink3.png');
+            //   }
+            // }
             .pink_text {
               width: 60vw;
               height: 20vw;
