@@ -26,8 +26,6 @@ body.index {
         height: 3vw;
         margin: 0 auto;
         background-image: url('images/logo.png');
-        // background-size: contain;
-        // background-repeat: no-repeat;
       }
 
       .bubble1 {
@@ -187,6 +185,10 @@ body.index {
         margin-top: 10vw;
       }
 
+      a {
+        transition: all 0.2s;
+      }
+
       // Розовый второй экран
       .secondscreen {
         background-color: var(--pinky);
@@ -267,14 +269,28 @@ body.index {
           gap: 1.8vw;
         }
 
+        // .articles {
+        //   width: 100%;
+        //   height: 35vw;
+        //   margin-top: 3vw;
+        //   padding: 0 5.6vw;
+        //   display: flex;
+        //   flex-direction: row;
+        //   justify-content: space-between;
+
         .articles {
           width: 100%;
           height: 35vw;
           margin-top: 3vw;
           padding: 0 5.6vw;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
+
+          .article-container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+        
 
           a {
             width: 28.8vw;
@@ -488,10 +504,10 @@ body.index {
         }
 
         .circle-1 {
-          width: 29vw;
-          height: 29vw;
+          width: 26vw;
+          height: 26vw;
           top: 9vw;
-          left: 77vw;
+          left: 71vw;
         }
 
         .circle-2 {
@@ -502,10 +518,10 @@ body.index {
         }
 
         .circle-3 {
-          width: 37vw;
-          height: 37vw;
-          top: 178vw;
-          left: 69vw;
+          width: 33vw;
+          height: 33vw;
+          top: 179vw;
+          left: 60vw;
         }
 
         .circle-4 {
@@ -556,11 +572,24 @@ body.index {
           gap: 5vw;
         }
 
+        // .articles {
+        //   width: 300vw;
+        //   height: 97vw;
+        //   margin-top: 36vw;
+        //   padding: 0 10vw;
+        //   overflow-x: scroll;
+
         .articles {
-          width: 300vw;
+          width: 100%;
           height: 97vw;
           margin-top: 36vw;
           padding: 0 10vw;
+          overflow: hidden;
+          overflow-x: scroll;
+
+          .article-container {
+            width: 300vw;
+          }
 
           a {
             width: 80vw;
@@ -588,6 +617,9 @@ body.index {
               }
             }
           }
+        }
+        .articles::-webkit-scrollbar {
+          display: none;
         }
         .lasttext2 {
           width: 80vw;
