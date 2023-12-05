@@ -1,215 +1,682 @@
 body.index {
-       content: "";
-       position: absolute;
-       top: 0;
-       left: 0;
-       width:100%;
-       height: 100%;
-       background: url(images/background.svg);
-       background-size: cover;
-       opacity: 1;
-     }
-h1 {
-  font-family: 'Source Serif Pro';
-  font-weight: 400;
-  font-size: 3.7vw;
-  margin: 0 auto;
-  text-align: center;
-}
-body.index {
-  h2 {
-  font-family: 'Source Serif Pro';
-  font-weight: 400;
-  letter-spacing: -0.06vw;
-}
-}
-p {
-  font-family: 'IBM Plex Sans';
-  font-weight: 400;
-  font-size: 1.5vw;
-  margin: 0 auto;
-  text-align: center;
-}
-.empty {
-  width:100%;
-  height: 2vw;
-}
-.form {
-  margin: 0 auto;
-  padding-bottom: 2vw;
-  margin-top: -1.6vw;
-  border: 0.1vw solid #000000;
-  background: url(images/form.svg);
-  background-size: cover;
-}
-input {
-  font-family: 'IBM Plex Sans';
-}
-button {
-  font-family: 'Source Serif Pro';
-  background: #000000;
-  border-radius: 10vw;
-  border: none;
-  color: #ffffff;
-}
-.tg {
-  background: url(images/tg.svg);
-  background-size: cover;
-}
-.vk {
-  background: url(images/vk.svg);
-  background-size: cover;
-}
-.dzen {
-  background: url(images/dzen.svg);
-  background-size: cover;
-}
-.tg, .vk, .dzen {
-  display: inline-block;
-  margin-right: 2vw;
-}
-// десктоп
-@media all and (min-width: 415px) {
-  h2 {
-    font-size: 2.5vw;
-  }
-  .text {
-    padding: 15vw 0;
-    p {
-      width: 31vw;
-      margin-top: 1.4vw;
-      line-height: 120%;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width:100%;
+      height: 100%;
+      // background: url('images/maket-mobile.png');
+      background-size: cover;
+      // opacity: 0.3;
+
+      // Первый экран
+      .firstscreen {
+        width: 100%;
+        height: 57vw;
+        background-color: var(--darkblue);
+        padding-top: 3vw;
+      }
+
+      .circle-container {
+        overflow: hidden
+      }
+
+      .logo {
+        width: 10vw;
+        height: 3vw;
+        margin: 0 auto;
+        background-image: url('images/logo.png');
+      }
+
+      .bubble1 {
+        width: 5.8vw;
+        height: 2.8vw;
+        background-image: url('images/bubble1.png');
+        margin-top: 2.4vw;
+        margin-left: 9.2vw;
+      }
+
+      .bubble2 {
+        width: 6vw;
+        height: 2.8vw;
+        background-image: url('images/bubble2.png');
+        margin-top: -1.3vw;
+        margin-left: 57.5vw;
+      }
+
+      .circle-1, .circle-2, .circle-3, .circle-4 {
+        position: absolute;
+      }
+
+      .circle-1 {
+        width: 13.5vw;
+        height: 13.5vw;
+        top: 7vw;
+        left: 74vw;
+        background-image: url('images/circle-1.png');
+        animation: circle-1 linear 1.4s;
+      }
+
+      .circle-2 {
+        width: 13.5vw;
+        height: 13.5vw;
+        top: 16vw;
+        left: 2vw;
+        background-image: url('images/circle-2.png');
+        animation: circle-2 linear 1.4s;
+      }
+
+      .circle-3 {
+        width: 21vw;
+        height: 21vw;
+        top: 29vw;
+        left: 76vw;
+        background-image: url('images/circle-3.png');
+        animation: circle-3 linear 1.4s;
+      }
+
+      .circle-4 {
+        width: 13.5vw;
+        height: 13.5vw;
+        top: 37vw;
+        left: 21vw;
+        background-image: url('images/circle-4.png');
+        animation: circle-4 linear 1.4s;
+      }
+
+      @keyframes circle-1 {
+        0% {
+          top: -14vw;
+          left: 64vw;
+          transform: scale(0.8);
+        }
+        100% {
+          top: 7vw;
+          left: 74vw;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes circle-2 {
+        0% {
+          top: 15vw;
+          left: -14vw;
+          transform: scale(0.8);
+        }
+        100% {
+          top: 16vw;
+          left: 2vw;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes circle-3 {
+        0% {
+          top: 22vw;
+          left: 102vw;
+          transform: scale(0.8);
+        }
+        100% {
+          top: 29vw;
+          left: 76vw;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes circle-4 {
+        0% {
+          top: 39vw;
+          left: -15vw;
+          transform: scale(0.8);
+        }
+        100% {
+          top: 37vw;
+          left: 21vw;
+          transform: scale(1);
+        }
+      }
+
+      .bubble3 {
+        width: 8.8vw;
+        height: 5.8vw;
+        background-image: url('images/bubble3.png');
+        margin-top: 4vw;
+        margin-left: 8.7vw;
+      }
+
+      .bubble4 {
+        width: 6.8vw;
+        height: 5.8vw;
+        background-image: url('images/bubble4.png');
+        margin-top: 3vw;
+        margin-left: 70vw;
+      }
+
+      h1 {
+        color: var(--white);
+      }
+
+      h1:nth-of-type(1) {
+        margin-top: 2vw;
+        margin-left: 16vw;
+      }
+
+      .splash1 {
+        width: 7vw;
+        height: 7vw;
+        background-image: url('images/splash1.png');
+        margin-top: -34vw;
+        margin-left: 21vw;
+      }
+
+      h1:nth-of-type(2) {
+        margin-left: 30vw;
+      }
+
+      h1:nth-of-type(3) {
+        margin-top: 0.2vw;
+        margin-left: 17.2vw;
+      }
+
+      .btn {
+        width: 21vw;
+        height: 4vw;
+        margin: 0 auto;
+        margin-top: 10vw;
+      }
+
+      a {
+        transition: all 0.2s;
+      }
+
+      // Розовый второй экран
+      .secondscreen {
+        background-color: var(--pinky);
+        width: 100%;
+        height: 33.5vw;
+
+            .circlepics {
+              display: inline-block;
+              width: 46vw;
+              height: 40vw;
+              margin-left: 49vw;
+              background-image: url('images/circles_pink.png');
+              animation: pictures 3s linear infinite;
+            }
+
+            // @keyframes pictures {
+            //   0% {
+            //     background-image: url('images/circles_pink.png');
+            //     background-size: cover;
+            //   }
+            //   50% {
+            //     background-image: url('images/circles_pink.png');
+            //     background-size: cover;
+            //   }
+            //   100% {
+            //     background-image: url('images/circles_pink3.png');
+            //     background-size: cover;
+            //   }
+            // }
+
+            .pink_text {
+              width: 60vw;
+              height: 20vw;
+              margin: -35vw 5.6vw;      
+              display: flex;
+              flex-direction: column;
+              gap: 1.8vw;
+            }
+  
+            h2, p {
+              color: var(--darkblue);
+            }
+
+            p {
+              width: 40vw;
+            }
+
+            .whitebubble1 {
+              width: 20vw;
+              height: 5.5vw;
+              margin-top: 15.7vw;
+              margin-left: 39.7vw;
+              background-image: url('images/whitebubble_top.png');
+            }
+
+            .whitebubble2 {
+              width: 20vw;
+              height: 5.5vw;
+              margin-top: -1.5vw;
+              margin-left: 8.2vw;
+              background-image: url('images/whitebubble_bottom.png');
+            }
+      }
+
+      // Статьи и подвал
+      .lastscreen {
+        width: 100%;
+        height: 84.4vw;
+        padding-top: 3.2vw;
+
+        .lasttext1 {
+          width: 42vw;
+          height: 10vw;
+          margin-left: 5.6vw;
+          display: flex;
+          flex-direction: column;
+          color: var(--darkblue);
+          gap: 1.8vw;
+        }
+
+        // .articles {
+        //   width: 100%;
+        //   height: 35vw;
+        //   margin-top: 3vw;
+        //   padding: 0 5.6vw;
+        //   display: flex;
+        //   flex-direction: row;
+        //   justify-content: space-between;
+
+        .articles {
+          width: 100%;
+          height: 35vw;
+          margin-top: 3vw;
+          padding: 0 5.6vw;
+
+          .article-container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+        
+
+          a {
+            width: 28.8vw;
+            background-color: var(--basicblue);
+            border-radius: 2.8vw;
+            display: flex;
+            flex-direction: column;
+            gap: 2.7vw;
+
+            .p1 {
+              background-image: url('images/article1_pic.png');
+            }
+
+            .p2 {
+              background-image: url('images/article2_pic.png');
+            }
+
+            .p3 {
+              background-image: url('images/article3_pic.png');
+            }
+
+            h4 {
+              color: var(--white);
+            }
+            .article-tag {
+              margin-bottom: 1vw;
+            }
+          }
+        }
+
+        .lasttext2 {
+          width: 54vw;
+          height: 11vw;
+          margin-top: 3.2vw;
+          margin-left: 5.6vw;
+          display: flex;
+          flex-direction: column;
+          color: var(--darkblue);
+          gap: 1.8vw;
+
+          p {
+            width: 40vw;
+          }
+        }
+        .footer {
+          width: 89vw;
+          height: 12.2vw;
+          background-color: var(--darkblue);
+          // background-color: gold;
+          border-radius: 2vw;
+          margin: 4vw auto;
+          padding: 1.8vw 3vw;
+
+          h3 {
+            color: var(--white);
+          }
+
+          .footer-container {
+            display: flex;
+            width: 100%;
+            height: 4vw;
+            margin-top: 1.6vw;
+            justify-content: space-between;
+            flex-direction: row;
+          }
+
+          form {
+            display: flex;
+            flex-direction: row;
+            gap: 1vw;
+
+            input {
+              width: 29vw;
+              height: 4vw;
+              padding: 0 2vw;
+              background-color: var(--darkblue);
+              border: 0.2vw solid var(--pinky);
+              border-radius: 30px;
+              color: var(--pinky);
+              font-family: 'TT Firs Neue Regular';
+              font-size: 1.6vw;
+            }
+
+            .btn {
+              width: 16vw;
+              margin-top: 0;
+            }
+          }
+
+          .socialmedia {
+            width: 14vw;
+            height: 4vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            a {
+              width: 4vw;
+              height: 4vw;
+            }
+
+            .vk {
+              background-image: url('images/vk.png');
+            }
+
+            .tg {
+              background-image: url('images/tg.png');
+            }
+
+            .dzen {
+              background-image: url('images/dzen.png');
+            }
+          }
+        }
+      }
     }
-  }
-  form {
-    display: flex;
-  }
-  .form {
-    width: 84.66vw;
-    // height: 13.5vw;
-    // padding: 2.8vw 0;
-    // height: 7.8vw;
-    margin-top: -1.6vw;
-    h2, form {
-      margin-left: 4.5vw;
+    
+    // мобильная версия
+    @media all and (max-width: 414px) {
+
+      body.index {
+
+        h1 {
+          font-size: 17vw;
+        }
+        h2 {
+          font-size: 9vw;
+        }
+
+        h3 {
+          font-size: 6.5vw;;
+        }
+
+        h4 {
+          font-size: 6.4vw;
+        }
+
+        p {
+          font-size: 4vw;
+        }
+
+        .btn {
+          height: 12vw;
+          border: 0.8vw solid var(--pinky);
+          padding: 0 3.5vw;
+          font-size: 4.5vw;
+        }
+
+        .btn img {
+          width: 9vw;
+          height: 9vw;
+        }
+      }
+
+      body.index .firstscreen {
+        height: 216vw;
+        padding-top: 7vw;
+
+        .bubble1 {
+          width: 20vw;
+          height: 9vw;
+          margin-top: 7vw;
+          margin-left: 25vw;
+        }
+
+        .bubble2 {
+          width: 22vw;
+          height: 9vw;
+          margin-top: 10vw;
+          margin-left: 55vw;
+        }
+
+        h1:nth-of-type(1) {
+          margin-top: 8vw;
+          margin-left: 21vw;
+        }
+
+        h1:nth-of-type(2) {
+          margin-left: 8vw;
+        }
+
+        h1:nth-of-type(3) {
+          margin-left: 17vw;
+        }
+
+        .bubble3 {
+          width: 31vw;
+          height: 9vw;
+          margin-top: 43vw;
+          margin-left: 10vw;
+        }
+
+        .bubble4 {
+          display: none;
+        }
+
+        .splash1 {
+          width: 18vw;
+          height: 19vw;
+          margin-top: -122vw;
+          margin-left: 65vw;
+        }
+
+        .btn {
+          width: 57vw;
+          margin-top: 59vw;
+        }
+
+        .circle-1, .circle-2, .circle-3, .circle-4 {
+          animation: none;
+        }
+
+        .circle-1 {
+          width: 26vw;
+          height: 26vw;
+          top: 9vw;
+          left: 71vw;
+        }
+
+        .circle-2 {
+          width: 27vw;
+          height: 27vw;
+          top: 24vw;
+          left: -9vw;
+        }
+
+        .circle-3 {
+          width: 33vw;
+          height: 33vw;
+          top: 179vw;
+          left: 60vw;
+        }
+
+        .circle-4 {
+          width: 31vw;
+          height: 31vw;
+          top: 161vw;
+          left: -14vw;
+        }
+      }
+
+      body.index .logo {
+        width: 23vw;
+        height: 5vw;
+      }
+
+      body.index .secondscreen {
+        height: 110vw;
+
+        .circlepics {
+          width: 87vw;
+          height: 44vw;
+          margin-left: 5.5vw;
+          margin-top: 52vw;
+          background-image: url('images/circles_pink_mobile.png');
+        }
+        
+        .pink_text {
+          margin-top: -89vw;
+          margin-left: 11vw;
+        }
+        
+        p {
+          display: none;
+        }
+
+        .whitebubble1, .whitebubble2 {
+          display: none;
+        }
+      }
+
+      body.index .lastscreen {
+        height: 293vw;
+
+        .lasttext1 {
+          margin-top: 4vw;
+          margin-left: 10vw;
+          width: 81vw;
+          gap: 5vw;
+        }
+
+        // .articles {
+        //   width: 300vw;
+        //   height: 97vw;
+        //   margin-top: 36vw;
+        //   padding: 0 10vw;
+        //   overflow-x: scroll;
+
+        .articles {
+          width: 100%;
+          height: 97vw;
+          margin-top: 36vw;
+          padding: 0 10vw;
+          overflow: hidden;
+          overflow-x: scroll;
+
+          .article-container {
+            width: 300vw;
+          }
+
+          a {
+            width: 80vw;
+            height: 97vw;
+            border-radius: 7vw;
+            gap: 5.7vw;
+          }
+
+          .article_pic {
+            height: 61vw;
+          }
+
+          .article-info {
+            height: 21vw;
+            padding: 0 5vw;
+
+            .article-tags {
+              height: 3vw;
+              gap: 3vw;
+  
+              .article_tag {
+                width: fit-content;
+                padding: 3vw;
+                height: 7vw;
+              }
+            }
+          }
+        }
+        .articles::-webkit-scrollbar {
+          display: none;
+        }
+        .lasttext2 {
+          width: 80vw;
+          margin-top: 8.2vw;
+          margin-left: 10.6vw;
+          gap: 5vw;
+
+          p {
+            width: 80vw;
+          }
+        }
+        
+        .footer {
+          width: 80vw;
+          height: 65vw;
+          margin-top: 52vw;
+          border-radius: 6vw;
+          padding: 0.8vw 2vw;
+
+          h3 {
+            margin-top: 4.5vw;
+          }
+
+          .footer-container {
+            flex-direction: column;
+            align-items: center;
+
+            form {
+              flex-direction: column;
+              margin-top: 3vw;
+              gap: 2vw;
+
+              input {
+                width: 68vw;
+                height: 12vw;
+                border: 0.8vw solid var(--pinky);
+                padding: 0 3.5vw;
+                font-size: 4.5vw;
+              }
+              .btn {
+                width: 68vw;
+                padding-right: 1vw;
+              }
+            }
+
+            .socialmedia {
+              margin-top: 5vw;
+              width: 36vw;
+              height: 12vw;
+
+              .tg, .vk, .dzen {
+                width: 10vw;
+                height: 10vw;
+              }
+            }
+          }
+        }
+
+      }
     }
-    form {
-      margin-top: 2.2vw;
-      display: flex;
-    }
-    input {
-      width: 20.3vw;
-      height: 2.7vw;
-      border-radius: 10vw;
-      border: 0.1vw solid #000000;
-      padding: 0.1vw 1.6vw;
-      font-size: 1.5vw;
-      letter-spacing: -0.03vw;
-    }
-    button {
-      width: 12.2vw;
-      height: 3.1vw;
-      border-radius: 10vw;
-      margin-left: 1.5vw;
-      font-size: 1.4vw;
-    }
-    .tg {
-      margin-top: 0.6vw;
-      padding: 0 0;
-      width: 2.4vw;
-      height: 2.4vw;
-      
-    }
-    .vk {
-      width: 2.4vw;
-      height: 1.6vw;
-      margin-bottom: 0.4vw;
-    }
-    .dzen {
-      width: 2.35vw;
-      height: 2.35vw;
-    }
-    #my-form-status {
-      margin-top: 0.9vw;
-    }
-  }
-  }
-// телефон
-@media all and (max-width: 414px) {
-  .text {
-    padding: 45.4vw 0;
-  }
-  h1 {
-    font-size: 9.4vw;
-  }
-  p {
-    width: 66vw;
-    font-size: 4.9vw;
-    margin-top: 8.4vw;
-    letter-spacing: -0.09vw;
-    line-height: 119%;
-  }
-  h2 {
-    font-size: 6.2vw;
-    letter-spacing: -0.06vw;
-    line-height: 111%;
-  }
-  h2, form {
-    margin-left: 10vw;
-  }
-  input, button {
-    display: block;
-  }
-  .form{
-    background: url(images/form_mobile.svg);
-    background-size: cover;
-    width: 87.7vw;
-    height: 53.7vw;
-    padding: 7vw 0;
-    margin-top: -4vw;
-  }
-  input {
-    width: 56vw;
-    height: 8.3vw;
-    border-radius: 10vw;
-    margin-top: 4vw;
-    border: 0.5vw solid #000000;
-    padding: 0 6vw;
-    font-size: 4.5vw;
-  }
-  button {
-    font-size: 4.6vw;
-    margin-top: 5vw;
-    width: 69vw;
-    height: 9vw;
-  }
-  .tg {
-    width: 6.5vw;
-    margin-top: -22vw;
-    height: 6.5vw;
-    margin-left: 16vw;
-  }
-  .vk {
-    width: 7vw;
-    height: 4.5vw;
-    margin-bottom: 1vw;
-  }
-  .dzen {
-    height: 6.5vw;
-    width: 6.5vw;
-    margin-top: -16vw;
-  }
-  .dzen, .vk {
-    margin-left: 5vw;
-  }
-  #my-form-status {
-    font-family: 'IBM Plex Sans';
-    font-size: 4vw;
-    margin-top: 1vw;
-    margin-left: -5vw;
-    width: 80vw;
-  }
-  .socialmedia {
-    margin-top: 4vw;
-  }
-}
