@@ -24,26 +24,31 @@ h1 {
 h2 {
   font-family: 'TT Firs Neue Regular';
   font-size: 4vw;
+  color: var(--darkblue)
 }
 
 h3 {
   font-family: 'TT Firs Neue Regular';
   font-size: 2.8vw;
+  color: var(--darkblue);
 }
 
 h4 {
   font-family: 'TT Firs Neue Regular';
   font-size: 2.2vw;
+  color: var(--darkblue);
 }
 
 p {
   font-family: 'TT Firs Neue Regular';
   font-size: 1.3vw;
   line-height: 120%;
+  color: var(--darkblue);
 }
 
 a {
   text-decoration: none;
+  font-family: 'TT Firs Neue Regular';
 }
 
 .article_pic {
@@ -86,13 +91,12 @@ a {
 }
 
 .btn {
+  width: fit-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // padding-top: 0.3vw;
-  // padding-left: 0.3vw;
-  padding-right: 0.3vw;
-  padding-left: 2vw;
+  height: fit-content;
+  padding: 0.3vw 0.3vw 0.3vw 2vw;
   background-color: none;
   border: 0.2vw solid var(--pinky);
   border-radius: 8vw;
@@ -108,6 +112,7 @@ a {
   width: 3vw;
   height: 3vw;
   transition: all 0.3s;
+  margin-left: 2vw;
 } 
 
 .btn:hover {
@@ -115,6 +120,39 @@ a {
   color: var(--darkblue);
 }
 .btn:hover img {
+  content: url('images/btn-icon2.png');
+}
+
+.btn-2 {
+  display: flex;
+  width: fit-content;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3vw 0.3vw 0.3vw 2vw;
+  height: fit-content;
+  background-color: var(--darkblue);
+  border: 0.2vw solid var(--darkblue);
+  border-radius: 8vw;
+  font-family: 'TT Firs Neue';
+  text-decoration: none;
+  font-size: 1.6vw;
+  color: var(--pinky);
+  transition: all 0.2s;
+}
+
+.btn-2 img {
+  display: inline-block;
+  width: 3vw;
+  height: 3vw;
+  transition: all 0.3s;
+  margin-left: 2vw;
+} 
+
+.btn-2:hover {
+  background-color: var(--pinky);
+  color: var(--darkblue);
+}
+.btn-2:hover img {
   content: url('images/btn-icon2.png');
 }
 
