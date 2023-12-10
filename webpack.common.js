@@ -100,8 +100,8 @@ module.exports = {
       filename: './index.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/structure.html',
-      filename: './structure.html'
+      template: './src/styleguide.html',
+      filename: './styleguide.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/about.html',

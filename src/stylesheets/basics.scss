@@ -76,8 +76,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--basicblue);
-  border: 0.2vw solid var(--pinky);
+  background-color: var(--white);
+  // border: 0.2vw solid var(--pinky);
   border-radius: 30px;
   padding: 1vw;
   width: fit-content;
@@ -87,7 +87,7 @@ a {
 
 .article_tag p {
   font-size: 1.1vw;
-  color: var(--pinky)
+  color: var(--basicblue);
 }
 
 .btn {
@@ -97,13 +97,13 @@ a {
   align-items: center;
   height: fit-content;
   padding: 0.3vw 0.3vw 0.3vw 2vw;
-  background-color: none;
+  background-color: var(--pinky);
   border: 0.2vw solid var(--pinky);
   border-radius: 8vw;
   font-family: 'TT Firs Neue';
   text-decoration: none;
   font-size: 1.6vw;
-  color: var(--pinky);
+  color: var(--darkblue);
   transition: all 0.2s;
 }
 
@@ -116,11 +116,11 @@ a {
 } 
 
 .btn:hover {
-  background-color: var(--pinky);
-  color: var(--darkblue);
+  background-color: var(--darkblue);
+  color: var(--pinky);
 }
 .btn:hover img {
-  content: url('images/btn-icon2.png');
+  content: url('images/btn-icon1.png');
 }
 
 .btn-2 {
