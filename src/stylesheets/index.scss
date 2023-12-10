@@ -6,9 +6,9 @@ body.index {
       width:100%;
       height: 100%;
       background-color: var(--white);
-      background: url('images/maket.png');
+      // background: url('images/maket.png');
       background-size: cover;
-      opacity: 0.3;
+      // opacity: 0.3;
 
       // Первый экран
       .firstscreen {
@@ -219,22 +219,6 @@ body.index {
             p {
               width: 40vw;
             }
-
-            .whitebubble1 {
-              width: 20vw;
-              height: 5.5vw;
-              margin-top: 15.7vw;
-              margin-left: 39.7vw;
-              background-image: url('images/whitebubble_top.png');
-            }
-
-            .whitebubble2 {
-              width: 20vw;
-              height: 5.5vw;
-              margin-top: -1.5vw;
-              margin-left: 8.2vw;
-              background-image: url('images/whitebubble_bottom.png');
-            }
       }
 
       // Статьи и подвал
@@ -402,12 +386,16 @@ body.index {
                   background-color: var(--white);
                   border-radius: 0.3vw;
                   cursor: pointer;
+                  
                 }
 
                 // input[type="checkbox"]:after {
 
                 // }
               }
+            }
+            .btn-2:hover {
+              background-color: var(--basicblue);
             }
           }
         }
@@ -448,7 +436,7 @@ body.index {
               input {
                 width: 29vw;
                 background-color: var(--white);
-                border: 0.3vw var(--darkblue) solid; 
+                border: 0.2vw var(--darkblue) solid; 
                 border-radius: 40vw;
                 padding: 1vw;
                 padding-left: 2vw;
