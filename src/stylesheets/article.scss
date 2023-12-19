@@ -1,0 +1,113 @@
+body.article {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    // background-color: var(--white);
+    // background: url('images/article_maket.png');
+    background-size: cover;
+    opacity: 1; 
+    .firstscreen {
+        height: 36.8vw;
+        margin-top: -0.1vw;
+    }
+    .circlegrid {
+        padding: 1vw 5.3vw 6.4vw 5.2vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 1vw 1vw;
+    }
+    .text1 {
+        line-height: 90%;
+        grid-column-start: 3;
+        grid-column-end: 6;
+        grid-row: 1;
+    }
+    .text2 {
+        line-height: 90%;
+        grid-column-start: 3;
+        grid-column-end: 9;
+        grid-row: 2;
+    }
+    .text3 {
+        line-height: 90%;
+        grid-column-start: 6;
+        grid-column-end: 10;
+        grid-row: 3;
+    }
+    .text1, .text2, .text3 {
+        color: var(--white);
+    }
+    .photo1, .photo2 {
+        width: 100%;
+        height: 100%;
+    }
+    .photo1 {
+        grid-column-start: 10;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        background-image: url(images/article_winter1.png);
+        background-size: cover;
+    }
+    .photo2{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        background-image: url(images/article_winter2.png);
+        background-size: cover;
+    }
+    .first {
+        margin-top: 2.3vw;
+        margin-left: 5.4vw;
+        .text_1 {
+            margin-left: 2.7vw;
+            margin-top: 0.1vw;
+            line-height: 130%;
+            width: 50vw;
+        }
+    }
+    .first, .all_bubbles {
+        display: flex;
+    }
+    .all_bubbles {
+        margin-top: 0.5vw;
+        gap: 0.8vw;
+    }
+    .b_1{
+        width: 5.3vw;
+    }
+    .b_2 {
+        width: 7vw;
+    }
+    .b_3 {
+        width: 6vw;
+    }
+}
+// меню
+.menu {
+    display: flex;
+    padding: 2vw 0;
+    background-color: var(--darkblue);
+    .logo {
+        width: 10vw;
+        height: 3vw;
+        margin-left: 5.3vw;
+        background-image: url('images/logo.png');
+      }
+    .link{
+        display: flex;
+        margin-left: 16.1vw;
+        margin-top: 0.8vw;
+        .tags {
+            color: var(--white);
+            margin-left:4.6vw;
+        }
+        .tag1 {
+            margin-left:0vw;
+        }
+    }
+}
