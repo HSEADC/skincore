@@ -23,7 +23,7 @@ body.styleguide {
             margin-top: 2vw;
         }
 
-    .menu {
+    .menu-styleguide {
     width: 10vw;
     height: 23vw;
     // background-color: gold;
@@ -350,7 +350,7 @@ body.styleguide {
         .graphics2 {
             width: 52vw;
             height: 14vw;
-            margin-top: 2vw;
+            margin-top: 6vw;
             margin-left: 24vw;
             background-image: url('images/graphics2.png');
         }
@@ -528,6 +528,62 @@ body.styleguide {
         
         .circlebig6:hover {
             background-color: var(--pinky);
+        }
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    body.styleguide {   
+        background: url('images/styleguide-mobile.png');
+        background-size: cover;
+        opacity: 0.3;
+
+        .menu-styleguide {
+            display: none;
+        }
+
+        .firstscreen {
+            height: 177vw;
+
+            // .circlegrid {
+            //     grid-template-columns: 1fr 1fr 1fr 1fr;
+            //     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            //     padding: 14.5vw 8vw 14.5vw 9vw;
+
+            //     .empty:nth-of-type(1) {
+            //         display: none;
+            //     }
+            // }
+        }
+
+        .aboutus {
+            height: 269vw;
+            padding-left: 9vw;
+            
+            h2, h3, p, div {
+                margin-left: 0;
+            }
+
+            h2 {
+                margin-top: 4vw;
+                width: 78vw;
+            }
+
+            h3 {
+                margin-top: 6vw;
+                width: 78vw;
+            }
+
+            p {
+                width: 78vw;
+            }
+
+            .values {
+                width: 78vw;
+                height: 32vw;
+                margin-top: 4vw;
+                background-image: url('images/styleguide/values-mobile.png');
+            }
         }
     }
 }
