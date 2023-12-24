@@ -534,9 +534,27 @@ body.styleguide {
 
 @media only screen and (max-width: 414px) {
     body.styleguide {   
-        background: url('images/styleguide-mobile.png');
+        // background: url('images/styleguide-mobile.png');
         background-size: cover;
-        opacity: 0.3;
+        // opacity: 0.3;
+
+        h2, h3, p, div {
+            margin-left: 0;
+        }
+
+        h2 {
+            margin-top: 4vw;
+            width: 78vw;
+        }
+
+        h3 {
+            margin-top: 6vw;
+            width: 78vw;
+        }
+
+        p {
+            width: 78vw;
+        }
 
         .menu-styleguide {
             display: none;
@@ -556,33 +574,107 @@ body.styleguide {
             // }
         }
 
+        // О бренде_мобилка
         .aboutus {
-            height: 269vw;
+            height: 220vw;
             padding-left: 9vw;
-            
-            h2, h3, p, div {
-                margin-left: 0;
-            }
-
-            h2 {
-                margin-top: 4vw;
-                width: 78vw;
-            }
-
-            h3 {
-                margin-top: 6vw;
-                width: 78vw;
-            }
-
-            p {
-                width: 78vw;
-            }
 
             .values {
                 width: 78vw;
                 height: 32vw;
                 margin-top: 4vw;
+                margin-left: 0vw;
                 background-image: url('images/styleguide/values-mobile.png');
+            }
+        }
+
+        // Лого_мобилка
+        .about-logo {
+            height: 528vw;
+            padding-left: 9vw;
+
+            h2, h3, p, div {
+                margin-left: 0;
+            }
+
+            .about-logo_text {
+                margin-top: 6vw;
+                flex-direction: column;
+                gap: 3vw;
+
+                .semantics {
+                    width: 78vw;
+
+                    p {
+                        width: 78vw;
+                    }
+                }
+
+                .personality {
+                    width: 78vw;
+
+                    p {
+                        width: 78vw;
+                    }
+                }
+            }
+
+            .logo-construction {
+                background-image: url('images/styleguide/logo-const_mobile.png');
+                width: 78vw;
+                height: 24vw;
+                margin-top: 3vw;
+            }
+
+            .logo-allowed {
+                background-image: url('images/styleguide/logo-allowed.png');
+                width: 78vw;
+                height: 94vw;
+                margin-top: 4vw;
+            }
+
+            .logo-donot1 {
+                margin-top: 4vw;
+                width: 78vw;
+                height: 71vw;
+                background-image: url('images/styleguide/logo-donts1_mobile.png');
+            }
+
+            .logo-donot2 {
+                margin-top: 4vw;
+                width: 78vw;
+                height: 71vw;
+                background-image: url('images/styleguide/logo-donts2_mobile.png');
+            }
+        }
+
+        // Цвета и типографика_мобилка
+        .colortype {
+            height: 315vw;
+            padding-left: 9vw;
+
+            .palette {
+                background-image: url('images/styleguide/colors_mobile.png');
+                margin-left: 0vw;
+                width: 78vw;
+                height: 78vw;
+                margin-top: 4vw;
+            }
+
+            .fonts {
+                width: 78vw;
+                margin-left: 0vw;
+                margin-top: 6vw;
+                flex-direction: column;
+                gap: 4vw;
+            }
+
+            .font1, .font2, .font3 {
+                width: 78vw;
+                
+                p {
+                    font-size: 5vw;
+                }
             }
         }
     }
