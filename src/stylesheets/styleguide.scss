@@ -677,5 +677,90 @@ body.styleguide {
                 }
             }
         }
+
+        .grid {
+            padding-left: 9vw;
+
+            img {
+                margin-left: 0vw;
+                width: 78vw;
+                height: 49vw;
+            }
+
+            .grid_forweb {
+                width: 78vw;
+                margin-top: 3vw;
+                height: 94vw;
+                margin-left: 0vw;
+                gap: 2vw;
+                flex-direction: column;
+
+                .web1, .web2 {
+                    width: 78vw;
+                    
+                }
+            }
+
+            .banner {
+                margin-left: 0vw;
+                margin-top: 3vw;
+                width: 78vw;
+                height: 23vw;
+            }
+
+            .posters {
+                margin-left: 0vw;
+                width: 78vw;
+                height: 56vw;
+
+                .poster1, .poster2 {
+                    width: 37.5vw;
+                }
+
+                .poster3 {
+                    display: none;
+                }
+            }
+            .photos {
+                margin-left: 0vw;
+                width: 78vw;
+                height: 47vw;
+
+                .photo1, .photo3 {
+                    width: 37vw;
+                }
+                .photo2 {
+                    display: none;
+                }
+            }
+
+            .graphics {
+                display: block;
+                margin-left: 0vw;
+                width: 78vw;
+                height: 122vw;
+                background-image: url('images/styleguide/graphics_mobile.png');
+
+                .circle, .shape1, .shape2, .shape3 {
+                    display: none;
+                }
+            }
+
+            .graphics2 {
+                width: 78vw;
+                height: 22vw;
+                margin-left: 0vw;
+            }
+
+            .mockups {
+                margin-top: 4vw;
+                margin-left: 0vw;
+                width: 78vw;
+
+                .mockup1 {
+                    height: 52vw;
+                }
+            }
+        }
     }
 }
