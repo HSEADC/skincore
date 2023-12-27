@@ -2,13 +2,23 @@
   background-color: var(--darkblue);
   width: 100%;
   display: flex;
-  padding: 5vw 0vw 3vw 5.6vw;
+  padding: 5vw 0vw 1vw 5.6vw;
   p{
     font-size: 1.3vw;
     color: var(--white);
     margin-right: 13.9vw;
   }
   
+}
+.adc {
+  background-color: var(--darkblue);
+  width: 100%;
+  padding: 1vw 0vw ;
+  p {
+    font-size: 1.3vw;
+    color: var(--white);
+    text-align: center;
+  }
 }
 .footer {
   width: 100%;

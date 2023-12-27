@@ -1,0 +1,49 @@
+.text_01, .text_2 {
+    color: var(--white);
+}
+.text_1 {
+    line-height: 90%;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row: 2;
+}
+.text_2 {
+    line-height: 90%;
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-row: 3;
+}
+.b_01 {
+    width: 8vw;
+}
+.b_02 {
+    width: 9vw;
+}
+.text0_1 {
+    margin-left: 4.7vw;
+    width: 51vw;
+}
+.photo_1 {
+    grid-column-start: 10;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(images/dictionary/dictionary1.png);
+    background-size: cover;
+}
+.photo_2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-image: url(images/dictionary/dictionary2.png);
+    background-size: cover;
+}
+.serum_1 {
+    background-image: url(images/dictionary/serum_1.png);
+    background-size: cover;
+}
+.serum_2 {
+    background-image: url(images/dictionary/serum_2.png);
+    background-size: cover;
+}

@@ -5,7 +5,7 @@ body.article {
     left: 0;
     width:100%;
     height: 100%;
-    // background-color: var(--white);
+    background-color: var(--white);
     // background: url('images/article_maket.png');
     background-size: cover;
     opacity: 1; 
@@ -42,7 +42,7 @@ body.article {
     .text1, .text2, .text3 {
         color: var(--white);
     }
-    .photo1, .photo2 {
+    .photo1, .photo2, .photo_1, .photo_2 {
         width: 100%;
         height: 100%;
     }
@@ -89,6 +89,8 @@ body.article {
         width: 6vw;
     }
 }
+
+    
 // содержание страницы
 .content > * {
     margin-left: 28vw;
@@ -108,10 +110,13 @@ body.article {
     .photo_type1 {
         height: 49.74vw;
         width:100%;
-        background-image: url(images/articles/article_winter3.png);
-        background-size: cover;
+        
         margin-top: 2.8vw;
         margin-left: 0;
+    }
+    .winter0_1 {
+        background-image: url(images/articles/article_winter3.png);
+        background-size: cover;
     }
     li {
         margin-top: 0.1vw;
@@ -125,12 +130,7 @@ body.article {
         margin-top: 2.8vw;
         border-radius: 2vw;
     }
-    .photo_type2
-    {
-        width: 66.74vw;
-        background-image: url(images/articles/article_winter4.png);
-        background-size: cover;
-    }
+    
     .type02 {
         margin-left: 1.6vw;
     }
@@ -151,11 +151,22 @@ body.article {
     .line {
         display: inline-block;
     }
+    .photo_type2
+    {
+        width: 66.74vw;
+    }
+    .winter0_2 {
+        background-image: url(images/articles/article_winter4.png);
+
+    }
     .photo_type3 {
         width: 21.04vw;
+        margin-left: 5.4vw;
+    }
+    .winter0_3 {
         background-image: url(images/articles/article_winter5.png);
         background-size: cover;
-        margin-left: 5.4vw;
+
     }
     .winter_1{
         background-image: url(images/articles/article_winter6.png);
@@ -200,9 +211,9 @@ body.article {
         }
     }
     .search {
-        width: 1.66vw;
-        height: 1.66vw;
-        margin-top: 0.7vw;
+        width: 2vw;
+        height: 2vw;
+        margin-top: 0.5vw;
         margin-left: 24.5vw;
         background-image: url('images/search.svg');
 
@@ -218,7 +229,53 @@ body.article {
         display: none;
     }
     .footer {
-        margin-top: 12vw;
+        height: 39vw;
+        margin-top: 18vw;
+        .footer-info {
+            .logo {
+                width: 29vw;
+                height: 6vw;
+                margin: 6.8vw 0vw;
+                margin-left: 1vw;
+                margin-bottom: 0vw;
+            }
+            p {
+                width: 37vw;
+                margin-left: 1vw;
+                margin-top: 3.3vw;
+            }
+            .socialmedia {
+                width: 42vw;
+                margin-left: 1vw;
+                margin-top: 2vw;
+                height: 13vw;
+                .vk, .tg, .dzen {
+                    width: 12vw;
+                    height: 12vw;
+                  }
+            }
+        }
+        
+    }
+    .names {
+        padding: 5vw 0vw 6vw 5.6vw;
+        display: block;
+        p {
+            margin-top: 1.5vw;
+        }
+    }
+    .names > p, .adc > p {
+        font-size: 3.4vw;
+    }
+    .adc {
+        width: fit-content;
+        background: none;
+        padding: 0 0;
+        margin-top: -13vw;
+        p {
+            text-align: right;
+            margin-left: 15vw;
+        }
     }
     // другие статьи
 
@@ -278,7 +335,7 @@ body.article {
     .menu_web {
         width: 9.5vw;
         height: 9.5vw;
-        margin-top: -2.3vw;
+        margin-top: -1.5vw;
         margin-left: 33.5vw;
         background-image: url('images/menu.svg');
     } 
@@ -406,6 +463,41 @@ body.article {
             h3 {
                 margin-left: 8vw;
             }
+        }
+        .exist {
+            background-image: url('images/cancel.svg');
+ 
+        }
+        .s_web {
+            width: 9.5vw;
+            height: 9.5vw;
+            display: block;
+            margin-top: -88vw;
+            margin-left: 69vw;
+            background-image: url('images/search_web.svg');
+
+        }
+        .menu_web0 {
+            display: block;
+            height: 220vw;
+        }
+        .menu_web00 {
+            margin-top: -9vw;
+            margin-left: 82.5vw;
+        }
+        .menu_web01{
+            display: block;
+        }
+        .link_web {
+            margin-left: 4.3vw;
+            margin-top: 30vw;
+        }
+        .tag1_web {
+            margin-left: 4vw;
+        }
+        .tags_web {
+            font-size: 7vw;
+            margin-top: 5.5vw;
         }
     }
 }

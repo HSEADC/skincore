@@ -8,7 +8,7 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -124,16 +124,19 @@ module.exports = {
       template: './src/checklist.html',
       filename: './checklist.html'
     }),
-    // new HtmlWebpackPlugin({
-    //   template: './src/dictionary.html',
-    //   filename: './dictionary.html'
-    // }),
+    new HtmlWebpackPlugin({
+      template: './src/dictionary.html',
+      filename: './dictionary.html'
+    }),
     // Article
     new HtmlWebpackPlugin({
       template: './src/article/article1.html',
       filename: './article/article1.html'
     }),
-
+    new HtmlWebpackPlugin({
+      template: './src/dictionary/serum.html',
+      filename: './dictionary/serum.html'
+    }),
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
