@@ -19,6 +19,7 @@ body {
 h1 {
   font-family: 'TT Firs Neue Regular';
   font-size: 7.3vw;
+  line-height: 78%;
 }
 
 h2 {
@@ -159,6 +160,22 @@ a {
 .btn-2:hover img {
   content: url('images/btn-icon2.png');
 }
+
+.btn_no-arrow {
+  width: fit-content;
+  background-color: var(--darkblue);
+  padding: 1vw 2.5vw;
+  font-family: 'TT Firs Neue';
+  font-size: 1.6vw;
+  border-radius: 20vw;
+  color: var(--white);
+}
+
+.btn_no-arrow:hover {
+  background-color: var(--pinky);
+  color: var(--darkblue)
+}
+
 .bubble {
   border: 0.2vw solid var(--darkblue);
   border-radius: 10vw;
