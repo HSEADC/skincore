@@ -40,7 +40,7 @@ h4 {
   color: var(--darkblue);
 }
 
-p {
+li, p {
   font-family: 'TT Firs Neue Regular';
   font-size: 1.4vw;
   line-height: 130%;
@@ -56,7 +56,6 @@ a {
 .article_pic {
   width: 100%;
   height: 21.8vw;
-  border-radius: 2.8vw;
 }
 
 .article-info {
@@ -81,8 +80,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--white);
-  // border: 0.2vw solid var(--pinky);
+  // background-color: var(--white);
+  border: 0.1vw solid var(--white);
   border-radius: 30px;
   padding: 1vw;
   width: fit-content;
@@ -92,7 +91,7 @@ a {
 
 .article_tag p {
   font-size: 1.1vw;
-  color: var(--basicblue);
+  color: var(--white);
 }
 
 .btn {
@@ -177,7 +176,7 @@ a {
 }
 
 .bubble {
-  border: 0.2vw solid var(--darkblue);
+  border: 0.1vw solid var(--darkblue);
   border-radius: 10vw;
   width: 14.8vw;
   text-align: center;
@@ -185,7 +184,6 @@ a {
   font-family: "TT Firs Neue";
   padding: 0.8vw 0;
   color: var(--darkblue);
-  letter-spacing: -0.023vw;
 }
 
 @media only screen and (max-width: 414px) {
@@ -194,11 +192,23 @@ a {
   }
 
   h3 {
-    font-size: 8vw;
+    font-size: 6.5vw;
   }
-
-  p {
-    font-size: 5vw;
+  h4 {
+    font-size: 6vw;
+  }
+  li, p {
+    font-size: 4vw;
+  }
+  .bubble {
+    border: 0.4vw solid var(--darkblue);
+    font-size: 3.7vw;
+    padding: 1.4vw 0;
+    height: 7vw;
+  }
+  .article_tag p {
+    font-size: 4vw;
+    color: var(--white);
   }
 }
 
