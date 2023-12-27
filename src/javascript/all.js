@@ -25,5 +25,42 @@ $(document).ready(function(){
             $(".tags").removeClass("tags_web");  
         }
     });
-    
+    // карточка вещества
+    $(".bt2").click(function() {
+        $(".bt1").removeClass("active"); 
+        $(".bt3").removeClass("active"); 
+        $(this).toggleClass("active"); 
+        $(".bubble_dark").css('margin-left', '12vw');
+        $(".bubble_dark").css('width', '13vw');
+        if (document.documentElement.clientWidth <= 414) {
+            $(".bubble_dark").css('width', '23.7vw');
+            $(".bubble_dark").css('margin-left', '20vw');
+        }
+        document.getElementById('change').textContent = 'Сыворотки для жирной кожи лица могут быть использованы для балансирования уровня жира, увлажнения кожи, уменьшения блеска, сужения пор и улучшения текстуры кожи. '
+    });
+    $(".bt1").click(function() {
+        $(".bt2").removeClass("active"); 
+        $(".bt3").removeClass("active"); 
+        $(this).toggleClass("active"); 
+        $(".bubble_dark").css('margin-left', '0vw');
+        
+        if (document.documentElement.clientWidth <= 414) {
+            $(".bubble_dark").css('width', '17.7vw');
+        }
+        document.getElementById('change').textContent = 'Сухой коже необходимо глубокое увлажнение. Для этого типа подойдут сыворотки с гиалуроновой кислотой, церамидами или натуральными маслами, которые увлажнят и питают кожу. Можно также обратить внимание на наличие в составе витаминов E, C и B3. '
+    });
+    $(".bt3").click(function() {
+        $(".bt1").removeClass("active"); 
+        $(".bt2").removeClass("active"); 
+        $(this).toggleClass("active"); 
+        $(".bubble_dark").css('margin-left', '26vw');
+        $(".bubble_dark").css('width', '17.9vw');
+        if (document.documentElement.clientWidth <= 414) {
+            $(".bubble_dark").css('width', '41.7vw');
+            $(".bubble_dark").css('margin-left', '46vw');
+        }
+        document.getElementById('change').textContent = 'Сыворотки для чувствительной кожи предназначены для ухода за кожей, которая склонна к раздражению, покраснениям, сухости и другим проблемам. Они имеют специальные формулы, разработанные с учетом потребностей чувствительной кожи, и содержат ингредиенты, которые помогают уменьшить воспаление, увлажнить и успокоить кожу.'
+
+        
+    });
 });  
