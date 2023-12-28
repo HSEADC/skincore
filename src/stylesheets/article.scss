@@ -64,7 +64,7 @@ body.article {
     }
     .first {
         margin-top: 2.3vw;
-        margin-left: 5.4vw;
+        margin-left: 4.7vw;
         .text_1 {
             margin-left: 2.7vw;
             margin-top: 0.1vw;
@@ -79,15 +79,15 @@ body.article {
         margin-top: 0.5vw;
         gap: 0.8vw;
     }
-    .b_1{
-        width: 5.3vw;
-    }
-    .b_2 {
-        width: 7vw;
-    }
-    .b_3 {
-        width: 6vw;
-    }
+    // .b_1{
+    //     width: 5.3vw;
+    // }
+    // .b_2 {
+    //     width: 7vw;
+    // }
+    // .b_3 {
+    //     width: 6vw;
+    // }
 }
 
     
@@ -231,8 +231,9 @@ body.article {
         display: none;
     }
     .footer {
-        height: 39vw;
+        height: 44vw;
         margin-top: 18vw;
+        padding: 0vw 3vw;
         .footer-info {
             .logo {
                 width: 29vw;
@@ -261,7 +262,7 @@ body.article {
     }
     
     .names {
-        padding: 5vw 0vw 6vw 5.6vw;
+        padding: 5vw 0vw 6vw 8vw;
         display: block;
         p {
             margin-top: 1.5vw;
@@ -271,20 +272,21 @@ body.article {
         font-size: 3.4vw;
     }
     .adc {
-        width: fit-content;
+        width: 100%;
         background: none;
-        padding: 0 0;
-        margin-top: -13vw;
+        padding: 0 6vw;
+        margin-top: -10.5vw;
         p {
             text-align: right;
-            margin-left: 15vw;
+            margin-left: 8vw;
         }
     }
     // другие статьи
 
     .articles-category {
         width: 100%;
-        height: 97vw;
+        height: 119vw;
+        overflow: hidden;
         margin-top: 5vw;
         padding: 0 0vw 0 2vw;
         .articles::-webkit-scrollbar {
@@ -293,12 +295,12 @@ body.article {
         .articles {
             overflow: hidden;
             overflow-x: scroll;
-            height: 90vw;
+            height: 95vw;
             padding: 0 6vw;
             margin-top: 5vw;
             a {
                 width: 73vw;
-                height: 90vw;
+                height: 95vw;
                 border-radius: 7.7vw;
                 gap: 5.7vw;
             }
@@ -308,7 +310,7 @@ body.article {
     }
 
         .article_pic {
-          height: 56vw;
+            height: 61vw;
         }
 
         .article-info {
@@ -356,6 +358,10 @@ body.article {
         margin-left: 2.5vw;
     }
     body.article {
+        .adc {
+            padding: 0 0;
+            margin-top: -12.5vw;
+        }
         .firstscreen{
             height: 188.8vw;
         }
@@ -501,6 +507,11 @@ body.article {
         .tags_web {
             font-size: 7vw;
             margin-top: 5.5vw;
+        }
+    }
+    .content {
+        li {
+            width: 89vw;
         }
     }
 }

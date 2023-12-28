@@ -178,11 +178,10 @@ a {
 .bubble {
   border: 0.1vw solid var(--darkblue);
   border-radius: 10vw;
-  width: 14.8vw;
+  padding: 0.8vw 1vw;
   text-align: center;
   font-size: 1.2vw;
   font-family: "TT Firs Neue";
-  padding: 0.8vw 0;
   color: var(--darkblue);
 }
 
@@ -261,5 +260,24 @@ a {
   .btn_no-arrow {
     font-size: 4vw;
     padding: 2vw 3vw;
+  }
+  .bubble {
+    
+    border: 0.3vw solid var(--darkblue);
+    border-radius: 10vw;
+    height: 7.4vw;
+    padding: 0 2vw;
+    width: 54.8vw;
+    text-align: center;
+    font-size: 3.4vw;
+    margin-left: 3vw;
+    padding: 2vw 0;
+  }
+  .btn_no-arrow {
+    width: 24vw;
+    text-align: center;
+    padding: 2vw 2.5vw;
+    height: 8vw;
+    margin-top: 2vw;
   }
 }

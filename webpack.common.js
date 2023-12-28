@@ -137,6 +137,10 @@ module.exports = {
       template: './src/dictionary/serum.html',
       filename: './dictionary/serum.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/checklist/korean.html',
+      filename: './checklist/korean.html'
+    }),
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
