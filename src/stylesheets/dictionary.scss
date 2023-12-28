@@ -1,0 +1,223 @@
+body.dictionary {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    // background: url(images/maket.png);
+    background-size: cover;
+    opacity: 1;
+    .articles {
+        height: 16vw;
+        .article-container {
+            height: 100%;
+            a {
+                width: 20.8vw;
+                background: var(--pinky);
+                .article-info {
+                    margin-top: 1.5vw;
+                }
+                h4, p{
+                    color: var(--darkblue);
+                }
+                
+            }
+        }
+
+    }
+    .tags_change{
+        margin-bottom: -2.2vw;
+        border: 0.1vw solid var(--darkblue);
+    }
+    .articles-category {
+        height: 28vw;
+    }
+}
+
+.text_01, .text_2 {
+    color: var(--white);
+}
+.text_01 {
+    line-height: 90%;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row: 2;
+}
+.text_2 {
+    line-height: 90%;
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-row: 3;
+}
+.b_01 {
+    width: 8vw;
+}
+.b_02 {
+    width: 9vw;
+}
+.text0_1 {
+    margin-left: 1.7vw;
+    width: 51vw;
+}
+.photo_1 {
+    grid-column-start: 10;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(images/dictionary/dictionary1.png);
+    background-size: cover;
+}
+.photo_2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-image: url(images/dictionary/dictionary2.png);
+    background-size: cover;
+}
+.serum_1 {
+    background-image: url(images/dictionary/serum_1.png);
+    background-size: cover;
+}
+.serum_2 {
+    background-image: url(images/dictionary/serum_2.png);
+    background-size: cover;
+}
+.the_whole {
+    width: 44vw;
+    margin-top: 3.8vw;
+    margin-top: 3.8vw;
+    height: 3.3vw;
+    padding: 0 0;
+}
+.bubble_dark {
+    width: 10.7vw;
+    height:100%;
+    background-color: var(--darkblue);
+    border-radius: 10vw;
+}
+.bubble_text0 {
+
+    // margin-top: -2.5vw;
+    width: 55vw;
+    color: var(--darkblue);
+    
+}
+.content {
+    .bubble {
+        .bubble_text {
+            width: 44vw;
+            display: flex;
+            margin-top: -4vw;
+            p {
+                margin-left: 4.9vw;
+                width: fit-content;
+            }
+            p:nth-of-type(1) {
+                margin-left: 1.4vw;
+            }
+        }
+    }
+}
+.active {
+    color: var(--white);
+}
+
+@media all and (max-width: 414px) {
+    body.dictionary {
+        .firstscreen {
+            .grid_dict {
+                display: grid;
+                margin-top: -0.2vw;
+                padding: 1vw 5vw 5vw 5vw;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                gap: 2.1vw 2.1vw;
+            }
+            .ph1 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 4;
+            }
+            .t01 {
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row: 5;
+                margin-top: 8vw;
+            }
+            .t02 {
+                grid-column-start: 2;
+                grid-column-end: 5;
+                grid-row: 6;
+                margin-top: 3vw;
+            }
+            .ph2 {
+                grid-column-start: 3;
+                grid-column-end: 5;
+                grid-row-start: 7;
+                grid-row-end: 9;
+            }
+            
+        }
+        .b_001 {
+            width: 22vw;
+        }
+        .b_002 {
+            width: 25vw;
+        }
+        .text0_1 {
+            margin-left: 3vw;
+        }
+        .the_whole {
+            width: 83.74vw;
+            height: 8vw;
+            overflow: hidden;
+        } 
+        .content {
+            .bubble {
+                .bubble_dark {
+                    width: 17.7vw;
+                }
+                .bubble_text {
+                    margin-top: -8.2vw;
+                    margin-left: 1.5vw;
+                    p {
+                        margin-left: 10.9vw;
+                    }
+                    .bt1 {
+                        margin-left: 1.5vw;
+                    }
+                }
+            }
+        }
+        .articles-category {
+            padding: 0 0vw 0 2vw;
+            height: 79vw;
+        }
+        .articles {
+            height: 55vw;
+            .article-container {
+                width: 207vw;
+                a {
+                    border-radius: 6.5vw;
+                    width: 48.8vw;
+                    height: 54vw;
+                    .article-info {
+                        margin-top: 5vw;
+                        .article-tags {
+                            .tags_change {
+                                border: 0.3vw solid var(--darkblue);
+                                margin-top: 19.8vw;
+                            }
+                        }
+                    }
+
+                }
+            
+        }
+    }
+    }
+    
+}

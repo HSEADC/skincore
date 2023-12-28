@@ -8,7 +8,7 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -100,8 +100,8 @@ module.exports = {
       filename: './index.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/structure.html',
-      filename: './structure.html'
+      template: './src/styleguide.html',
+      filename: './styleguide.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/about.html',
@@ -124,16 +124,23 @@ module.exports = {
       template: './src/checklist.html',
       filename: './checklist.html'
     }),
-    // new HtmlWebpackPlugin({
-    //   template: './src/dictionary.html',
-    //   filename: './dictionary.html'
-    // }),
+    new HtmlWebpackPlugin({
+      template: './src/dictionary.html',
+      filename: './dictionary.html'
+    }),
     // Article
     new HtmlWebpackPlugin({
       template: './src/article/article1.html',
       filename: './article/article1.html'
     }),
-
+    new HtmlWebpackPlugin({
+      template: './src/dictionary/serum.html',
+      filename: './dictionary/serum.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/checklist/korean.html',
+      filename: './checklist/korean.html'
+    }),
     // Partials
     new HtmlWebpackPartialsPlugin([
       {

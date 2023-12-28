@@ -3,7 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skincore</title>
+    <!-- Primary Meta Tags -->
+    <title>Skincore — инфосистема о здоровой коже</title>
+    <meta name="title" content="Skincore — инфосистема о здоровой коже" />
+    <meta name="description" content="Привет, мы — Skincore! Здесь вы найдете полезные статьи об уходе за кожей и составах уходовых средств, а также интересные чек-листы и тесты"/>
+    <script src="./index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src ="./index.js"></script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:title" content="Skincore — инфосистема о здоровой коже"/>
+    <meta property="og:description" content="Привет, мы — Skincore! Здесь вы найдете полезные статьи об уходе за кожей и составах уходовых средств, а также интересные чек-листы и тесты"/>
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="index.html"/>
+    <meta property="twitter:title" content="Skincore — инфосистема о здоровой коже"/>
+    <meta property="twitter:description" content="Привет, мы — Skincore! Здесь вы найдете полезные статьи об уходе за кожей и составах уходовых средств, а также интересные чек-листы и тесты"/>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
 </head>
 <body class = "index">
   <!-- первый экран -->
@@ -25,132 +46,234 @@
       <div class="splash1"></div>
       <a href="#my-form" class="btn">
         <span>Присоединиться</span>
-        <img src="images/btn-icon1.png" alt="">
+        <img src="images/btn-icon2.png" alt="">
       </a>
-      <!-- <a href="">
-        <div class="btn">
-          <p>присоединиться</p>
-          <div class="icon"></div>
-        </div>
-      </a> -->
     </div>
     <!-- второй экран -->
     <div class="secondscreen">
       <div class="circlepics"></div>
       <div class="pink_text">
         <h2>Мы выступаем за красивую<br>и здоровую кожу</h2>
-        <p>Skincore — это про заботу о своем здоровье. Мы хотим, чтобы все, вне зависимости от пола, возраста и достатка смогли сделать первые шаги на пути к чистой, здоровой и красивой коже.</p>
+        <p>Skincore — это про заботу о своем здоровье. Мы хотим, чтобы все, вне зависимости от пола, возраста и достатка смогли сделать первые шаги на пути к чистой, здоровой и красивой коже.</p>
       </div>
-      <div class="whitebubble1"></div>
-      <div class="whitebubble2"></div>
     </div>
-    <!-- статьи и подвал -->
-    <!-- статьи -->
-    <div class="lastscreen">
-      <div class="lasttext1">
-        <H2>Полезные статьи</H2>
-        <p>Недавно у нас вышли первые статьи, и мы очень рекомендуем вам с ними ознакомиться, вполне вероятно, что вы найдете там много полезностей!</p>
+    <!-- слово дня -->
+    <div class="wordoftheday">
+      <div class="word-grid">
+        <div class="circle"></div>
+        <div class="empty web"></div>
+        <div class="bigcircle1 web"></div>
+        <div class="circle"></div>
+        <div class="empty"></div>
+        <div class="circle"></div>
+        <div class="empty "></div>
+        <div class="empty "></div>
+        <div class="circle up"></div>
+        <div class="circle up"></div>
+        <div class="empty web"></div>
+        <div class="empty web"></div>
+        <div class="circle web"></div>
+        <div class="empty web"></div>
+        <div class="circle web"></div>
+        <div class="circle web"></div>
+        <div class="circle web"></div>
+        <div class="empty web"></div>
+        <div class="circle web"></div>
+        <div class="empty web"></div>
+        <div class="circle web"></div>
+        <h1 class="word-header1"> СЛОВО ДНЯ —</h1>
+        <div class="circle web"></div>
+        <div class="word-circle-photo"></div>
+        <div class="empty web"></div>
+        <div class="circle web"></div>
+        <h1 class="word-header2">СЫВОРОТКА</h1>
+        <div class="circle web"></div>
+        <div class="empty web"></div>
+        <div class="word-text1">
+          <p>Нанесение сыворотки – важный этап в системе ухода. Предлагаем разобраться, для чего нужны разные сыворотки и как выбрать подходящую под ваш тип кожи и возраст</p>
+          <a href="./dictionary/serum.html" class="btn_no-arrow">читать</a>
+        </div>
+        <div class="bigcircle2 web"></div>
+        <div class="circle web"></div>
+        <div class="circle web"></div>
+        <div class="empty web"></div>
+        <div class="circle web"></div>
+        <div class="circle web"></div>
       </div>
-      <div class="articles">
-        <div class="article-container">
-          <a href="">
-          <div class="article_pic p1"></div>
-          <div class="article-info">
-            <h4>Уход за кожей зимой</h4>
-            <div class="article-tags">
-              <div class="article_tag">
-                <p>Сезоны</p>
-              </div>
-            </div>
+      <!-- <div class="word-grid_mobile">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="empty"></div>
+        <div class="circle"></div>
+        <h1 class="word-header1"> СЛОВО ДНЯ —</h1>
+        <h1 class="word-header2">СЫВОРОТКА</h1>
+        <div class="word-text1">
+          <p>Нанесение сыворотки – важный этап в системе ухода. Предлагаем разобраться, для чего нужны разные сыворотки и как выбрать подходящую под ваш тип кожи и возраст</p>
+          <a href="" class="btn_no-arrow">читать</a>
+        </div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="word-circle-photo"></div>
+      </div> -->
+    </div>
+    <!-- статьи  -->
+    <div class="preview-article">
+      <h2>Полезные статьи</h2>
+      <p>Недавно у нас вышли первые статьи, и мы очень рекомендуем вам с ними ознакомиться, вполне вероятно, что вы найдете там много полезностей!</p>
+      <a href="./article/article1.html" class="firstarticle">
+        <div class="article-pic"></div>
+        <div class="article-text">
+          <h3>Уход за кожей зимой: особенности и советы</h3>
+          <p>В этой статье мы обсудим особенности ухода за кожей зимой и поделимся с вами несколькими важными продуктами, которые помогут вашей коже оставаться здоровой и увлажненной.</p>
+          <div class="bubbles">
+            <div class="bubble">сезоны</div>
+            <div class="bubble">этапы</div>
           </div>
-        </a>
-        <a href="">
-          <div class="article_pic p2"></div>
-          <div class="article-info">
-            <h4>Как выбрать SPF</h4>
-            <div class="article-tags">
-              <div class="article_tag">
-                <p>Средства</p>
-              </div>
-            </div>
           </div>
-        </a>
-        <a href="">
-          <div class="article_pic p3"></div>
-          <div class="article-info">
-            <h4>Как питание влияет на кожу</h4>
-            <div class="article-tags">
-              <div class="article_tag">
-                <p>Питание</p>
-              </div>
-            </div>
+        </div>
+      </a>
+      <div class="checklists_mobile">
+        <div class="check-text">
+          <h2>Чек-листы</h2>
+          <p>Мы подготовили чек-листы с особенностями ухода, а также уходовыми трендами. Они вам точно понравятся!</p>
+        </div>
+        <div class="check-list">
+          <h4>10 этапов ухода от кореянок</h4>
+          <div class="check-container">
+                <input class="custom-checkbox" type="checkbox" id="check1" name="" id="">
+                <label for="check1">Гидрофильное масло</label>
+
+                <input class="custom-checkbox" type="checkbox" id="check2" name="" id="">
+                <label for="check2">Пенка для умывания</label>
+
+                <input class="custom-checkbox" type="checkbox" id="check3" name="" id="">
+                <label for="check3">Скраб или пилинг</label>
+
+                <input class="custom-checkbox" type="checkbox" id="check4" name="" id="">
+                <label for="check4">Увлажняющий крем</label>
+
+                <input class="custom-checkbox" type="checkbox" id="check5" name="" id="">
+                <label for="check5">Тонер</label>
+
+                <input class="custom-checkbox" type="checkbox" id="check6" name="" id="">
+                <label for="check6">Сыворотка или эссенция</label>
           </div>
-        </a>
+          <a href="" class="btn_no-arrow">читать</a>
         </div>
       </div>
-      <!-- <div class="articles"> -->
-        <!-- <a href="">
-          <div class="article_pic p1"></div>
-          <div class="article-info">
-            <h4>Уход за кожей зимой</h4>
-            <div class="article-tags">
-              <div class="article_tag">
-                <p>Сезоны</p>
-              </div>
-            </div>
+      <div class="checklists">
+        <div class="check-grid">
+          <div class="circle"></div>
+          <div class="empty"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="empty"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="bigcircle1"></div>
+          <div class="circle"></div>
+          <div class="empty"></div>
+          <div class="check-text">
+            <h2>Чек-листы</h2>
+            <p>Мы подготовили чек-листы с особенностями ухода, а также уходовыми трендами. Они вам точно понравятся!</p>
           </div>
-        </a>
-        <a href="">
-          <div class="article_pic p2"></div>
-          <div class="article-info">
-            <h4>Как выбрать SPF</h4>
-            <div class="article-tags">
-              <div class="article_tag">
-                <p>Средства</p>
-              </div>
+          <div class="empty"></div>
+          <div class="bigcircle2"></div>
+          <div class="bigcircle3"></div>
+          <div class="check-list">
+            <h4>10 этапов ухода от кореянок</h4>
+            <div class="check-container">
+                  <input class="custom-checkbox" type="checkbox" id="check1" name="" id="">
+                  <label for="check1">Гидрофильное масло</label>
+
+                  <input class="custom-checkbox" type="checkbox" id="check2" name="" id="">
+                  <label for="check2">Пенка для умывания</label>
+
+                  <input class="custom-checkbox" type="checkbox" id="check3" name="" id="">
+                  <label for="check3">Скраб или пилинг</label>
+
+                  <input class="custom-checkbox" type="checkbox" id="check4" name="" id="">
+                  <label for="check4">Увлажняющий крем</label>
+
+                  <input class="custom-checkbox" type="checkbox" id="check5" name="" id="">
+                  <label for="check5">Тонер</label>
+
+                  <input class="custom-checkbox" type="checkbox" id="check6" name="" id="">
+                  <label for="check6">Сыворотка или эссенция</label>
             </div>
+            <a href="./checklist/korean.html" class="btn_no-arrow">читать</a>
           </div>
-        </a>
-        <a href="">
-          <div class="article_pic p3"></div>
-          <div class="article-info">
-            <h4>Как питание влияет на кожу</h4>
-            <div class="article-tags">
-              <div class="article_tag">
-                <p>Питание</p>
-              </div>
-            </div>
-          </div>
-        </a> -->
-      <!-- </div> -->
-      <!-- текст -->
-      <div class="lasttext2">
-        <H2>С заботой о вас, Skincore</H2>
-        <p>Количество контента постепенно будет пополняться, появятся новые разделы и интересные активности, поэтому заполняйте форму внизу, чтобы не пропустить наши обновления!</p>
+          <div class="circle"></div>
+          <div class="empty"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="empty"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="empty"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
       </div>
-      <!-- подвал -->
-      <div class="footer">
-        <h3>Не пропусти новости!</h3>
-        <div class="footer-container">
-          <div class="form">
+    </div>
+
+    <!-- Подписывайтесь на новости -->
+    <div class="subscribe">
+      <H2>С заботой о вас, Skincore</H2>
+      <p>Количество контента постепенно будет пополняться, появятся новые разделы и интересные активности, поэтому заполняйте форму внизу, чтобы не пропустить наши обновления!</p>
+      <div class="forma">
+        <div class="forma_type">
+          <h3>Не пропустите новости!</h3>
             <form id="my-form" action="https://formspree.io/f/xpzgbeeq" method="POST">
             <input type="email" name="email" value = "e-mail"/>
-            <a href="" class="btn">
+            <a href="" class="btn-2">
               <span>Отправить!</span>
               <img src="images/btn-icon1.png" alt="">
             </a>
-          </div>
-          <div class="socialmedia">
-            <a href="https://vk.com/staytrueofficial" class="vk"></a>
-            <a href="https://t.me/staytrueofficial" class="tg"></a>
-            <a href="https://dzen.ru/sstaytrue" class="dzen"></a>
-          </div>
         </div>
+        <div class="forma-pic"></div>
       </div>
     </div>
+
+    <!-- Подвал -->
+    <div class="footer">
+      <div class="footer-info">
+          <div class="logo"></div>
+          <p>инфосистема по уходу за кожей</p>
+        <div class="socialmedia">
+          <a href="https://vk.com/staytrueofficial" class="vk"></a>
+            <a href="https://t.me/staytrueofficial" class="tg"></a>
+            <a href="https://dzen.ru/sstaytrue" class="dzen"></a>
+        </div>
+      </div>
+      <!-- <div class="footer-menu web">
+        <div class="main web">
+          <a href="">Главная</a>
+        </div>
+        <div class="about web">
+          <a href="">О проекте</a>
+        </div>
+        <div class="sections web">
+          <a href="">Статьи</a>
+          <a href="">Чек-листы</a>
+          <a href="">Словарик</a>
+          <a href="">Проверь себя</a>
+        </div>
+      </div> -->
     </div>
-    <div class="empty"></div>
-    <!-- <script>
+    <div class="names">
+      <p>Анна Комкова</p>
+      <p>Софья Каем</p>
+      <p>Полина Ефимова</p>
+      <p>Дария Муракаева</p>
+    </div>
+    <script>
         var form = document.getElementById("my-form");
         async function handleSubmit(event) {
           event.preventDefault();
