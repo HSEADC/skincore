@@ -35,7 +35,7 @@ body.styleguide {
     // background-color: gold;
     position: fixed;
     left: 5vw;
-    top: 30%;
+    top: 23%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -202,7 +202,7 @@ body.styleguide {
     .grid {
         width: 100%;
         background-color: var(--white);
-        height: 400vw;
+        height: 447vw;
         padding-top: 7vw;
 
         img {
@@ -367,17 +367,37 @@ body.styleguide {
 
         .mockups {
             width: 70.6vw;
-            height: 100vw;
             display: flex;
+            flex-direction: column;
             margin-top: 2vw;
             margin-left: 24vw;
             gap: 2vw;
 
+            .mockup1, .mockup2, .mockup3, .mockup4, .mockup5 {
+                width: 70.6vw;
+                height: 50vw;
+            }
+
             .mockup1 {
-                width: 100%;
-                height: 48vw;
                 background-image: url('images/mockup1.png');
             }
+
+            .mockup2 {
+                background-image: url('images/styleguide/mockup2.png');
+            }
+            .mockup3 {
+                background-image: url('images/styleguide/mockup3.png');
+            }
+            .mockup4 {
+                background-image: url('images/styleguide/mockup4.png');
+            }
+            .mockup5 {
+                background-image: url('images/styleguide/mockup5.png');
+            }
+        }
+
+        .footer-info p {
+            margin: 0vw;
         }
     }
     
@@ -634,7 +654,7 @@ body.styleguide {
 
         // О бренде_мобилка
         .aboutus {
-            height: 178vw;
+            height: 220vw;
             padding-left: 9vw;
 
             .values {
@@ -648,7 +668,7 @@ body.styleguide {
 
         // Лого_мобилка
         .about-logo {
-            height: 480vw;
+            height: 476vw;
             padding-left: 9vw;
 
             h2, h3, p, div {
@@ -708,7 +728,7 @@ body.styleguide {
 
         // Цвета и типографика_мобилка
         .colortype {
-            height: 300vw;
+            height: 315vw;
             padding-left: 9vw;
 
             .palette {
@@ -815,10 +835,12 @@ body.styleguide {
                 margin-left: 0vw;
                 width: 100%;
 
-                .mockup1 {
-                    height: 61vw;
-                }
             }
+        }
+
+        .footer {
+            width: 100vw;
+            margin-left: -9vw;
         }
     }
 }
