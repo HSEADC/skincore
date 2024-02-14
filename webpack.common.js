@@ -107,6 +107,10 @@ module.exports = {
       template: './src/about.html',
       filename: './about.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/components.html',
+      filename: './components.html'
+    }),
     // Section
     new HtmlWebpackPlugin({
       template: './src/article.html',

@@ -1,0 +1,81 @@
+// Desktop
+
+// Иконки
+.Q_Arrow {
+    width: 3.11vw;
+    height: 3.11vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+
+    &.White {
+        background-image:url('./images/basic/Q_ArrowWhite.svg') ;
+    }
+
+    &.Blue {
+        background-image:url('./images/basic/Q_ArrowBlue.svg') ;
+    }
+}
+
+.Q_Arrow:hover {
+    background-image: url('./images/basic/Q_ArrowHover.svg');
+}
+
+.Q_Cancel, .Q_Burger, .Q_Search {
+    width: 3.11vw;
+    height: 3.11vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+}
+
+.Q_Cancel {
+    background-image: url('./images/basic/Q_Cancel.svg');
+}
+
+.Q_Burger {
+    background-image: url('./images/basic/Q_Burger.svg');
+}
+
+.Q_Search {
+    background-image: url('./images/basic/Q_SearchDefault.svg');
+}
+.Q_Search:hover {
+    background-image: url('./images/basic/Q_SearchHover.svg');
+}
+// Картинки
+
+
+// Ipad Landscape
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    // Иконки
+    .Q_Arrow, .Q_Cancel, .Q_Burger, .Q_Search {
+        width: 3.13vw;
+        height: 3.13vw;
+    }
+// Картинки
+
+}
+
+
+// Ipad Portrait
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    // Иконки
+    .Q_Arrow, .Q_Cancel, .Q_Burger, .Q_Search {
+        width: 4.17vw;
+        height: 4.17vw;
+    }
+// Картинки
+
+}
+
+
+// Mobile
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    // Иконки
+    .Q_Arrow, .Q_Cancel, .Q_Burger, .Q_Search {
+        width: 7.73vw;
+        height: 7.73vw;
+    }
+// Картинки
+}
