@@ -44,29 +44,40 @@
     background-image: url('./images/basic/Q_SearchHover.svg');
 }
 // Картинки
-
+.Q_1Circle {
+    width: 6.28vw;
+    height: 6.28vw;
+    border-radius: 50%;
+    background-color: var(--basicblue);
+}
 
 // Ipad Landscape
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    // Иконки
+// Иконки
     .Q_Arrow, .Q_Cancel, .Q_Burger, .Q_Search {
-        width: 3.13vw;
-        height: 3.13vw;
+            width: 3.13vw;
+            height: 3.13vw;
     }
-// Картинки
-
+    // Картинки
+    .Q_1Circle {
+        width: 5.96vw;
+        height: 5.96vw;
+    }
 }
 
 
 // Ipad Portrait
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-    // Иконки
+// Иконки
     .Q_Arrow, .Q_Cancel, .Q_Burger, .Q_Search {
         width: 4.17vw;
         height: 4.17vw;
     }
 // Картинки
-
+    .Q_1Circle {
+        width: 5.6vw;
+        height: 5.6vw;
+    }
 }
 
 
@@ -77,5 +88,10 @@
         width: 7.73vw;
         height: 7.73vw;
     }
+    
 // Картинки
+    .Q_1Circle {
+        width: 16.19vw;
+        height: 16.19vw;
+    }
 }
