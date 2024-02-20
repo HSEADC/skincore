@@ -7,17 +7,17 @@
     background-size: contain;
     background-repeat: no-repeat;
     transition: all 0.2s;
-
-    &.White {
+    cursor: pointer;
+    &.Arrow-White {
         background-image:url('./images/basic/Q_ArrowWhite.svg') ;
     }
 
-    &.Blue {
+    &.Arrow-Blue {
         background-image:url('./images/basic/Q_ArrowBlue.svg') ;
     }
 }
 
-.Q_Arrow:hover {
+.Q_Arrow:hover, .A_Primary-Button:hover .Q_Arrow{
     background-image: url('./images/basic/Q_ArrowHover.svg');
 }
 
@@ -27,6 +27,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     transition: all 0.2s;
+    cursor: pointer;
+
 }
 
 .Q_Cancel {
@@ -140,8 +142,8 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 // Иконки
     .Q_Arrow, .Q_Cancel, .Q_Burger, .Q_Search {
-        width: 4.17vw;
-        height: 4.17vw;
+        width: 3.13vw;
+        height: 3.13vw;
     }
 // Картинки
 //Кружки

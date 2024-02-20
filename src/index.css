@@ -1,6 +1,9 @@
 @import 'stylesheets/reset.scss';
 @import 'stylesheets/fonts.scss';
 @import 'stylesheets/index.scss';
+@import 'stylesheets/components/quarks.scss';
+@import 'stylesheets/components/atoms.scss';
+@import 'stylesheets/components/molecules.scss';
 @import 'stylesheets/about.scss';
 @import 'stylesheets/basics.scss';
 @import 'stylesheets/vars.scss';
@@ -8,4 +11,4 @@
 @import 'stylesheets/dictionary.scss';
 @import 'stylesheets/article.scss';
 @import 'stylesheets/checklists.scss';
-@import 'stylesheets/components/quarks.scss';
+
