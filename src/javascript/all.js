@@ -1,9 +1,30 @@
 
-// let Tag = document.querySelector(".A_Tag");
-// function tag() {
-//     tags.classList.toggle("Tag-Active");
-// }
 
+
+function tag() {
+    let tags = document.querySelectorAll(".TagClickable");
+    tags.forEach((tag) => {
+        tag.addEventListener('click', () => {
+            tag.classList.toggle("TagActive");
+        })
+        
+    })
+}
+function search() {
+    let search1 = document.querySelectorAll(".Q_Search");
+    let searchinput = document.querySelector(".SearchInput");
+    search1.forEach((search) => {
+        search.addEventListener('click', () => {
+            search.classList.toggle("SearchActive");
+            searchinput.classList.toggle("SearchInputActive");
+        })
+        
+    })
+}
+document.addEventListener('DOMContentLoaded', () => {
+    tag()
+    search()
+})
 
 // $(document).ready(function(){ 
 
