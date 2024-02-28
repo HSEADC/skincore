@@ -1,6 +1,13 @@
 // Desktop
 
 // Иконки
+.Q_Logo {
+    width: 9.79vw;
+    height: 2.18vw;
+    background-image: url('./images/basic/Q_Logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .Q_Arrow {
     width: 3.11vw;
     height: 3.11vw;
@@ -45,6 +52,26 @@
 .Q_Search:hover, .SearchActive {
     background-image: url('./images/basic/Q_SearchHover.svg');
 }
+
+// соц сети
+.Q_Vk, .Q_Tg, .Q_Dzen {
+    width: 2.12vw;
+    height: 2.12vw;
+    border-radius: 0.6vw;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: cover;
+}
+.Q_Vk {
+    background-image:url('./images/basic/A_Vk.svg') ;
+}
+.Q_Tg {
+    background-image:url('./images/basic/A_Tg.svg') ;
+}
+.Q_Dzen {
+    background-image:url('./images/basic/A_Dzen.svg') ;
+}
+
 // Картинки
 //Кружки
 .Q_1Circle, .Q_2Circles, .Q_3Circles {
@@ -94,10 +121,22 @@
 // Ipad Landscape
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 // Иконки
+    .Q_Logo {
+        width: 10.16vw;
+        height: 2.246vw;
+    }
+
     .Q_Arrow, .Q_Cancel, .Q_Burger, .Q_Search {
             width: 3.13vw;
             height: 3.13vw;
     }
+     // соц сети
+    .Q_Vk, .Q_Tg, .Q_Dzen {
+        width: 2.35vw;
+        height: 2.35vw;
+        border-radius: 0.6vw;
+    }
+
     // Картинки
     //Кружки
     .Q_1Circle {
@@ -141,10 +180,23 @@
 // Ipad Portrait
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 // Иконки
+    .Q_Logo {
+        width: 13.541vw;
+        height: 3vw;
+    }
+
     .Q_Arrow, .Q_Cancel, .Q_Burger, .Q_Search {
         width: 4.17vw;
         height: 4.17vw;
     }
+
+    // соц сети
+    .Q_Vk, .Q_Tg, .Q_Dzen {
+        width: 3.13vw;
+        height: 3.13vw;
+        border-radius: 0.8vw;
+    }
+
 // Картинки
 //Кружки
     .Q_1Circle {
@@ -188,9 +240,20 @@
 // Mobile
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     // Иконки
+    .Q_Logo {
+        width: 24.36vw;
+        height: 5.38vw;
+    }
+
     .Q_Arrow, .Q_Cancel, .Q_Burger, .Q_Search {
         width: 7.73vw;
         height: 7.73vw;
+    }
+    // Соцсети
+    .Q_Vk, .Q_Tg, .Q_Dzen {
+        width: 10.87vw;
+        height: 10.87vw;
+        border-radius: 2.5vw;
     }
     
 // Картинки

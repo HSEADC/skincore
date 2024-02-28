@@ -93,8 +93,8 @@
     font-family: 'TT Firs Neue Regular';
     font-size: 1.456vw;
     color: var(--darkblue);
-
 }
+
 input[type=radio], input[type=checkbox] {
     appearance: none;
     border-radius: 100%;
@@ -115,24 +115,28 @@ input[type="radio"]:checked{
 input[type="checkbox"]:checked{
     background: var(--basicblue);
 }
-// соц сети
-.A_Vk, .A_Tg, .A_Dzen {
-    width: 2.12vw;
-    height: 2.12vw;
-    border-radius: 0.6vw;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    background-size: cover;
+// // соц сети
+.A_FooterSocialMedia {
+    display: inline-flex;
+    gap: 0.66vw;
 }
-.A_Vk {
-    background-image:url('./images/basic/A_Vk.svg') ;
-}
-.A_Tg {
-    background-image:url('./images/basic/A_Tg.svg') ;
-}
-.A_Dzen {
-    background-image:url('./images/basic/A_Dzen.svg') ;
-}
+// .A_Vk, .A_Tg, .A_Dzen {
+//     width: 2.12vw;
+//     height: 2.12vw;
+//     border-radius: 0.6vw;
+//     background-repeat: no-repeat;
+//     cursor: pointer;
+//     background-size: cover;
+// }
+// .A_Vk {
+//     background-image:url('./images/basic/A_Vk.svg') ;
+// }
+// .A_Tg {
+//     background-image:url('./images/basic/A_Tg.svg') ;
+// }
+// .A_Dzen {
+//     background-image:url('./images/basic/A_Dzen.svg') ;
+// }
 // Загрузить еще
 .A_ButtonLoad {
     cursor: pointer;
@@ -242,13 +246,13 @@ input[type="checkbox"]:checked{
         cursor: pointer;
     }
     .TagWhite {
-        border: 0.14vw solid var(--white);
+        border: 0.127vw solid var(--white);
     }
     .TagBlue {
-        border: 0.14vw solid var(--darkblue);
+        border: 0.127vw solid var(--darkblue);
     }
     .TagPink {
-        border: 0.14vw solid var(--pinky);
+        border: 0.127vw solid var(--pinky);
     }
     // форма
     .A_Form {
@@ -270,12 +274,17 @@ input[type="checkbox"]:checked{
         height: 1.96vw;
         border: 0.14vw solid var(--darkblue);
     }
-    // соц сети
-    .A_Vk, .A_Tg, .A_Dzen {
-        width: 2.35vw;
-        height: 2.35vw;
-        border-radius: 0.6vw;
+    // // соц сети
+    .A_FooterSocialMedia {
+        display: inline-flex;
+        gap: 0.97vw;
     }
+    // .A_Vk, .A_Tg, .A_Dzen {
+    //     width: 2.35vw;
+    //     height: 2.35vw;
+    //     border-radius: 0.6vw;
+    // }
+    
     // Загрузить еще
     .A_ButtonLoad {
         font-size: 1.76vw;
@@ -356,13 +365,13 @@ input[type="checkbox"]:checked{
         font-size: 1.83vw;
     }
     .TagWhite {
-        border: 0.16vw solid var(--white);
+        border: 0.17vw solid var(--white);
     }
     .TagBlue {
-        border: 0.16vw solid var(--darkblue);
+        border: 0.17vw solid var(--darkblue);
     }
     .TagPink {
-        border: 0.16vw solid var(--pinky);
+        border: 0.17vw solid var(--pinky);
     }
     // форма
     .A_Form {
@@ -385,11 +394,15 @@ input[type="checkbox"]:checked{
         border: 0.15vw solid var(--darkblue);
     }
     // соц сети
-    .A_Vk, .A_Tg, .A_Dzen {
-        width: 3.13vw;
-        height: 3.13vw;
-        border-radius: 0.8vw;
+    .A_FooterSocialMedia {
+        display: inline-flex;
+        gap: 1.3vw;
     }
+    // .A_Vk, .A_Tg, .A_Dzen {
+    //     width: 3.13vw;
+    //     height: 3.13vw;
+    //     border-radius: 0.8vw;
+    // }
     // Загрузить еще
     .A_ButtonLoad {
         font-size: 2.35vw;
@@ -471,13 +484,13 @@ input[type="checkbox"]:checked{
         font-size: 2.9vw;
     }
     .TagWhite {
-        border: 0.25vw solid var(--white);
+        border: 0.3vw solid var(--white);
     }
     .TagBlue {
-        border: 0.25vw solid var(--darkblue);
+        border: 0.3vw solid var(--darkblue);
     }
     .TagPink {
-        border: 0.25vw solid var(--pinky);
+        border: 0.3vw solid var(--pinky);
     }
     // форма
     .A_Form {
@@ -503,11 +516,15 @@ input[type="checkbox"]:checked{
         border: 0.35vw solid var(--darkblue);
     }
     // соц сети
-    .A_Vk, .A_Tg, .A_Dzen {
-        width: 10.87vw;
-        height: 10.87vw;
-        border-radius: 2.5vw;
+    .A_FooterSocialMedia {
+        display: inline-flex;
+        gap: 2.42vw;
     }
+    // .A_Vk, .A_Tg, .A_Dzen {
+    //     width: 10.87vw;
+    //     height: 10.87vw;
+    //     border-radius: 2.5vw;
+    // }
     // Загрузить еще
     .A_ButtonLoad {
         font-size: 4.35vw;

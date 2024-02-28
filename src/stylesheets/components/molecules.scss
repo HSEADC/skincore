@@ -3,6 +3,7 @@
 // теги 
 .M_TagsArticle, .M_TagsList {
     display: inline-flex;
+    flex-wrap: wrap;
     gap: 0.8vw;
     width: 17.599vw;
 }
@@ -10,28 +11,47 @@
     display: flex;
 }
 // соц сети
-.M_FooterSocialMedia {
-    display: inline-flex;
-    gap: 0.66vw;
+.M_FooterDescription {
+    width: 15.94vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.53vw;
+
+    p {
+        font-family: 'TT Firs Neue Regular';
+        font-size: 1.46vw;
+        color: var(--white)
+    }
 }
+// .M_FooterSocialMedia {
+//     display: inline-flex;
+//     gap: 0.66vw;
+// }
 // футер
 .M_FooterNames {
     display: inline-flex;
-    gap: 19.1vw;
+    justify-content: space-between;
     width: 88.89vw;
-    .A_Article-body-text {
+
+    .A_ArticleBodyText {
         width: auto;
+        color: var(--white);
     }
 }
 .M_FooterMenu {
     display: flex;
     width: 51.26vw;
-    gap: 13.2vw;
+    justify-content: space-between;
+    p {
+        font-size: 1.46vw;
+        font-family: 'TT Firs Neue Regular';
+        color: var(--white);
+    }
     div {
-        p {
-            width: 10vw;
-            margin-bottom: 0.9vw;
-        }
+        display: flex;
+        flex-direction: column;
+        gap: 0.53vw;
     }
 }
 // поиск
@@ -71,10 +91,11 @@
 .M_Header {
     display: flex;
     width: 35.72vw;
-    gap: 2.79vw;
+    justify-content: space-between;
     p {
         width: auto;
         color: var(--white);
+        font-family: 'TT Firs Neue Regular';
     }
 }
 // текст в карточках
@@ -88,7 +109,7 @@
         margin-bottom: 5.14vw;
     }
 }
-.M_ArticleCard1, .M_ChecklistCard, .M_ArticleCard, .M_TruthOrMyth, .M_ArticleHighlight, .M_TestText {
+.M_ArticleCard1, .M_ChecklistCard, .M_ArticleCard, .M_TruthOrMyth, .M_TestText {
     width: fit-content;
     display: flex;
     flex-direction: column;
@@ -121,6 +142,8 @@
 }
 .M_ArticleHighlight {
     width: 59.26vw;
+    display: flex;
+    flex-direction: column;
     .A_ArticleH3 {
         color: var(--white);
     }
@@ -145,17 +168,35 @@
         gap: 0.7vw;
         width: 17.68vw;
     }
-    .M_FooterSocialMedia {
-        display: inline-flex;
-        gap: 0.97vw;
+
+    .M_FooterDescription {
+        width: 16.11vw;
+        height: fit-content;
+        gap: 0.78vw;
+    
+        p {
+            font-size: 1.47vw;
+        }
     }
+    // .M_FooterSocialMedia {
+    //     display: inline-flex;
+    //     gap: 0.97vw;
+    // }
+
     // футер
     .M_FooterNames {
         gap: 15vw;
         width: 88.87vw;
     }
+
     .M_FooterMenu {
         width: 51.57vw;
+        p {
+            font-size: 1.47vw;
+        }
+        div {
+            gap: 0.78vw;
+        }
     }
     // кнопка
     .M_Search {
@@ -225,23 +266,35 @@
             margin-bottom: 0.8vw;
         }
     }
-    .M_FooterSocialMedia {
-        display: inline-flex;
-        gap: 1.3vw;
+
+    .M_FooterDescription {
+        width: 21.48vw;
+        height: fit-content;
+        gap: 1.04vw;
+    
+        p {
+            font-size: 1.96vw;
+        }
     }
+
+    // .M_FooterSocialMedia {
+    //     display: inline-flex;
+    //     gap: 1.3vw;
+    // }
+
     // футер
     .M_FooterNames {
         gap: 10.1vw;
         width: 88.81vw;
     }    
+
     .M_FooterMenu {
         width: 51.57vw;
-        gap: 9vw;
+        p {
+            font-size: 1.96vw;
+        }
         div {
-            p {
-                width: 13.2vw;
-                margin-bottom: 0.9vw;
-            }
+            gap: 1.04vw;
         }
     }
     // кнопка
@@ -314,17 +367,26 @@
         width: 78.75vw;
     }
     
-    .M_FooterSocialMedia {
-        display: inline-flex;
-        gap: 2.42vw;
+    .M_FooterDescription {
+        width: 81vw;
+        height: fit-content;
+        gap: 2.05vw;
+    
+        p {
+            font-size: 3.87vw;
+        }
     }
+    // .M_FooterSocialMedia {
+    //     display: inline-flex;
+    //     gap: 2.42vw;
+    // }
     // футер
     .M_FooterNames {
         flex-direction: column;
         gap: 0.96vw;
         width: 36.96vw;
     }
-    .M_FooterMenu{
+    .M_FooterMenu {
         display: none;
     } 
     // кнопка

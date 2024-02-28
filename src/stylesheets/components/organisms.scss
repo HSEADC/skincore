@@ -1,0 +1,181 @@
+// Desktop
+
+// Менюбар + Подвал
+.O_Header {
+    width: 89.42vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--darkblue);
+}
+
+.O_Footer {
+    width: 100vw;
+    height: 25.26vw;
+    box-sizing: border-box;
+    background-color: var(--darkblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.78vw 5.56vw;
+
+    .FooterMenuContainer {
+        display: inline-flex;
+        justify-content: space-between;
+    }
+}
+
+// Статья
+.O_ArticleTags {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.66vw;
+
+    .A_ArticleBodyText {
+        width: auto;
+    }
+}
+
+.O_ArticleHighlight {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--basicblue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.323vw;
+
+    .HighlightImage {
+        width: 26.65vw;
+        height: 19.047vw;
+        background-image: url('./images/basic/A_HighlightImage.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+// Тест
+.O_TestQuestion {
+    width: 89.42vw;
+    height: fit-content;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1.59vw;
+    background-color: var(--pinky);
+    border-radius: 1.59vw;
+}
+// Ipad Landscape
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+    // Менюбар + Подвал
+    .O_Header {
+        width: 91.9vw;
+    }
+
+    .O_Footer {
+        width: 100vw;
+        height: 27.73vw;
+        padding: 2.34vw 5.57vw;
+    }
+
+    // Статья
+    .O_ArticleTags {
+        gap: 0.78vw;
+    }
+
+    .O_ArticleHighlight {
+        gap: 1.953vw;
+    
+        .HighlightImage {
+            width: 29.23vw;
+            height: 22.36vw;
+        }
+    }
+
+    // Тест
+    .O_TestQuestion {
+        width: 91.9vw;
+        gap: 1.95vw;
+        border-radius: 2.344vw;
+    }
+}
+// Ipad Portrait
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+    // Менюбар + Подвал
+    .O_Header {
+        width: 89.06vw;
+    }
+
+    .O_Footer {
+        width: 100vw;
+        height: 27.86vw;
+        padding: 2.34vw 5.6vw;
+    }
+
+        // Статья
+        .O_ArticleTags {
+            gap: 1.041vw;
+        }
+
+        .O_ArticleHighlight {
+            gap: 2.083vw;
+        
+            .HighlightImage {
+                width: 25.38vw;
+                height: 21.875vw;
+                background-image: url('./images/basic/A_HighlightImagePortrait.png');
+            }
+        }
+
+    // Тест
+    .O_TestQuestion {
+        width: 89.06vw;
+        gap: 2.6vw;
+        border-radius: 3.125vw;
+    }
+}
+// Mobile
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    // Менюбар + Подвал
+    .O_Header {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .O_Footer {
+        width: 100vw;
+        height: 87.18vw;
+        padding: 7.18vw 8.2vw;
+    }
+
+    // Статья
+    .O_ArticleTags {
+        gap: 2.05vw;
+    }
+
+    .O_ArticleHighlight {
+        box-sizing: border-box;
+        padding: 6.154vw 7.69vw;
+        gap: 1.953vw;
+    
+        .HighlightImage {
+            display: none;
+        }
+    }
+
+    // Тест
+    .O_TestQuestion {
+        width: 83.59vw;
+        justify-content: center;
+        padding-top: 5.13vw;
+        padding-bottom: 5.13vw;
+        gap: 2.6vw;
+        border-radius: 6.15vw;
+    }
+}
