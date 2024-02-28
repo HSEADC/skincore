@@ -56,6 +56,30 @@
     }
 }
 
+.O_ArticleCard {
+    width: 89.42vw;
+    height: fit-content;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 2.646vw;
+    background-color: var(--darkblue);
+    border-radius: 1.59vw;
+
+    .ArticleCardPicture1 {
+        background-color: var(--pinky);
+        width: 38.03vw;
+        height: 24.14vw;
+        border-top-left-radius: 1.59vw;
+        border-bottom-left-radius: 1.59vw;
+    }
+
+    .A_ArticleCardP {
+        color: var(--white);
+    }
+}
+
 // Тест
 .O_TestQuestion {
     width: 89.42vw;
@@ -68,6 +92,26 @@
     background-color: var(--pinky);
     border-radius: 1.59vw;
 }
+
+.O_TestCard {
+    width: 44.7vw;
+    height: 22.09vw;
+    box-sizing: border-box;
+    padding-left: 1.85vw;
+    background-color: var(--pinky);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 1.59vw;
+
+    .TestCardImage {
+        width: 21.693vw;
+        height: 22.09vw;
+        border-top-right-radius: 1.59vw;
+        border-bottom-right-radius: 1.59vw;
+    }
+}
+
 // Ipad Landscape
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 
@@ -96,11 +140,38 @@
         }
     }
 
+    .O_ArticleCard {
+        width: 91.9vw;
+        gap: 3.125vw;
+        border-radius: 1.953vw;
+    
+        .ArticleCardPicture1 {
+            width: 39.06vw;
+            height: 24.8vw;
+            border-top-left-radius: 1.953vw;
+            border-bottom-left-radius: 1.953vw;
+        }
+    }
+
     // Тест
     .O_TestQuestion {
         width: 91.9vw;
         gap: 1.95vw;
         border-radius: 2.344vw;
+    }
+
+    .O_TestCard {
+        width: 44.92vw;
+        height: 22.46vw;
+        padding-left: 2.344vw;
+        border-radius: 1.953vw;
+    
+        .TestCardImage {
+            width: 20.215vw;
+            height: 22.46vw;
+            border-top-right-radius: 1.953vw;
+            border-bottom-right-radius: 1.953vw;
+        }
     }
 }
 // Ipad Portrait
@@ -132,11 +203,38 @@
             }
         }
 
+        .O_ArticleCard {
+            width: 89.06vw;
+            gap: 2.6vw;
+            border-radius: 2.08vw;
+        
+            .ArticleCardPicture1 {
+                width: 38.02vw;
+                height: 28.65vw;
+                border-top-left-radius: 2.08vw;
+                border-bottom-left-radius: 2.08vw;
+            }
+        }
+
     // Тест
     .O_TestQuestion {
         width: 89.06vw;
         gap: 2.6vw;
         border-radius: 3.125vw;
+    }
+
+    .O_TestCard {
+        width: 89.06vw;
+        height: 28.385vw;
+        padding-left: 3.125vw;
+        border-radius: 2.08vw;
+    
+        .TestCardImage {
+            width: 34.51vw;
+            height: 28.385vw;
+            border-top-right-radius: 2.08vw;
+            border-bottom-right-radius: 2.08vw;
+        }
     }
 }
 // Mobile
@@ -169,6 +267,20 @@
         }
     }
 
+    .O_ArticleCard {
+        padding: 6.41vw 6.41vw;
+        width: 83.59vw;
+        border-radius: 4.1025vw;
+    
+        .ArticleCardPicture1 {
+            display: none;
+        }
+
+        .A_ArticleCardP {
+            display: none;
+        }
+    }
+
     // Тест
     .O_TestQuestion {
         width: 83.59vw;
@@ -177,5 +289,19 @@
         padding-bottom: 5.13vw;
         gap: 2.6vw;
         border-radius: 6.15vw;
+    }
+
+    .O_TestCard {
+        width: 83.59vw;
+        height: 42.051vw;
+        padding-left: 3.846vw;
+        border-radius: 4.1vw;
+    
+        .TestCardImage {
+            width: 34.51vw;
+            height: 42.051vw;
+            border-top-right-radius: 4.1vw;
+            border-bottom-right-radius: 4.1vw;
+        }
     }
 }

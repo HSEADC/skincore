@@ -147,7 +147,7 @@ input[type="checkbox"]:checked{
     width: 100%;
 }
 // Текст для статей и карточек
-.A_ArticleTitle, .A_ArticleH2, .A_ArticleH3, .A_ArticleH4, .A_ArticleBodyText, .A_TestCardH4, .A_TestCardBodyText, .A_ChecklistCardH4, .A_ArticleCardH3, .A_ArticleCardz, .A_ArticleCardH4, .A_TruthOrMythCardH4, .A_TruthOrMythCardlietruth, .A_TruthOrMythCardP, .A_ChecklistTitle  {
+.A_ArticleTitle, .A_ArticleH2, .A_ArticleH3, .A_ArticleH4, .A_ArticleBodyText, .A_TestCardH4, .A_TestCardBodyText, .A_ChecklistCardH4, .A_ArticleCardH3, .A_ArticleCardz, .A_ArticleCardH4, .A_TruthOrMythCardH4, .A_TruthOrMythCardlietruth, .A_TruthOrMythCardP, .A_ChecklistTitle, .A_ArticleCardP  {
     font-family: 'TT Firs Neue Regular';
 }
 .Bold {
@@ -306,7 +306,7 @@ input[type="checkbox"]:checked{
         font-size: 1.47vw;
         width: 56.94vw;
     }
-    .A_TestCardH4, .A_TestCardBodyText {
+    .A_TestCardH4, .A_TestCardBodyText, {
         width: 19.34vw;
     }
     .A_ChecklistCardH4 {
