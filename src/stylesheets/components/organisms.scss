@@ -80,6 +80,25 @@
     }
 }
 
+.O_ArticleCard1 {
+    width: 21.36vw;
+    height: 27.91vw;
+    box-sizing: border-box;
+    padding-bottom: 1.653vw;
+    background-color: var(--pinky);
+    border-radius: 1.59vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.653vw;
+
+    .ArticleCardImage {
+        width: 100%;
+        height: 14.286vw;
+        border-top-left-radius: 1.59vw;
+        border-top-right-radius: 1.59vw;
+    }
+}
+
 // Тест
 .O_TestQuestion {
     width: 89.42vw;
@@ -107,6 +126,27 @@
     .TestCardImage {
         width: 21.693vw;
         height: 22.09vw;
+        border-top-right-radius: 1.59vw;
+        border-bottom-right-radius: 1.59vw;
+    }
+}
+
+//Чек-лист
+.O_ChecklistCard {
+    width: 44.05vw;
+    height: 16vw;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding-left: 1.322vw;
+    justify-content: space-between;
+    background-color: var(--pinky);
+    border-radius: 1.59vw;
+
+    .ChecklistCardImage {
+        width: 17.59vw;
+        height: 16vw;
+        background-color: var(--darkblue);
         border-top-right-radius: 1.59vw;
         border-bottom-right-radius: 1.59vw;
     }
@@ -153,6 +193,20 @@
         }
     }
 
+    .O_ArticleCard1 {
+        width: 29.39vw;
+        height: 34.375vw;
+        border-radius: 1.953vw;
+        gap: 1.46vw;
+    
+        .ArticleCardImage {
+            height: 21.48vw;
+            background-color: var(--darkblue);
+            border-top-left-radius: 1.953vw;
+            border-top-right-radius: 1.953vw;
+        }
+    }
+
     // Тест
     .O_TestQuestion {
         width: 91.9vw;
@@ -169,6 +223,21 @@
         .TestCardImage {
             width: 20.215vw;
             height: 22.46vw;
+            border-top-right-radius: 1.953vw;
+            border-bottom-right-radius: 1.953vw;
+        }
+    }
+
+    //Чек-лист
+    .O_ChecklistCard {
+        width: 45.12vw;
+        height: 16.4vw;
+        padding-left: 1.953vw;
+        border-radius: 1.953vw;
+
+        .ChecklistCardImage {
+            width: 19.336vw;
+            height: 16.4vw;
             border-top-right-radius: 1.953vw;
             border-bottom-right-radius: 1.953vw;
         }
@@ -216,6 +285,19 @@
             }
         }
 
+        .O_ArticleCard1 {
+            width: 28.385vw;
+            height: 34.375vw;
+            border-radius: 2.08vw;
+            gap: 1.46vw;
+        
+            .ArticleCardImage {
+                height: 18.49vw;
+                border-top-left-radius: 2.08vw;
+                border-top-right-radius: 2.08vw;
+            }
+        }
+
     // Тест
     .O_TestQuestion {
         width: 89.06vw;
@@ -234,6 +316,21 @@
             height: 28.385vw;
             border-top-right-radius: 2.08vw;
             border-bottom-right-radius: 2.08vw;
+        }
+    }
+
+    //Чек-лист
+    .O_ChecklistCard {
+        width: 43.75vw;
+        height: 18.75vw;
+        padding-left: 2.6vw;
+        border-radius: 2.083vw;
+
+        .ChecklistCardImage {
+            width: 15.756vw;
+            height: 18.75vw;
+            border-top-right-radius: 2.083vw;
+            border-bottom-right-radius: 2.083vw;
         }
     }
 }
@@ -281,6 +378,19 @@
         }
     }
 
+    .O_ArticleCard1 {
+        width: 71.79vw;
+        height: 74.36vw;
+        border-radius: 2.08vw;
+        gap: 3.846vw;
+    
+        .ArticleCardImage {
+            height: 48.71vw;
+            border-top-left-radius: 2.08vw;
+            border-top-right-radius: 2.08vw;
+        }
+    }
+
     // Тест
     .O_TestQuestion {
         width: 83.59vw;
@@ -302,6 +412,21 @@
             height: 42.051vw;
             border-top-right-radius: 4.1vw;
             border-bottom-right-radius: 4.1vw;
+        }
+    }
+
+    //Чек-лист
+    .O_ChecklistCard {
+        width: 83.59vw;
+        height: 35.897vw;
+        padding-left: 4.103vw;
+        border-radius: 4.103vw;
+
+        .ChecklistCardImage {
+            width: 30.77vw;
+            height: 35.897vw;
+            border-top-right-radius: 4.103vw;
+            border-bottom-right-radius: 4.103vw;
         }
     }
 }

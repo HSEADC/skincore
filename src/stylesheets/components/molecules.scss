@@ -1,5 +1,7 @@
 // Desktop
-
+* {
+    box-sizing: border-box;
+}
 // теги 
 .M_TagsArticle, .M_TagsList {
     display: inline-flex;
@@ -116,14 +118,17 @@
     justify-content: space-between;
 }
 .M_ArticleCard1 {
-    width: 18.66vw;
+    width: 21.36vw;
+    box-sizing: border-box;
+    padding: 0vw 1.323vw;
     height: 10.39vw;
     .A_ArticleCardH4 {
         width: auto;
+        color: var(--darkblue);
     }
 }
 .M_ChecklistCard {
-    height: 9.66vw;
+    height: 16vw;
     padding: 1.59vw 0;
 }
 .M_ArticleCard {
@@ -231,7 +236,8 @@
         height: 9.48vw;
     }
     .M_ChecklistCard {
-        height: 10.16vw;
+        width: 21.875vw;
+        height: 16.4vw;
         padding: 1.563vw 0;
     }
     .M_ArticleCard {
@@ -331,7 +337,7 @@
         height: 14.33vw;
     }
     .M_ChecklistCard {
-        height:  10.42vw;
+        height:  18.75vw;
         padding: 2.09vw 0;
     }
     .M_ArticleCard {
@@ -426,7 +432,7 @@
         height: 17.65vw;
     }
     .M_ChecklistCard {
-        height:  18.34vw;
+        height:  35.897vw;
         padding: 3.88vw 0;
     }
     .M_ArticleCard {
