@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+// Desktop
+
+.C_ChecklistCards, .C_TestCards, .C_DictionaryCards, .C_TruthOrMythCards {
+    width: 89.42vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1.323vw;
+}
+
+// Ipad Landscape
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .C_ChecklistCards, .C_TestCards, .C_DictionaryCards, .C_TruthOrMythCards {
+        width: 91.9vw;
+        row-gap: 1.953vw;
+    }
+}
+
+// Ipad Portrait
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .C_ChecklistCards, .C_TestCards, .C_DictionaryCards, .C_TruthOrMythCards {
+        width: 90.625vw;
+        row-gap: 2.083vw;
+    }
+}
+
+// Mobile
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .C_ChecklistCards, .C_TestCards, .C_DictionaryCards, .C_TruthOrMythCards {
+        width: 83.59vw;
+        row-gap: 4.1vw;
+    }
+
+    .C_TruthOrMythCards {
+        flex-wrap: nowrap;
+        gap: 4.1vw;
+    }
+}

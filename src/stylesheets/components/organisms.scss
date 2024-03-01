@@ -2,11 +2,14 @@
 * {
     box-sizing: border-box;
 }
+
+.O_Header, .O_Footer, .O_TestCard, .O_TruthOrMythCard, .O_ChecklistCard {
+    display: flex;
+    justify-content: space-between;
+}
 // Менюбар + Подвал
 .O_Header {
     width: 89.42vw;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: var(--darkblue);
 }
@@ -16,9 +19,7 @@
     height: 25.26vw;
     box-sizing: border-box;
     background-color: var(--darkblue);
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 2.78vw 5.56vw;
 
     .FooterMenuContainer {
@@ -36,7 +37,40 @@
     grid-template-rows: 1fr 1fr;
     column-gap: 1.32vw;
     row-gap: 1.32vw;
+
+    .CB2_1, .CB2_2, .CB2_3, .CB2_4, .CB2_5, .CB2_6 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .CB2_1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .CB2_2 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .CB2_3 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .CB2_4 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+    }
+    .CB2_5 {
+        grid-column-start: 5;
+        grid-column-end: 7;
+    }
+    .CB2_6 {
+        grid-column-start: 6;
+        grid-column-end: 8;
+    }
 }
+
 // Статья
 .O_ArticleTags {
     width: fit-content;
@@ -71,7 +105,6 @@
 .O_ArticleCard {
     width: 89.42vw;
     height: fit-content;
-    box-sizing: border-box;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -95,7 +128,6 @@
 .O_ArticleCard1 {
     width: 21.36vw;
     height: 27.91vw;
-    box-sizing: border-box;
     padding-bottom: 1.653vw;
     background-color: var(--pinky);
     border-radius: 1.59vw;
@@ -115,7 +147,6 @@
 .O_TestQuestion {
     width: 89.42vw;
     height: fit-content;
-    box-sizing: border-box;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -125,14 +156,11 @@
 }
 
 .O_TestCard {
-    width: 44.7vw;
+    width: 44.04vw;
     height: 22.09vw;
-    box-sizing: border-box;
     padding-left: 1.85vw;
     background-color: var(--pinky);
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
     border-radius: 1.59vw;
 
     .TestCardImage {
@@ -146,10 +174,8 @@
 .O_TruthOrMythCard {
     width: 21.36vw;
     height: 20.83vw;
-    display: flex;
     flex-direction: column;
     padding: 1.32vw;
-    justify-content: space-between;
     background-color: var(--basicblue);
     border-radius: 1.59vw;
 }
@@ -158,11 +184,8 @@
 .O_ChecklistCard {
     width: 44.05vw;
     height: 16vw;
-    display: flex;
     flex-direction: row;
-    box-sizing: border-box;
     padding-left: 1.322vw;
-    justify-content: space-between;
     background-color: var(--pinky);
     border-radius: 1.59vw;
 
@@ -210,6 +233,14 @@
         width: 100vw;
         height: 27.73vw;
         padding: 2.34vw 5.57vw;
+    }
+
+    // Сетки
+    .O_GridSection {
+        width: 53.22vw;
+        height: 13.67vw;
+        column-gap: 1.953vw;
+        row-gap: 1.758vw;
     }
 
     // Статья
@@ -325,6 +356,14 @@
         padding: 2.34vw 5.6vw;
     }
 
+    // Сетки
+    .O_GridSection {
+        width: 51.56vw;
+        height: 13.15vw;
+        column-gap: 2.083vw;
+        row-gap: 1.953vw;
+    }
+
         // Статья
         .O_ArticleTags {
             gap: 1.041vw;
@@ -437,6 +476,10 @@
         width: 100vw;
         height: 87.18vw;
         padding: 7.18vw 8.2vw;
+    }
+
+    .O_GridSection {
+        display: none;
     }
 
     // Статья
