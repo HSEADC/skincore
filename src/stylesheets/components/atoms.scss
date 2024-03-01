@@ -34,7 +34,9 @@
     color: var(--darkblue);
 }
 .A_SecondaryButton {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     padding: 0.7vw 3.38vw;
 }
 .SBBlue {
@@ -88,6 +90,13 @@
     color: var(--darkblue);
 }
 // тесты
+.A_Response {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.058vw;
+}
+
 .A_ResponseText {
     cursor: pointer;
     font-family: 'TT Firs Neue Regular';
@@ -100,14 +109,14 @@ input[type=radio], input[type=checkbox] {
     border-radius: 100%;
     width: 1.6vw;
     height: 1.6vw;
-    background-color: var(--pinky);
+    background-color: var(--white);
     border: 0.13vw solid var(--darkblue);
     cursor: pointer;
     vertical-align: text-bottom;
 }
 input[type=checkbox] {
     border-radius: 0.4vw;
-    vertical-align: top;
+    // vertical-align: top;
 }
 input[type="radio"]:checked{
     background: var(--basicblue);
@@ -195,7 +204,7 @@ input[type="checkbox"]:checked{
 }
 .A_TruthOrMythCardH4, .A_TruthOrMythCardP {
     width: 17.66vw;
-    height: 13.23vw;
+    max-height: 13.23vw;
 }
 .A_TruthOrMythCardP {
     height: 14.49vw;
@@ -234,7 +243,7 @@ input[type="checkbox"]:checked{
         border: 0.15vw solid var(--pinky);
     }
     .A_SecondaryButton {
-        padding: 0.7vw 3.25vw;
+        padding: 0.7vw 0vw;
         font-size: 1.37vw;
     }
 // теги
@@ -323,7 +332,7 @@ input[type="checkbox"]:checked{
     }
     .A_TruthOrMythCardH4, .A_TruthOrMythCardP {
         width: 18.17vw;
-        height: 13.48vw;
+        max-height: 13.48vw;
     }
     .A_TruthOrMythCardP {
         height: 14.56vw;
@@ -356,7 +365,7 @@ input[type="checkbox"]:checked{
         border: 0.15vw solid var(--pinky);
     }
     .A_SecondaryButton {
-        padding: 0.91vw 4.32vw;
+        padding: 0.91vw 0vw;
         font-size: 1.83vw;
     }
 // теги 
@@ -392,6 +401,9 @@ input[type="checkbox"]:checked{
         width: 2.62vw;
         height: 2.62vw;
         border: 0.15vw solid var(--darkblue);
+    }
+    input[type=checkbox] {
+        border-radius: 0.6vw;
     }
     // соц сети
     .A_FooterSocialMedia {
@@ -439,8 +451,8 @@ input[type="checkbox"]:checked{
     .A_ArticleCardH4 {
         width: 32.56vw;
     }
-    .A_TruthoOMythCardH4, .A_TruthOrMythCardP {
-        width: 23.7vw;
+    .A_TruthorMythCardH4, .A_TruthOrMythCardP {
+        width: 23.69vw;
         height: 17.2vw;
     }
     .A_TruthOrMythCardP {
@@ -475,7 +487,7 @@ input[type="checkbox"]:checked{
         border: 0.15vw solid var(--pinky);
     }
     .A_SecondaryButton {
-        padding: 1.82vw 8.1vw;
+        padding: 1.82vw 0vw;
         font-size: 4.35vw;
     }
 // теги
@@ -508,7 +520,8 @@ input[type="checkbox"]:checked{
         font-size: 3.87vw;
     }
     input[type=checkbox] {
-        vertical-align: bottom;
+        border-radius: 1vw;
+        // vertical-align: bottom;
     }
     input[type=radio], input[type=checkbox] {
         width: 4.84vw;
@@ -563,7 +576,7 @@ input[type="checkbox"]:checked{
     }
     .A_TruthOrMythCardH4, .A_TruthOrMythCardP {
         width: 39.15vw;
-        height: 29vw;
+        max-height: 29vw;
     }
     .A_TruthOrMythCardP {
         height: 34.56vw;

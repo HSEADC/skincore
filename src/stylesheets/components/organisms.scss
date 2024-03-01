@@ -133,6 +133,17 @@
     }
 }
 
+.O_TruthOrMythCard {
+    width: 21.36vw;
+    height: 20.83vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1.32vw;
+    justify-content: space-between;
+    background-color: var(--basicblue);
+    border-radius: 1.59vw;
+}
+
 //Чек-лист
 .O_ChecklistCard {
     width: 44.05vw;
@@ -152,6 +163,17 @@
         border-top-right-radius: 1.59vw;
         border-bottom-right-radius: 1.59vw;
     }
+}
+
+.O_Checklist {
+    width: 55.291vw;
+    height: fit-content;
+    background-color: var(--pinky);
+    padding: 2.38vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.79vw;
+    border-radius: 1.59vw;
 }
 
 // Карточка в словаре
@@ -225,7 +247,7 @@
     .O_TestQuestion {
         width: 91.9vw;
         gap: 1.95vw;
-        border-radius: 2.344vw;
+        border-radius: 1.953vw;
     }
 
     .O_TestCard {
@@ -242,6 +264,13 @@
         }
     }
 
+    .O_TruthOrMythCard {
+        width: 22.07vw;
+        height: 23.05vw;
+        padding: 1.953vw;
+        border-radius: 1.953vw;
+    }
+
     //Чек-лист
     .O_ChecklistCard {
         width: 45.12vw;
@@ -256,12 +285,19 @@
             border-bottom-right-radius: 1.953vw;
         }
     }
+
+    .O_Checklist {
+        width: 56.93vw;
+        padding: 2.344vw;
+        gap: 1.17vw;
+        border-radius: 1.953vw;
+    }
     
     //Карточка в словаре
     .O_DictionaryCard {
         width: 21.875vw;
         height: 16vw;
-        padding: 1.953vw;
+        padding: 2.343vw;
         border-radius: 1.953vw;
     }
 }
@@ -341,6 +377,13 @@
         }
     }
 
+    .O_TruthOrMythCard {
+        width: 28.9vw;
+        height: 28.65vw;
+        padding: 2.6vw;
+        border-radius: 1.953vw;
+    }
+
     //Чек-лист
     .O_ChecklistCard {
         width: 43.75vw;
@@ -354,6 +397,13 @@
             border-top-right-radius: 2.083vw;
             border-bottom-right-radius: 2.083vw;
         }
+    }
+
+    .O_Checklist {
+        width: 54.82vw;
+        padding: 3.125vw;
+        gap: 1.56vw;
+        border-radius: 2.083vw;
     }
 
     //Карточка в словаре
@@ -445,6 +495,13 @@
         }
     }
 
+    .O_TruthOrMythCard {
+        width: 51.79vw;
+        height: 54.615vw;
+        padding: 5.128vw;
+        border-radius: 1.953vw;
+    }
+
     //Чек-лист
     .O_ChecklistCard {
         width: 83.59vw;
@@ -458,6 +515,13 @@
             border-top-right-radius: 4.103vw;
             border-bottom-right-radius: 4.103vw;
         }
+    }
+
+    .O_Checklist {
+        width: 83.59vw;
+        padding: 5.128vw;
+        gap: 3.077vw;
+        border-radius: 4.1vw;
     }
 
     //Карточка в словаре

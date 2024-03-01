@@ -138,12 +138,12 @@
     }
 }
 .M_TruthOrMyth {
-    height: 17.792vw;
+    max-height: 17.792vw;
+    gap: 0.93vw;
     .A_ArticleH4 {
         width: fit-content;
         color: var(--white);
     }
-
 }
 .M_ArticleHighlight {
     width: 59.26vw;
@@ -246,9 +246,12 @@
             margin-bottom: 0.98vw;
         }
     }
+
     .M_TruthOrMyth {
-        height: 18.17vw;
+        max-height: 26.27vw;
+        gap: 0.98vw;
     }
+
     .M_ArticleHighlight {
         width: 60.85vw;
         gap: 3.12vw;
@@ -347,8 +350,11 @@
         }
     }
     .M_TruthOrMyth {
-        height: 23.45vw;
+        width: 23.69vw;
+        max-height: 23.44vw;
+        gap: 1.3vw;
     }
+
     .M_ArticleHighlight {
         width: 59.13vw;
         gap: 3.63vw;
@@ -439,8 +445,11 @@
         height: 30.68vw;
     }
     .M_TruthOrMyth {
-        height: 42.8vw;
+        width: 41.538vw;
+        max-height: 44.36vw;
+        gap: 2.56vw;
     }
+
     .M_ArticleHighlight {
         width: 68.36vw;
         gap: 4.74vw;
