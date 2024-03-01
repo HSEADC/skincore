@@ -27,6 +27,16 @@
     }
 }
 
+// Сетки
+.O_GridSection {
+    width: 51.786vw;
+    height: 13.76vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1.32vw;
+    row-gap: 1.32vw;
+}
 // Статья
 .O_ArticleTags {
     width: fit-content;
