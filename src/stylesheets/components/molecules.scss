@@ -11,6 +11,10 @@
 }
 .M_TagsList {
     display: flex;
+    flex-direction: row;
+    width: 94.7vw;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 // соц сети
 .M_FooterDescription {
@@ -174,6 +178,10 @@
         width: 17.68vw;
     }
 
+    .M_TagsList {
+        width: 96vw;
+    }
+
     .M_FooterDescription {
         width: 16.11vw;
         height: fit-content;
@@ -274,6 +282,10 @@
         .A_Tag {
             margin-bottom: 0.8vw;
         }
+    }
+
+    .M_TagsList {
+        width: 94.79vw;
     }
 
     .M_FooterDescription {
@@ -377,6 +389,10 @@
     .M_TagsArticle {
         gap: 2vw;
         width: 78.75vw;
+    }
+
+    .M_TagsList {
+        width: 91.79vw;
     }
     
     .M_FooterDescription {
