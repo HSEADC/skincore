@@ -6,6 +6,7 @@
 @import 'stylesheets/components/molecules.scss';
 @import 'stylesheets/components/organisms.scss';
 @import 'stylesheets/components/collections.scss';
+@import 'stylesheets/components/superorganisms.scss';
 @import 'stylesheets/about.scss';
 @import 'stylesheets/basics.scss';
 @import 'stylesheets/vars.scss';

@@ -26,6 +26,22 @@ document.addEventListener('DOMContentLoaded', () => {
     search()
 })
 
+const card = document.querySelector(".TruthOrMythInnerCard");
+
+card.addEventListener("click", function (e) {
+    card.classList.toggle('Flipped');
+});
+// function cards() {
+//     let card = document.querySelectorAll(".TruthOrMythInnerCard");
+//     card.forEach((cards) => {
+//         card.addEventListener('click', function(e) {
+//             card.classList.toggle('Flipped');
+//         })
+//     })
+// }
+
+
+
 // $(document).ready(function(){ 
 
 //     $(".menu_web").click(function() {

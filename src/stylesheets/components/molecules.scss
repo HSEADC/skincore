@@ -142,8 +142,10 @@
     }
 }
 .M_TruthOrMyth {
-    max-height: 17.792vw;
+    width: 100%;
+    height: 100%;
     gap: 0.93vw;
+
     .A_ArticleH4 {
         width: fit-content;
         color: var(--white);
@@ -256,7 +258,6 @@
     }
 
     .M_TruthOrMyth {
-        max-height: 26.27vw;
         gap: 0.98vw;
     }
 
@@ -363,7 +364,6 @@
     }
     .M_TruthOrMyth {
         width: 23.69vw;
-        max-height: 23.44vw;
         gap: 1.3vw;
     }
 
@@ -462,7 +462,6 @@
     }
     .M_TruthOrMyth {
         width: 41.538vw;
-        max-height: 44.36vw;
         gap: 2.56vw;
     }
 

@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+// Desktop
+.S_NewArticles, .S_AllArticles, .S_ChecklistCards, .S_ChecklistPage, .S_DictionaryPage, .S_Recommendations, .S_TestPage {
+    width: 89.42vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.S_NewArticles, .S_Recommendations {
+    gap: 3.968vw;
+}
+
+.S_AllArticles, .S_DictionaryPage, .S_TestPage {
+    gap: 1.5vw;
+}
+
+.S_ChecklistCards {
+    gap: 2vw;
+}
+
+.S_ChecklistPage {
+    width: 55.29vw;
+    gap: 1.5vw;
+}
+
+
+// Ipad Landscape
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .S_NewArticles, .S_AllArticles, .S_Recommendations {
+        width: 91.9vw;
+        gap: 3.125vw;
+    }
+    
+    .S_AllArticles, .S_DictionaryPage, .S_TestPage {
+        gap: 2.73vw;
+    }
+
+    .S_ChecklistCards {
+        gap: 2vw;
+    }
+
+    .S_ChecklistPage {
+        width: 56.93vw;
+        gap: 2vw;
+    }
+}
+
+// Ipad Portrait
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .S_NewArticles, .S_AllArticles, .S_Recommendations {
+        width: 91.9vw;
+        gap: 3.646vw;
+    }
+
+    .S_AllArticle, .S_ChecklistCards, .S_DictionaryPage, .S_TestPage {
+        gap: 2vw;
+    }
+
+    .S_ChecklistPage {
+        width: 54.82vw;
+        gap: 2.3vw;
+    }
+}
+
+// Mobile
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .S_NewArticles, .S_ChecklistPage {
+        width: 83.59vw;
+
+        .A_ArticleH2, .C_ArticleCards {
+            display: none;
+        }
+    }
+
+    .S_Recommendations {
+        width: 83.59vw;
+    }
+
+    .S_AllArticles, .S_ChecklistCards, .S_DictionaryPage , .S_TestPage{
+        width: 83.59vw;
+        gap: 3vw;
+    }
+
+    .S_ChecklistCards {
+        gap: 4vw;
+    }
+
+    .S_ChecklistPage {
+        gap: 4vw;
+    }
+}
