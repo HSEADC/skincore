@@ -3,7 +3,7 @@
 }
 
 // Desktop
-.S_NewArticles, .S_AllArticles, .S_ChecklistCards, .S_ChecklistPage, .S_DictionaryPage, .S_Recommendations, .S_TestPage {
+.S_NewArticles, .S_AllArticles, .S_ChecklistCards, .S_ChecklistPage, .S_DictionaryPage, .S_Recommendations, .S_TestPage, .S_SectionHeader, .S_ArticleHeader {
     width: 89.42vw;
     height: fit-content;
     display: flex;
@@ -27,6 +27,29 @@
     gap: 1.5vw;
 }
 
+.S_SectionHeader, .S_ArticleHeader {
+    width: 100%;
+    height: fit-content;
+    gap: 2.315vw;
+    background-color: var(--darkblue);
+    padding: 2.31vw 0;
+    align-items: center;
+    box-sizing: border-box;
+
+    .SectionGridContainer {
+        width: 89.42vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+
+        .A_ArticleTitle {
+            width: auto;
+            height: fit-content;
+        }
+    }
+}
+
 
 // Ipad Landscape
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -47,12 +70,21 @@
         width: 56.93vw;
         gap: 2vw;
     }
+
+    .S_SectionHeader, .S_ArticleHeader {
+        gap: 2vw;
+        padding: 2.73vw 3.9vw;
+    
+        .SectionGridContainer {
+            width: 91.9vw;
+        }
+    }
 }
 
 // Ipad Portrait
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     .S_NewArticles, .S_AllArticles, .S_Recommendations {
-        width: 91.9vw;
+        width: 89.32vw;
         gap: 3.646vw;
     }
 
@@ -63,6 +95,15 @@
     .S_ChecklistPage {
         width: 54.82vw;
         gap: 2.3vw;
+    }
+
+    .S_SectionHeader, .S_ArticleHeader {
+        gap: 2.34vw;
+        padding: 3.52vw 5.2vw;
+    
+        .SectionGridContainer {
+            width: 89.32vw;
+        }
     }
 }
 
@@ -91,5 +132,11 @@
 
     .S_ChecklistPage {
         gap: 4vw;
+    }
+
+    .S_ArticleHeader {
+        padding: 5.13vw 9.23vw;
+        height: 100vh;
+        gap: 3.85vw;
     }
 }

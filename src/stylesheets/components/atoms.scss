@@ -169,6 +169,7 @@ input[type="checkbox"]:checked{
     color: var(--white);
 }
 .A_ArticleTitle {
+    display: inline-block;
     font-size: 7.144vw;
 }
 .A_ArticleH2, .A_ChecklistTitle {

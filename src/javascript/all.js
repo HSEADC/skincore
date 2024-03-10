@@ -21,16 +21,29 @@ function search() {
         
     })
 }
+
+// const card = document.querySelector(".TruthOrMythInnerCard");
+
+// card.addEventListener("click", function (e) {
+//     card.classList.toggle('Flipped');
+// });
+
+function card() {
+    let cards = document.querySelectorAll(".TruthOrMythInnerCard");
+    cards.forEach((card) => {
+        card.addEventListener('click', () => {
+            card.classList.toggle("Flipped");
+        })
+        
+    })
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     tag()
     search()
+    card()
 })
 
-const card = document.querySelector(".TruthOrMythInnerCard");
-
-card.addEventListener("click", function (e) {
-    card.classList.toggle('Flipped');
-});
 // function cards() {
 //     let card = document.querySelectorAll(".TruthOrMythInnerCard");
 //     card.forEach((cards) => {

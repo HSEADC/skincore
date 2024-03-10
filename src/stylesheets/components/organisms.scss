@@ -17,6 +17,10 @@
     width: 89.42vw;
     align-items: center;
     background-color: var(--darkblue);
+
+    .Q_Burger {
+        display: none;
+    }
 }
 
 .O_Footer {
@@ -44,6 +48,8 @@
     row-gap: 1.32vw;
 
     .CB2_1, .CB2_2, .CB2_3, .CB2_4, .CB2_5, .CB2_6 {
+        width: 100%;
+        height: 100%;
         grid-row-start: 1;
         grid-row-end: 3;
     }
@@ -73,6 +79,154 @@
     .CB2_6 {
         grid-column-start: 6;
         grid-column-end: 8;
+    }
+}
+
+.O_ArticleGridSection {
+    width: 89.42vw;
+    height: 29.1vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 1.32vw;
+    row-gap: 1.32vw;
+
+    .ATP_1, .ATP_2, .ATP_3, .ATP_4_2, .ATP_5_2, .ATP_6_2, .ATP_7_3, .ATP_8_2 {
+        grid-column-start: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .ATP_2, .ATP_3, .ATP_4_1 {
+        grid-column-start: 2;
+    }
+    .ATP4_1, .ATP_5_1, .ATP_6_1, .ATP_7_2, .ATP_8_1 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .ATP_5_1, .ATP_7_3, .ATP_8_2 {
+        grid-column-start: 5;
+    }
+
+    .ATP_8_1 {
+        grid-column-start: 3;
+    }
+
+    .ATP_5_2, .ATP_6_2 {
+        grid-column-start: 7;
+    }
+
+    .ATP_7_1 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .ATP_7_2 {
+        grid-column-start: 4;
+    }
+
+    .ATP_8_3 {
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    .CB3_1, .CB2_1, .CB3_2, .CB2_2, .CB2_3_1, .CB2_3_2, .CB2_4_1, .CB2_4_2, .CB3_5 {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .CB3_1 {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }
+
+    .CB2_1 {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .CB3_2 {
+        grid-column-start: 9;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    .CB2_2 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .CB2_3_1 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .CB2_3_2, .CB2_8_3 {
+        grid-column-start: 11;
+        grid-column-end: 13;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    .CB2_4_1{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    .CB2_4_2, .CB2_8_1, .CB2_8_2 {
+        grid-column-start: 10;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .CB2_4_1, .CB2_6{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    .CB3_5, .CB3_7 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    .CB3_7 {
+        grid-column-start: 10;
+        grid-column-end: 13;
+    }
+
+    .CB2_7 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    .CB2_8_1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .CB2_8_2 {
+        grid-column-start: 8;
+        grid-column-end: 10;
     }
 }
 
@@ -177,17 +331,8 @@
     }
 }
 
-// .O_TruthOrMythCard {
-//     width: 21.36vw;
-//     height: 20.83vw;
-//     flex-direction: column;
-//     padding: 1.32vw;
-//     background-color: var(--basicblue);
-//     border-radius: 1.59vw;
-// }
 
-
-// 1 tutorial
+// Правда или миф
 .O_TruthOrMythCard {
     width: 21.36vw;
     height: 20.83vw;
@@ -231,6 +376,10 @@
         width: 100%;
         height: 100%;
         transform: rotateY(180deg);
+    }
+
+    .A_SecondaryButton:hover {
+        background-color: var(--darkblue);
     }
 }
 
@@ -290,11 +439,16 @@
     }
 
     // Сетки
-    .O_GridSection {
+    .O_GridSection, .O_GridArticle_Section {
         width: 53.22vw;
         height: 13.67vw;
         column-gap: 1.953vw;
         row-gap: 1.758vw;
+    }
+
+    .O_ArticleGridSection {
+        width: 91.9vw;
+        height: 29.1vw;
     }
 
     // Статья
@@ -411,11 +565,16 @@
     }
 
     // Сетки
-    .O_GridSection {
+    .O_GridSection, .O_ArticleGridSection {
         width: 51.56vw;
         height: 13.15vw;
         column-gap: 2.083vw;
         row-gap: 1.953vw;
+    }
+
+    .O_ArticleGridSection {
+        width: 89.06vw;
+        height: 28.26vw;
     }
 
         // Статья
@@ -522,8 +681,17 @@
 
     // Менюбар + Подвал
     .O_Header {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: fit-content;
+        justify-content: space-between;
+
+        .M_Header, .M_Search {
+            display: none;
+        }
+
+        .Q_Burger {
+            display: inline-block;
+        }
     }
 
     .O_Footer {
@@ -532,8 +700,81 @@
         padding: 7.18vw 8.2vw;
     }
 
+    // Сетки
     .O_GridSection {
         display: none;
+    }
+
+    .O_ArticleGridSection {
+        width: 81vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 3.846vw;
+        column-gap: 4.1vw;
+
+        .ATP_1, .ATP_2, .ATP_3, .ATP_4_1, .ATP_4_2, .ATP_5_1, .ATP_5_2, .ATP_6_1, .ATP_6_2, .ATP_7_1, .ATP_7_2, .ATP_7_3, .ATP_8_1, .ATP_8_2, .ATP_8_3 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        .ATP_1 {
+            grid-row-start: 6;
+            grid-row-end: 7;
+        }
+        .ATP_2, .ATP_3, .ATP_4_1, .ATP_7_1 {
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .ATP_4_2, .ATP_7_2 {
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        .ATP_7_3 {
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+
+        .CB3_1, .CB3_5, .CB2_6, .CB2_8_1 {
+            width: 100%;
+            height: 100%;
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+        .CB2_1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 7;
+            grid-row-end: 9;
+        }
+        .CB3_2 {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 6;
+            grid-row-end: 9;
+        }
+        .CB2_2, .CB2_3_1, .CB2_4_1, .CB2_7 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .CB2_3_2, .CB2_4_2 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 5;
+            grid-row-end: 7;
+        }
+        .CB3_7 {
+            grid-row-start: 6;
+            grid-row-end: 9;
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+        .CB2_8_2, .CB2_8_3 {
+            display: none;
+        }
     }
 
     // Статья

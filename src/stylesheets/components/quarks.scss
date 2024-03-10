@@ -79,6 +79,7 @@
     background-color: var(--basicblue);
 }
 .Q_1Circle {
+    display: inline-block;
     width: 6.28vw;
     height: 6.28vw;
 }
@@ -291,5 +292,9 @@
     .Q_ImageFullWidth {
         width: 100%;
         height: 51.28vw;
+    }
+
+    .CircleNone {
+        display: none;
     }
 }
