@@ -80,6 +80,13 @@ module.exports = {
         }
       },
       {
+        test: /\.webp/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[hash][ext][query]'
+        }
+      },
+      {
         test: /\.(ttf|otf|woff|woff2)$/i,
         loader: 'file-loader',
         options: {
