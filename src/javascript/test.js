@@ -52,8 +52,8 @@ const questions = [
 ]
 
 // находим текст
-const numberQuestion = document.querySelector(".A_ArticleBodyText");
-const nameQuestion = document.querySelector(".A_ArticleH3");
+const numberQuestion = document.querySelector(".ArticleBodyText");
+const nameQuestion = document.querySelector(".ArticleH3");
 const answersList = document.querySelector(".A_ResponseList");
 const button = document.querySelector(".A_PrimaryButton");
 
@@ -73,12 +73,12 @@ function clearText() {
 }
 function changeText() {
     // номер
-    const numberHtml = '<div class="A_ArticleBodyText">%1/5%</div>';
+    const numberHtml = '<div class="A_ArticleBodyText ArticleBodyText">%1/5%</div>';
     const num = numberHtml.replace('%1/5%',questions[questionIndex]['number']);
     numberQuestion.innerHTML = num;
 
     // заголовок
-    const nameHtml = '<div class="A_ArticleH3">%name%</div>';
+    const nameHtml = '<div class="A_ArticleH3 ArticleH3">%name%</div>';
     const name = nameHtml.replace('%name%',questions[questionIndex]['question']);
     nameQuestion.innerHTML = name;
     

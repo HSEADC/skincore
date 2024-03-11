@@ -134,8 +134,12 @@ module.exports = {
     }),
     // Article
     new HtmlWebpackPlugin({
-      template: './src/article/article1.html',
-      filename: './article/article1.html'
+      template: './src/article/winterskincare.html',
+      filename: './article/winterskincare.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/article/spf.html',
+      filename: './article/spf.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/dictionary/serum.html',

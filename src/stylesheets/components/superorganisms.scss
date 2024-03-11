@@ -8,6 +8,7 @@
     height: fit-content;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .S_NewArticles, .S_Recommendations {
@@ -25,6 +26,10 @@
 .S_ChecklistPage {
     width: 55.29vw;
     gap: 1.5vw;
+}
+
+.S_Recommendations {
+    margin-top: 6vw;
 }
 
 .S_SectionHeader, .S_ArticleHeader {
@@ -51,6 +56,32 @@
 }
 
 
+.S_ArticleContent {
+    width: 89.42vw;
+    height: fit-content;
+    margin: 2.116vw auto;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    column-gap: 1.32vw;
+
+    .O_ArticleTags {
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+    .C_ArticleText, .Q_ImageTextWidth, .A_PhotoInRow {
+        grid-column-start: 7;
+        grid-column-end: 22;
+    }
+    .Q_ImageFullWidth {
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .Q_ImageTextWidth, .A_PhotoInRow, .Q_ImageFullWidth {
+        margin-top: 1.85vw;
+        margin-bottom: 1.5vw;
+    }
+}
+
 // Ipad Landscape
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .S_NewArticles, .S_AllArticles, .S_Recommendations {
@@ -69,6 +100,12 @@
     .S_ChecklistPage {
         width: 56.93vw;
         gap: 2vw;
+    }
+
+    .S_Recommendations {
+        .O_ArticleCard1:nth-child(4) {
+            display: none;
+        }
     }
 
     .S_SectionHeader, .S_ArticleHeader {
@@ -95,6 +132,19 @@
     .S_ChecklistPage {
         width: 54.82vw;
         gap: 2.3vw;
+    }
+
+    .S_ArticleContent {
+        .O_ArticleTags {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    }
+
+    .S_Recommendations {
+        .O_ArticleCard1:nth-child(4) {
+            display: none;
+        }
     }
 
     .S_SectionHeader, .S_ArticleHeader {
@@ -138,5 +188,23 @@
         padding: 5.13vw 9.23vw;
         height: 100vh;
         gap: 3.85vw;
+    }
+
+    .S_ArticleContent {
+        width: 83.59vw;
+        height: fit-content;
+        margin: 2.116vw auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 2vw;
+
+        .Q_ImageFullWidth, .A_PhotoInRow, .Q_ImageFullWidth {
+            margin-top: 4vw;
+            margin-bottom: 3vw;
+        }
+    }
+
+    .O_ArticleHighlight {
+        margin-top: 8vw;
     }
 }

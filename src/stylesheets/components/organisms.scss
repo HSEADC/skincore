@@ -30,6 +30,7 @@
     background-color: var(--darkblue);
     flex-direction: column;
     padding: 2.78vw 5.56vw;
+    margin-top: 5.96vw;
 
     .FooterMenuContainer {
         display: inline-flex;
@@ -42,7 +43,7 @@
     width: 51.786vw;
     height: 13.76vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 1.32vw;
     row-gap: 1.32vw;
@@ -91,6 +92,10 @@
     column-gap: 1.32vw;
     row-gap: 1.32vw;
 
+    .ATP_7_1, .ATP_7_2, .ATP_7_3 {
+        display: inline-block;
+    }
+
     .ATP_1, .ATP_2, .ATP_3, .ATP_4_2, .ATP_5_2, .ATP_6_2, .ATP_7_3, .ATP_8_2 {
         grid-column-start: 5;
         grid-row-start: 3;
@@ -100,7 +105,7 @@
     .ATP_2, .ATP_3, .ATP_4_1 {
         grid-column-start: 2;
     }
-    .ATP4_1, .ATP_5_1, .ATP_6_1, .ATP_7_2, .ATP_8_1 {
+    .ATP4_1, .ATP_5_1, .ATP_6_1, .ATP_7_2, .ATP_8_1, .ATP_4_1 {
         grid-row-start: 2;
         grid-row-end: 3;
     }
@@ -109,7 +114,7 @@
         grid-column-start: 5;
     }
 
-    .ATP_8_1 {
+    .ATP_8_1, .ATP_7_1 {
         grid-column-start: 3;
     }
 
@@ -126,12 +131,16 @@
         grid-column-start: 4;
     }
 
+    .ATP_7_3 {
+        grid-column-start: 5;
+    }
+
     .ATP_8_3 {
         grid-row-start: 4;
         grid-row-end: 5;
     }
 
-    .CB3_1, .CB2_1, .CB3_2, .CB2_2, .CB2_3_1, .CB2_3_2, .CB2_4_1, .CB2_4_2, .CB3_5 {
+    .CB3_1, .CB2_1, .CB3_2, .CB2_2, .CB2_3_1, .CB2_3_2, .CB2_4_1, .CB2_4_2, .CB3_5, .CB3_7, .CB2_7 {
         display: inline-block;
         width: 100%;
         height: 100%;
@@ -228,6 +237,27 @@
         grid-column-start: 8;
         grid-column-end: 10;
     }
+
+    // Заголовки по статьям
+    .A1T1, .A1T2, .A1T3, .A2T1, .A2T2 {
+        display: inline-block;
+        line-height: 0.88;
+    }
+    .A1T1 {
+        grid-column-end: 6;
+    }
+    .A1T2 {
+        grid-column-end: 10;
+    }
+    .A1T3 {
+        grid-column-end: 9;
+    }
+    .A2T1 {
+        grid-column-end: 9;
+    }
+    .A2T2 {
+        grid-column-end: 10;
+    }
 }
 
 // Статья
@@ -300,6 +330,7 @@
         height: 14.286vw;
         border-top-left-radius: 1.59vw;
         border-top-right-radius: 1.59vw;
+        object-fit: cover;
     }
 }
 
@@ -460,8 +491,9 @@
         gap: 1.953vw;
     
         .HighlightImage {
-            width: 29.23vw;
+            width: 22.23vw;
             height: 22.36vw;
+            background-image: url("./images/basic/A_HighlightImageLandscape.png");
         }
     }
 
@@ -480,7 +512,7 @@
 
     .O_ArticleCard1 {
         width: 29.39vw;
-        height: 34.375vw;
+        height: 36.375vw;
         border-radius: 1.953vw;
         gap: 1.46vw;
     
@@ -586,7 +618,7 @@
             gap: 2.083vw;
         
             .HighlightImage {
-                width: 25.38vw;
+                width: 21.38vw;
                 height: 21.875vw;
                 background-image: url('./images/basic/A_HighlightImagePortrait.png');
             }
@@ -607,7 +639,7 @@
 
         .O_ArticleCard1 {
             width: 28.385vw;
-            height: 34.375vw;
+            height: 36.375vw;
             border-radius: 2.08vw;
             gap: 1.46vw;
         
@@ -683,6 +715,7 @@
     .O_Header {
         width: 100%;
         height: fit-content;
+        padding: 2vw 6vw;
         justify-content: space-between;
 
         .M_Header, .M_Search {
@@ -698,6 +731,7 @@
         width: 100vw;
         height: 87.18vw;
         padding: 7.18vw 8.2vw;
+        margin-top: 10vw;
     }
 
     // Сетки

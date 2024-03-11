@@ -1,3 +1,7 @@
+* {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 // Desktop
 
 // Иконки
@@ -84,6 +88,10 @@
     height: 6.28vw;
 }
 
+.Empty {
+    opacity: 0%;
+}
+
 .Q_2Circles {
     width: 13.76vw;
     height: 13.76vw;
@@ -95,28 +103,32 @@
 }
 
 //Картинки в статьях
+.Q_ImageTextWidth, .Q_ImageFullWidth, .Q_2ImagesFirst, .Q_2ImagesSecond {
+    object-fit: cover;
+}
+
 .Q_ImageTextWidth {
     width: 55.36vw;
     height: 35.52vw;
-    background-color: var(--pinky);
+    border-radius: 1vw;
 }
 
 .Q_2ImagesFirst {
     width: 21.36vw;
     height: 35.52vw;
-    background-color: var(--pinky);
+    border-radius: 1vw;
 }
 
 .Q_2ImagesSecond {
     width: 32.67vw;
     height: 35.52vw;
-    background-color: var(--pinky);
+    border-radius: 1vw;
 }
 
 .Q_ImageFullWidth {
     width: 100%;
-    height: 49.93vw;
-    background-color: var(--pinky);
+    // height: auto;
+    border-radius: 1vw;
 }
 
 // Ipad Landscape
@@ -159,21 +171,25 @@
     .Q_ImageTextWidth {
         width: 60.84vw;
         height: 36.62vw;
+        border-radius: 1vw;
     }
 
     .Q_2ImagesFirst {
         width: 21.58vw;
         height: 36.62vw;
+        border-radius: 1vw;
     }
 
     .Q_2ImagesSecond {
         width: 37.31vw;
         height: 36.62vw;
+        border-radius: 1vw;
     }
 
     .Q_ImageFullWidth {
         width: 100%;
-        height: 42vw;
+        // height: 100%;
+        border-radius: 1vw;
     }
 }
 
@@ -233,7 +249,7 @@
 
     .Q_ImageFullWidth {
         width: 100%;
-        height: 41.67vw;
+        // height: 100%;
     }
 }
 
@@ -242,8 +258,8 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     // Иконки
     .Q_Logo {
-        width: 24.36vw;
-        height: 5.38vw;
+        width: 35.75vw;
+        height: 8vw;
     }
 
     .Q_Arrow, .Q_Cancel, .Q_Burger, .Q_Search {
@@ -274,24 +290,32 @@
         height: 61.3vw;
     }
 
+    .Mobile {
+        display: none;
+    }
+
     //Картинки в статьях
     .Q_ImageTextWidth {
         width: 78.74vw;
         height: 42.27vw;
+        border-radius: 5vw;
     }
 
     .Q_2ImagesFirst {
         display: none;
+        border-radius: 5vw;
     }
 
     .Q_2ImagesSecond {
         width: 78.74vw;
         height: 42.27vw;
+        border-radius: 5vw;
     }
 
     .Q_ImageFullWidth {
         width: 100%;
-        height: 51.28vw;
+        // height: 100%;
+        border-radius: 5vw;
     }
 
     .CircleNone {
