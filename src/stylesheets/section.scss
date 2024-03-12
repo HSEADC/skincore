@@ -1,0 +1,48 @@
+// проверь себя
+body.activity {
+    .O_GridSection {
+        width: 28.97vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .None {
+        display: none;
+    }
+    .SectionGridContainer {
+        align-items: end;
+    }
+    .C_TruthOrMythCards {
+        margin-top: 1.856vw;
+    }
+    .S_SectionTest, .S_SectionTruthOrMyth {
+        width: fit-content;
+        margin: 0 auto;
+        .A_ArticleH2 {
+            margin: 2.45vw 0 1.856vw 0;
+        }
+    }
+}
+// Ipad Landscape
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+}
+
+// Ipad Portrait
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+
+}
+// Mobile
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body.activity{
+        .S_SectionTest, .S_SectionTruthOrMyth {
+            .A_ArticleH2{
+                width: 83.59vw;
+                margin: 6vw 0 5vw 0;
+            }
+        }
+        .C_TruthOrMythCards {
+            margin-top: 5vw;
+        }
+       
+        
+    } 
+}

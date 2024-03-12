@@ -156,6 +156,13 @@ module.exports = {
       template: './src/checklist/korean.html',
       filename: './checklist/korean.html'
     }),
+
+    // Tests
+    new HtmlWebpackPlugin({
+      template: './src/tests/typeofskin.html',
+      filename: './tests/typeofskin.html'
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {

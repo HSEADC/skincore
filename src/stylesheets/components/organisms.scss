@@ -31,6 +31,7 @@
     flex-direction: column;
     padding: 2.78vw 5.56vw;
     margin-top: 5.96vw;
+    margin-top: 5.96vw;
 
     .FooterMenuContainer {
         display: inline-flex;
@@ -355,6 +356,7 @@
     border-radius: 1.59vw;
 
     .TestCardImage {
+        object-fit: cover;
         width: 21.693vw;
         height: 22.09vw;
         border-top-right-radius: 1.59vw;
@@ -377,7 +379,7 @@
         cursor: pointer;
         position: absolute;
     }
-    .TruthOrMythInnerCard.Flipped {
+    .Flipped {
         transform: rotateY(180deg);
     }
 
@@ -538,6 +540,7 @@
         border-radius: 1.953vw;
     
         .TestCardImage {
+            object-position: 1vw;
             width: 20.215vw;
             height: 22.46vw;
             border-top-right-radius: 1.953vw;
@@ -548,7 +551,7 @@
     .O_TruthOrMythCard {
         width: 22.07vw;
         height: 23.05vw;
-        padding: 1.953vw;
+        // padding: 1.953vw;
         border-radius: 1.953vw;
     }
 
@@ -658,7 +661,7 @@
     }
 
     .O_TestCard {
-        width: 89.06vw;
+        width: 100%;
         height: 28.385vw;
         padding-left: 3.125vw;
         border-radius: 2.08vw;
@@ -674,7 +677,7 @@
     .O_TruthOrMythCard {
         width: 28.9vw;
         height: 28.65vw;
-        padding: 2.6vw;
+        // padding: 2.6vw;
         border-radius: 1.953vw;
     }
 
@@ -870,6 +873,7 @@
         border-radius: 4.1vw;
     
         .TestCardImage {
+            object-position: 1vw;
             width: 34.51vw;
             height: 42.051vw;
             border-top-right-radius: 4.1vw;

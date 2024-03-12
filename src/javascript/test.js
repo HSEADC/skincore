@@ -171,7 +171,7 @@ function result()
         const but = buttonHtml.replace('%next%', "Пройти другие тесты");
         button.innerHTML = but;
         button.addEventListener('click', () => {
-            window.location.href = 'index.html';
+            window.location.href = '../activity.html';
         })
     }
     

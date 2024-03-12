@@ -27,7 +27,18 @@
         background-image:url('./images/basic/Q_ArrowBlue.svg') ;
     }
 }
+.Q_DropInCircleM, .Q_DropInCircleK {
+    background-repeat: no-repeat;
+    background-size: contain;
 
+}
+.Q_DropInCircleM {
+    background-image: url('./images/basic/Q_DropInCircleM.svg');
+}
+.Q_DropInCircleK {
+    background-image: url('./images/basic/Q_DropInCircleK.svg');
+
+}
 .A_Primary-Button:hover .Q_Arrow {
     background-image: url('./images/basic/Q_ArrowHover.svg');
 }
@@ -55,6 +66,8 @@
 }
 .Q_Search:hover, .SearchActive {
     background-image: url('./images/basic/Q_SearchHover.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 // соц сети

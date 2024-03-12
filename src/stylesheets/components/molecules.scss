@@ -95,10 +95,12 @@
 }
 // header 
 .M_Header {
+    
     display: flex;
     width: 35.72vw;
     justify-content: space-between;
-    p {
+    a {
+        text-decoration: none;
         width: auto;
         color: var(--white);
         font-family: 'TT Firs Neue Regular';
@@ -108,11 +110,11 @@
 .M_TestCard {
     padding: 1.59vw 0;
     width: fit-content;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
     .A_TestCardH4 {
         margin-bottom: 0.8vw;
-    }
-    .A_TestCardBodyText {
-        margin-bottom: 5.14vw;
     }
 }
 .M_ArticleCard1, .M_ChecklistCard, .M_ArticleCard, .M_TruthOrMyth, .M_TestText {
@@ -171,7 +173,26 @@
         margin-top: 1vw;
     }
 }
-
+// Toggle switch
+.M_ToggleSwitch {
+    width: 10vw;
+    height: fit-content;
+    display: flex;
+    border-radius: 20vw;
+    border: 0.13vw solid var(--darkblue);
+    button:before{
+        background: transparent;
+    }
+    button:after{
+        background: var(--darkblue);
+    }
+    button:nth-of-type(1){
+        width: 10vw;
+    }
+    .A_ArticleBodyText {
+        width: fit-content;
+    }
+}
 
 // Ipad Landscape
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -235,9 +256,6 @@
         padding: 1.96vw 0;
         .A_TestCardH4 {
             margin-bottom: 0.7vw;
-        }
-        .A_TestCardBodyText {
-            margin-bottom: 3.93vw;
         }
     }
     .M_ArticleCard1 {
@@ -342,9 +360,6 @@
         .A_TestCardH4 {
             margin-bottom: 0.92vw;
         }
-        .A_TestCardBodyText {
-            margin-bottom: 4.44vw;
-        }
     }
     .M_ArticleCard1 {
         width: 28.91vw;
@@ -442,9 +457,6 @@
     // текст в карточках
     .M_TestCard {
         padding: 4.86vw 0;
-        .A_TestCardH4 {
-            margin-bottom: 10.23vw;
-        }
     }
     
     .M_ArticleCard1 {
