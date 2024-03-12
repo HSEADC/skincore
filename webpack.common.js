@@ -80,6 +80,13 @@ module.exports = {
         }
       },
       {
+        test: /\.webp/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[hash][ext][query]'
+        }
+      },
+      {
         test: /\.(ttf|otf|woff|woff2)$/i,
         loader: 'file-loader',
         options: {
@@ -145,6 +152,13 @@ module.exports = {
       template: './src/checklist/korean.html',
       filename: './checklist/korean.html'
     }),
+
+    // Tests
+    new HtmlWebpackPlugin({
+      template: './src/tests/typeofskin.html',
+      filename: './tests/typeofskin.html'
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {

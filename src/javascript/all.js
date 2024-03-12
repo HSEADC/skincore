@@ -1,6 +1,3 @@
-
-
-
 function tag() {
     let tags = document.querySelectorAll(".TagClickable");
     tags.forEach((tag) => {
@@ -37,12 +34,45 @@ function card() {
         
     })
 }
+// загрузить еще — тесты
+
+function loadMoreTest() {
+    // let testContainer = document.querySelector('.None');
+    let testContainer = document.querySelectorAll('.None');
+    let buttonTestMore = document.querySelector('.ButtonTestMore');
+    let count = 0;
+    buttonTestMore.addEventListener('click', () => {
+        if (count <2) {
+            testContainer[count].style.display = 'flex';
+            console.log(testContainer[count]);
+            count +=1;
+        }
+        if (count ==2){
+            buttonTestMore.style.display = 'none';
+        }
+    })
+    // buttonTestMore.addEventListener('click', () => {
+    //     testContainer.style.display = 'flex';
+    // })
+    // testContainer.forEach((test) => {
+    //     buttonTestMore.addEventListener('click', () => {
+    //         test.style.display = 'flex';
+    //     })
+    // })
+
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     tag()
     search()
     card()
+    loadMoreTest()
 })
+
+
+
+
+
 
 // function cards() {
 //     let card = document.querySelectorAll(".TruthOrMythInnerCard");

@@ -23,7 +23,18 @@
         background-image:url('./images/basic/Q_ArrowBlue.svg') ;
     }
 }
+.Q_DropInCircleM, .Q_DropInCircleK {
+    background-repeat: no-repeat;
+    background-size: contain;
 
+}
+.Q_DropInCircleM {
+    background-image: url('./images/basic/Q_DropInCircleM.svg');
+}
+.Q_DropInCircleK {
+    background-image: url('./images/basic/Q_DropInCircleK.svg');
+
+}
 .A_Primary-Button:hover .Q_Arrow {
     background-image: url('./images/basic/Q_ArrowHover.svg');
 }
@@ -51,6 +62,8 @@
 }
 .Q_Search:hover, .SearchActive {
     background-image: url('./images/basic/Q_SearchHover.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 // соц сети
@@ -242,8 +255,8 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     // Иконки
     .Q_Logo {
-        width: 24.36vw;
-        height: 5.38vw;
+        width: 35.75vw;
+        height: 8vw;
     }
 
     .Q_Arrow, .Q_Cancel, .Q_Burger, .Q_Search {
