@@ -144,7 +144,7 @@ img {
         grid-row-end: 5;
     }
 
-    .CB3_1, .CB2_1, .CB3_2, .CB2_2, .CB2_3_1, .CB2_3_2, .CB2_4_1, .CB2_4_2, .CB3_5, .CB3_7, .CB2_7 {
+    .CB3_1, .CB2_1, .CB3_2, .CB2_2, .CB2_3_1, .CB2_3_2, .CB2_4_1, .CB2_4_2, .CB3_5, .CB3_7, .CB2_7, .CB2_8_1, .CB2_8_2 {
         display: inline-block;
         width: 100%;
         height: 100%;
@@ -233,6 +233,8 @@ img {
     }
 
     .CB2_8_1 {
+        grid-row-start: 2;
+        grid-row-end: 4;
         grid-column-start: 1;
         grid-column-end: 3;
     }
@@ -243,7 +245,7 @@ img {
     }
 
     // Заголовки по статьям
-    .A1T1, .A1T2, .A1T3, .A2T1, .A2T2 {
+    .A1T1, .A1T2, .A1T3, .A2T1, .A2T2, .A10T1, .A10T2, .A10T3 {
         display: inline-block;
         line-height: 0.88;
     }
@@ -261,6 +263,15 @@ img {
     }
     .A2T2 {
         grid-column-end: 10;
+    }
+    .A10T1 {
+        grid-column-end: 8;
+    }
+    .A10T2 {
+        grid-column-end: 8;
+    }
+    .A10T3 {
+        grid-column-end: 13;
     }
 }
 

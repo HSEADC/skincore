@@ -149,6 +149,10 @@ module.exports = {
       filename: './article/spf.html'
     }),
     new HtmlWebpackPlugin({
+      template: './src/article/haleybieber.html',
+      filename: './article/haleybieber.html'
+    }),
+    new HtmlWebpackPlugin({
       template: './src/dictionary/serum.html',
       filename: './dictionary/serum.html'
     }),
@@ -164,7 +168,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/checklist/sensitiveskin.html',
       filename: './checklist/sensitiveskin.html'
-    }),
+    }), 
 
     // Tests
     new HtmlWebpackPlugin({
