@@ -5,6 +5,11 @@ body.test {
     //     margin-top: 2.32vw;
         
     // }
+    .SectionGridContainer {
+        .A_ArticleH2{
+            width: 30vw;
+        }
+    }
     .ABTLeft {
         margin: 2.32vw 0 2.32vw 0;
         width: 40.15vw;
@@ -46,6 +51,10 @@ body.test {
             margin: 5vw 0 5vw 0;
             width: 83.59vw;
         }
-        
+        .SectionGridContainer {
+            .A_ArticleH2{
+                width: fit-content;
+            }
+        }
     } 
 }

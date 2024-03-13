@@ -65,6 +65,7 @@
     background-image: url('./images/basic/Q_SearchDefault.svg');
 }
 .Q_Search:hover, .SearchActive {
+    background-color: var(--darkblue);
     background-image: url('./images/basic/Q_SearchHover.svg');
     background-size: contain;
     background-repeat: no-repeat;
