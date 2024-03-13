@@ -1,5 +1,7 @@
 // проверь себя
 body.activity {
+    background-color: var(--white);
+
     .O_GridSection {
         width: 28.97vw;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -19,6 +21,19 @@ body.activity {
         .A_ArticleH2 {
             margin: 2.45vw 0 1.856vw 0;
         }
+    }
+}
+body.checklist_section {
+    background-color: var(--white);
+    .O_GridSection {
+        width: 44.18vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .None {
+        display: none;
+    }
+    .SectionGridContainer {
+        align-items: end;
     }
 }
 // Ipad Landscape

@@ -116,6 +116,22 @@
     height: 21.36vw;
 }
 
+.Q_CB_M {
+    background-image: url('./images/basic/Q_CB_M.svg');
+}
+
+.Q_CB_J {
+    background-image: url('./images/basic/Q_CB_J.svg');
+}
+
+.Q_CB_K {
+    background-image: url('./images/basic/Q_CB_K.svg');
+}
+
+.Q_CB_U {
+    background-image: url('./images/basic/Q_CB_U.svg');
+}
+
 //Картинки в статьях
 .Q_ImageTextWidth, .Q_ImageFullWidth, .Q_2ImagesFirst, .Q_2ImagesSecond {
     object-fit: cover;

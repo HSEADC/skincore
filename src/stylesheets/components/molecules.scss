@@ -29,6 +29,13 @@
         font-size: 1.46vw;
         color: var(--white)
     }
+
+    a {
+        text-decoration: none;
+        font-family: 'TT Firs Neue Regular';
+        font-size: 1.46vw;
+        color: var(--white)
+    }
 }
 // .M_FooterSocialMedia {
 //     display: inline-flex;
@@ -53,6 +60,13 @@
         font-size: 1.46vw;
         font-family: 'TT Firs Neue Regular';
         color: var(--white);
+    }
+    a {
+        text-decoration: none;
+        width: auto;
+        font-size: 1.46vw;
+        color: var(--white);
+        font-family: 'TT Firs Neue Regular';
     }
     div {
         display: flex;
@@ -225,7 +239,7 @@
     }
 
     .M_TagsList {
-        width: 96vw;
+        width: 94.7vw;
     }
 
     .M_FooterDescription {

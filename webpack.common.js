@@ -139,7 +139,7 @@ module.exports = {
       template: './src/dictionary.html',
       filename: './dictionary.html'
     }),
-    // Article
+    // Articles
     new HtmlWebpackPlugin({
       template: './src/article/winterskincare.html',
       filename: './article/winterskincare.html'
@@ -152,9 +152,18 @@ module.exports = {
       template: './src/dictionary/serum.html',
       filename: './dictionary/serum.html'
     }),
+    // Checklists
     new HtmlWebpackPlugin({
       template: './src/checklist/korean.html',
       filename: './checklist/korean.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/checklist/basicset.html',
+      filename: './checklist/basicset.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/checklist/sensitiveskin.html',
+      filename: './checklist/sensitiveskin.html'
     }),
 
     // Tests
