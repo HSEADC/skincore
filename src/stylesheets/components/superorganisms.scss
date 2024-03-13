@@ -20,6 +20,7 @@
 }
 
 .S_ChecklistCards {
+    margin-top: 3vw;
     gap: 2vw;
 }
 
@@ -48,10 +49,12 @@
         justify-content: space-between;
         align-items: center;
         .A_ArticleH2 {
+            width: 36.5vw;
             color: var(--white);
         }
         .A_ArticleTitle {
-            width: auto;
+            max-width: 50vw;
+            // width: auto;
             height: fit-content;
         }
     }
@@ -81,6 +84,11 @@
     .Q_ImageTextWidth, .A_PhotoInRow, .Q_ImageFullWidth {
         margin-top: 1.85vw;
         margin-bottom: 1.5vw;
+    }
+
+    .S_ChecklistPage {
+        grid-column-start: 6;
+        grid-column-end: 23;
     }
 }
 
@@ -179,6 +187,7 @@
     }
 
     .S_ChecklistCards {
+        margin-top: 6vw;
         gap: 4vw;
     }
 
@@ -197,6 +206,7 @@
         height: fit-content;
         margin: 2.116vw auto;
         display: flex;
+        gap: 4vw;
         flex-direction: column;
         padding-top: 2vw;
 

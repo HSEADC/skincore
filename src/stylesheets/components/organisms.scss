@@ -2,6 +2,9 @@
 * {
     box-sizing: border-box;
 }
+img {
+    object-fit: cover;
+}
 
 .O_Header, .O_Footer, .O_TestCard, .O_TruthOrMythCard, .O_ChecklistCard {
     display: flex;
@@ -428,7 +431,6 @@
     .ChecklistCardImage {
         width: 17.59vw;
         height: 16vw;
-        background-color: var(--darkblue);
         border-top-right-radius: 1.59vw;
         border-bottom-right-radius: 1.59vw;
     }
@@ -493,7 +495,7 @@
         gap: 1.953vw;
     
         .HighlightImage {
-            width: 22.23vw;
+            width: 25.73vw;
             height: 22.36vw;
             background-image: url("./images/basic/A_HighlightImageLandscape.png");
         }
@@ -621,7 +623,7 @@
             gap: 2.083vw;
         
             .HighlightImage {
-                width: 21.38vw;
+                width: 25.38vw;
                 height: 21.875vw;
                 background-image: url('./images/basic/A_HighlightImagePortrait.png');
             }
@@ -718,7 +720,7 @@
     .O_Header {
         width: 100%;
         height: fit-content;
-        padding: 2vw 6vw;
+        padding: 2vw 4vw;
         justify-content: space-between;
 
         .M_Header, .M_Search {

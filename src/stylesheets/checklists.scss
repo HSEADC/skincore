@@ -5,124 +5,124 @@ body.checklist {
     left: 0;
     width:100%;
     height: 100%;
-    background-color: var(--darkblue);
+    background-color: var(--white);
     // background: url('images/maket.png');
     background-size: cover;
     opacity: 1; 
 
-    .whole_checklist_grid {
-        width: 100%;
-        height: 53.2vw;
-        background-color: var(--darkblue);
-        padding: 1vw 5.5vw 0vw 5.5vw;
-        .checklist_grid {
-            width: 100%;
-            height: 100%;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            gap: 0.7vw 0.85vw;
-        }
-        .left_content {
-            grid-column-start: 1;
-            grid-column-end: 7;
-            grid-row-start: 1;
-            grid-row-end: 8;
-        }
-        .word-header1, .word-text1 {
-            color: var(--white);
-        }
-        .word-header1 {
-            line-height: 110%;
-        }
-        .word-text1 {
-            margin-top: 1vw;
-        }
-        .check-list {
-            width: 40vw;
-            background-color: var(--pinky);
-            border-radius: 3vw;
-            padding: 2vw 2vw;
-            display: flex;
-            flex-direction: column;
+//     .whole_checklist_grid {
+//         width: 100%;
+//         height: 53.2vw;
+//         background-color: var(--darkblue);
+//         padding: 1vw 5.5vw 0vw 5.5vw;
+//         .checklist_grid {
+//             width: 100%;
+//             height: 100%;
+//             display: grid;
+//             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+//             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+//             gap: 0.7vw 0.85vw;
+//         }
+//         .left_content {
+//             grid-column-start: 1;
+//             grid-column-end: 7;
+//             grid-row-start: 1;
+//             grid-row-end: 8;
+//         }
+//         .word-header1, .word-text1 {
+//             color: var(--white);
+//         }
+//         .word-header1 {
+//             line-height: 110%;
+//         }
+//         .word-text1 {
+//             margin-top: 1vw;
+//         }
+//         .check-list {
+//             width: 40vw;
+//             background-color: var(--pinky);
+//             border-radius: 3vw;
+//             padding: 2vw 2vw;
+//             display: flex;
+//             flex-direction: column;
             
-            margin-top: 2.7vw;
-            .check-container {
-                display: flex;
-                flex-direction: column;
-                gap: 0.96vw;
-                label {
-                    color: var(--darkblue);
-                }
-            }
-        }
-    }
-    .check-circle-photo {
-        grid-column-start: 11;
-        grid-column-end: 13;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        background: url('images/checklist/korean1.png');
-        background-size: cover;
-    }
-    .check-circle-photo3 {
-        grid-column-start: 10;
-        grid-column-end: 12;
-        grid-row-start: 5;
-        grid-row-end: 7;
-        background: url('images/checklist/korean3.png');
-        background-size: cover;
-    }
-    .check-circle-photo2 {
-        grid-column-start: 7;
-        grid-column-end: 10;
-        grid-row-start: 2;
-        grid-row-end: 5;
-        background: url('images/checklist/korean2.png');
-        background-size: cover;
-    }
-}
-@media all and (max-width:414px) {
-    .web {
-        display: none;
-    }
-    body.checklist {
-        .footer {
-            margin-top: 0vw;
-        }
-        .whole_checklist_grid {
-            height: 218vw;
-            padding: 0 8vw;
-            .checklist_grid {
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-                gap: 2.2vw 1.8vw;
-                .left_content {
-                    grid-column-start: 1;
-                    grid-column-end: 5;
-                    grid-row-start: 3;
-                    grid-row-end: 11;
-                }
-                .check-list {
-                    width: 100%;
-                    padding: 4vw 4vw;
-                    margin-top: 8.7vw;
-                    .check-container {
-                        gap: 3vw;
-                    }
-                }
-            }
+//             margin-top: 2.7vw;
+//             .check-container {
+//                 display: flex;
+//                 flex-direction: column;
+//                 gap: 0.96vw;
+//                 label {
+//                     color: var(--darkblue);
+//                 }
+//             }
+//         }
+//     }
+//     .check-circle-photo {
+//         grid-column-start: 11;
+//         grid-column-end: 13;
+//         grid-row-start: 1;
+//         grid-row-end: 3;
+//         background: url('images/checklist/korean1.png');
+//         background-size: cover;
+//     }
+//     .check-circle-photo3 {
+//         grid-column-start: 10;
+//         grid-column-end: 12;
+//         grid-row-start: 5;
+//         grid-row-end: 7;
+//         background: url('images/checklist/korean3.png');
+//         background-size: cover;
+//     }
+//     .check-circle-photo2 {
+//         grid-column-start: 7;
+//         grid-column-end: 10;
+//         grid-row-start: 2;
+//         grid-row-end: 5;
+//         background: url('images/checklist/korean2.png');
+//         background-size: cover;
+//     }
+// }
+// @media all and (max-width:414px) {
+//     .web {
+//         display: none;
+//     }
+//     body.checklist {
+//         .footer {
+//             margin-top: 0vw;
+//         }
+//         .whole_checklist_grid {
+//             height: 218vw;
+//             padding: 0 8vw;
+//             .checklist_grid {
+//                 grid-template-columns: 1fr 1fr 1fr 1fr;
+//                 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+//                 gap: 2.2vw 1.8vw;
+//                 .left_content {
+//                     grid-column-start: 1;
+//                     grid-column-end: 5;
+//                     grid-row-start: 3;
+//                     grid-row-end: 11;
+//                 }
+//                 .check-list {
+//                     width: 100%;
+//                     padding: 4vw 4vw;
+//                     margin-top: 8.7vw;
+//                     .check-container {
+//                         gap: 3vw;
+//                     }
+//                 }
+//             }
 
-        }
-        .check-circle-photo3 {
-            grid-column-start: 3;
-            grid-column-end: 5;
-            grid-row-start: 1;
-            grid-row-end: 3;
-        }
-        .word-header1 {
-            width: 100%;
-        }
-    }
+//         }
+//         .check-circle-photo3 {
+//             grid-column-start: 3;
+//             grid-column-end: 5;
+//             grid-row-start: 1;
+//             grid-row-end: 3;
+//         }
+//         .word-header1 {
+//             width: 100%;
+//         }
+//     }
     
 }
