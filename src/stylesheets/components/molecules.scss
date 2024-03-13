@@ -175,22 +175,45 @@
 }
 // Toggle switch
 .M_ToggleSwitch {
-    width: 10vw;
+    width: fit-content;
     height: fit-content;
     display: flex;
     border-radius: 20vw;
+    position: relative;
     border: 0.13vw solid var(--darkblue);
-    button:before{
+    button{
         background: transparent;
+        border: none;
+        padding: 0.74vw 1.4vw;
+        border-radius: 20vw;
     }
-    button:after{
+    .ButtonActive{
+        position: absolute;
         background: var(--darkblue);
+        height: 100%;
+        border-radius: 20vw;
+        z-index: -1;
+        transition: .5s;
+        left: 0vw;
     }
-    button:nth-of-type(1){
-        width: 10vw;
+    .BA_1 {
+        width: 5.23vw;
+        left: 0vw;
+    }
+    .BA_2 {
+        width: 9.6vw;
+        left: 5.3vw;
+    }
+    .BA_3 {
+        width: 9.34vw;
+        left: 14.9vw;
     }
     .A_ArticleBodyText {
         width: fit-content;
+    }
+    .DarkBlue {
+        color: var(--white);
+        transition: .7s;
     }
 }
 
@@ -290,6 +313,28 @@
             margin: 2.5vw 0 2.5vw 0;
         }
     }
+    // Toggle Switch
+    .M_ToggleSwitch{
+        button{
+            background: transparent;
+            border: none;
+            padding: 0.88vw 1.4vw;
+            border-radius: 20vw;
+        }
+        .BA_1 {
+            width: 5.23vw;
+            left: 0vw;
+        }
+        .BA_2 {
+            width: 9.6vw;
+            left: 5.3vw;
+        }
+        .BA_3 {
+            width: 9.34vw;
+            left: 14.9vw;
+        }
+    }
+    
 }
 
 // Ipad Portrait
@@ -393,6 +438,27 @@
         }
         .A_Response {
             margin-top: 1.5vw;
+        }
+    }
+    // Toggle Switch
+    .M_ToggleSwitch{
+        button{
+            background: transparent;
+            border: none;
+            padding: 0.88vw 1.4vw;
+            border-radius: 20vw;
+        }
+        .BA_1 {
+            width: 6.1vw;
+            left: 0vw;
+        }
+        .BA_2 {
+            width: 12vw;
+            left: 6.1vw;
+        }
+        .BA_3 {
+            width: 11.5vw;
+            left: 18.1vw;
         }
     }
 }

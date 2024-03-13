@@ -27,12 +27,12 @@ function search() {
 
 function card() {
     let cards = document.querySelectorAll(".TruthOrMythInnerCard");
-    cards.forEach((card) => {
-        card.addEventListener('click', () => {
-            card.classList.toggle("Flipped");
+    cards.forEach((item) => {
+        item.addEventListener('click', () => {
+            item.classList.toggle("Flipped");
         })
-        
     })
+    
 }
 // загрузить еще — тесты
 
@@ -44,21 +44,12 @@ function loadMoreTest() {
     buttonTestMore.addEventListener('click', () => {
         if (count <2) {
             testContainer[count].style.display = 'flex';
-            console.log(testContainer[count]);
             count +=1;
         }
         if (count ==2){
             buttonTestMore.style.display = 'none';
         }
     })
-    // buttonTestMore.addEventListener('click', () => {
-    //     testContainer.style.display = 'flex';
-    // })
-    // testContainer.forEach((test) => {
-    //     buttonTestMore.addEventListener('click', () => {
-    //         test.style.display = 'flex';
-    //     })
-    // })
 
 }
 
@@ -67,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     search()
     card()
     loadMoreTest()
+    
 })
 
 
