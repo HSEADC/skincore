@@ -181,7 +181,7 @@
     width: 68.66vw;
     height: 32.35vw;
     .A_ArticleH3 {
-        margin: 2vw 0 2vw 0;
+        margin: 1.5vw 0 1.5vw 0;
     }
     .A_Response{
         margin-top: 1vw;
@@ -224,6 +224,54 @@
     }
     .A_ArticleBodyText {
         width: fit-content;
+    }
+    .DarkBlue {
+        color: var(--white);
+        transition: .7s;
+    }
+}
+
+// Toggle switch skin
+.M_ToggleSwitchSkin {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    border-radius: 20vw;
+    position: relative;
+    border: 0.13vw solid var(--darkblue);
+    button{
+        background: transparent;
+        border: none;
+        padding: 0.74vw 1.4vw;
+        border-radius: 20vw;
+    }
+    .ButtonActiveSkin{
+        position: absolute;
+        background: var(--darkblue);
+        height: 100%;
+        border-radius: 20vw;
+        z-index: -1;
+        transition: .5s;
+        left: 0vw;
+    }
+    .BAS_1 {
+        
+        width: 10.8vw;
+        left: 0vw;
+    }
+    .BAS_2 {
+        width: 12.2vw;
+        left: 10.8vw;
+    }
+    .BAS_3 {
+        width: 17.57vw;
+        left: 23vw;
+    }
+    .A_ArticleBodyText {
+        width: fit-content;
+    }
+    .A_ArticleBodyText::after {
+       content: ' кожа';
     }
     .DarkBlue {
         color: var(--white);
@@ -324,11 +372,12 @@
         width: 66.61vw;
         height: 35.55vw;
         .A_ArticleH3 {
-            margin: 2.5vw 0 2.5vw 0;
+            margin: 1.5vw 0 1.5vw 0;
         }
     }
     // Toggle Switch
     .M_ToggleSwitch{
+        border: 0.18vw solid var(--darkblue);
         button{
             background: transparent;
             border: none;
@@ -346,6 +395,30 @@
         .BA_3 {
             width: 9.34vw;
             left: 14.9vw;
+        }
+    }
+    .M_ToggleSwitchSkin{
+        border: 0.18vw solid var(--darkblue);
+        button{
+            background: transparent;
+            border: none;
+            padding: 0.88vw 1.4vw;
+            border-radius: 20vw;
+        }
+        .BAS_1 {
+            width: 6.9vw;
+            left: 0vw;
+        }
+        .BAS_2 {
+            width: 8vw;
+            left: 7vw;
+        }
+        .BAS_3 {
+            width: 13.8vw;
+            left: 15vw;
+        }
+        .A_ArticleBodyText::after {
+            content: none;
         }
     }
     
@@ -435,7 +508,7 @@
         }
     }
     .M_TruthOrMyth {
-        width: 23.69vw;
+        width: 26vw;
         gap: 1.3vw;
     }
 
@@ -446,16 +519,17 @@
     // тесты
     .M_TestText {
         width: 66.61vw;
-        height: 45vw;
+        height: 45.5vw;
         .A_ArticleH3 {
-            margin: 2.5vw 0 2.5vw 0;
+            margin: 1.5vw 0 1.5vw 0;
         }
         .A_Response {
-            margin-top: 1.5vw;
+            margin-top: 1vw;
         }
     }
     // Toggle Switch
     .M_ToggleSwitch{
+        border: 0.2vw solid var(--darkblue);
         button{
             background: transparent;
             border: none;
@@ -475,10 +549,34 @@
             left: 18.1vw;
         }
     }
+    .M_ToggleSwitchSkin{
+        border: 0.2vw solid var(--darkblue);
+        button{
+            background: transparent;
+            border: none;
+            padding: 0.88vw 1.4vw;
+            border-radius: 20vw;
+        }
+        .BAS_1 {
+            width: 8vw;
+            left: 0vw;
+        }
+        .BAS_2 {
+            width: 10.2vw;
+            left: 8vw;
+        }
+        .BAS_3 {
+            width: 17.4vw;
+            left: 18.2vw;
+        }
+        .A_ArticleBodyText::after {
+            content: none;
+        }
+    }
 }
 
 // Mobile
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
     .M_TagsArticle {
         gap: 2vw;
         width: 78.75vw;
@@ -572,6 +670,48 @@
         }
         .A_Response {
             margin-top: 2vw;
+        }
+    }
+    // Toggle Switch
+    .M_ToggleSwitch{
+        border: 0.4vw solid var(--darkblue);
+        button{
+            padding: 1.64vw 6.05vw;
+            border-radius: 20vw;
+        }
+        .BA_1 {
+            width: 18.6vw;
+            left: 0vw;
+        }
+        .BA_2 {
+            width: 30vw;
+            left: 18.7vw;
+        }
+        .BA_3 {
+            width: 29.3vw;
+            left: 48.8vw;
+        }
+    }
+    .M_ToggleSwitchSkin{
+        border: 0.4vw solid var(--darkblue);
+        button{
+            padding: 1.64vw 4.08vw;
+            border-radius: 20vw;
+        }
+        .BAS_1 {
+            width: 18.6vw;
+            left: 0vw;
+        }
+        .BAS_2 {
+            width: 22.5vw;
+            left: 18.7vw;
+        }
+        .BAS_3 {
+            width: 37vw;
+            left: 41.2vw;
+        }
+        .A_ArticleBodyText::after {
+            content: none;
         }
     }
 }

@@ -93,11 +93,12 @@
 .A_Response {
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 1.058vw;
 }
 
 .A_ResponseText {
+    margin-top: 0.4vw;
+    width: 90%;
     cursor: pointer;
     width: 90%;
     font-family: 'TT Firs Neue Regular';
@@ -280,6 +281,7 @@ input[type="checkbox"]:checked{
     }
     // тесты
     .A_ResponseText {
+        margin-top: 0.5vw;
         font-size: 1.76vw;
     }
     input[type=radio], input[type=checkbox] {
@@ -400,6 +402,7 @@ input[type="checkbox"]:checked{
     }
     // тесты
     .A_ResponseText {
+        margin-top: 0.9vw;
         font-size: 2.35vw;
     }
     input[type=radio], input[type=checkbox] {
@@ -477,7 +480,7 @@ input[type="checkbox"]:checked{
 }
 
 // Mobile
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
 // кнопки
     .A_PrimaryButton {
         padding: 1.1vw 1.5vw 1.1vw 4.5vw;
@@ -485,10 +488,10 @@ input[type="checkbox"]:checked{
         gap: 3.76vw;
     }
     .PBBlue {
-        border: 0.15vw solid var(--darkblue);
+        border: 0.4vw solid var(--darkblue);
     }
     .PBPink {
-        border: 0.15vw solid var(--pinky);
+        border: 0.4vw solid var(--pinky);
     }
     .A_SecondaryButton {
         padding: 1.82vw 0vw;
@@ -522,6 +525,7 @@ input[type="checkbox"]:checked{
     // тесты
     .A_ResponseText {
         font-size: 3.87vw;
+        margin-top: 1.5vw;
     }
     input[type=checkbox] {
         border-radius: 1vw;
