@@ -45,7 +45,7 @@ body.test {
 
 }
 // Mobile
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
     body.test{
         .ABTLeft {
             margin: 5vw 0 5vw 0;

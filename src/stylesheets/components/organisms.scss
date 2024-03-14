@@ -456,7 +456,15 @@
     justify-content: space-between;
     border-radius: 1.59vw;
 }
-
+// Toggle Switch Skin
+.O_ToggleSwitchSkin {
+    .ABT {
+        margin-top: 1.59vw;
+    }
+    .None {
+        display: none;
+    }
+}
 // Ipad Landscape
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 
@@ -712,7 +720,7 @@
     }
 }
 // Mobile
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
 
     // Менюбар + Подвал
     .O_Header {
@@ -884,7 +892,7 @@
     .O_TruthOrMythCard {
         width: 51.79vw;
         height: 54.615vw;
-        padding: 5.128vw;
+        // padding: 5.128vw;
         border-radius: 4.1vw;
     }
 
@@ -916,5 +924,11 @@
         height: 24.62vw;
         padding: 4.1vw;
         border-radius: 4.1vw;
+    }
+    // Toggle Switch Skin
+    .O_ToggleSwitchSkin {
+        .ABT {
+            margin-top: 2vw;
+        }
     }
 }

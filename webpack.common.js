@@ -149,9 +149,16 @@ module.exports = {
       filename: './article/spf.html'
     }),
     new HtmlWebpackPlugin({
+      template: './src/article/homemaderecipes.html',
+      filename: './article/homemaderecipes.html'
+    }),
+    // Dictionary
+    new HtmlWebpackPlugin({
       template: './src/dictionary/serum.html',
       filename: './dictionary/serum.html'
     }),
+    
+    // Checklists
     new HtmlWebpackPlugin({
       template: './src/checklist/korean.html',
       filename: './checklist/korean.html'
