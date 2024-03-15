@@ -156,6 +156,14 @@ module.exports = {
       template: './src/article/homemaderecipes.html',
       filename: './article/homemaderecipes.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/article/undereye.html',
+      filename: './article/undereye.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/article/acneprevention.html',
+      filename: './article/acneprevention.html'
+    }),
     // Dictionary
     new HtmlWebpackPlugin({
       template: './src/dictionary/serum.html',
