@@ -169,8 +169,8 @@ module.exports = {
       filename: './article/airpollution.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/article/formula.html',
-      filename: './article/formula.html'
+      template: './src/article/skinaging.html',
+      filename: './article/skinaging.html'
     }),
     // Dictionary
     new HtmlWebpackPlugin({
