@@ -245,7 +245,7 @@ img {
     }
 
     // Заголовки по статьям
-    .A1T1, .A1T2, .A1T3, .A2T1, .A2T2, .A10T1, .A10T2, .A10T3, .A5T2 {
+    .A1T1, .A1T2, .A1T3, .A2T1, .A2T2, .A10T1, .A10T2, .A10T3, .A5T2, .A6T1 {
         display: inline-block;
         line-height: 0.88;
     }
@@ -269,6 +269,9 @@ img {
     }
     .A5T2 {
         grid-column-end: 11;
+    }
+    .A6T1 {
+        grid-column-end: 5;
     }
 }
 

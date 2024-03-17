@@ -188,6 +188,10 @@ input[type="checkbox"]:checked{
 .A_ArticleBodyText, .A_TestCardBodyText, .A_ArticleCardP, .A_TruthOrMythCardP {
     font-size: 1.46vw;
     width: 55.292vw;
+
+    a {
+        color: var(--darkblue)
+    }
 }
 .A_TestCardH4, .A_TestCardBodyText, .A_ChecklistCardH4, .A_ArticleCardH3, .A_ArticleCardH4, .A_TruthOrMythCardH4 {
     line-height: 98%;

@@ -164,6 +164,14 @@ module.exports = {
       template: './src/article/acneprevention.html',
       filename: './article/acneprevention.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/article/airpollution.html',
+      filename: './article/airpollution.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/article/formula.html',
+      filename: './article/formula.html'
+    }),
     // Dictionary
     new HtmlWebpackPlugin({
       template: './src/dictionary/serum.html',
