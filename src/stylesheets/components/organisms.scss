@@ -918,10 +918,23 @@ img {
     }
 
     .O_TruthOrMythCard {
-        width: 51.79vw;
+        // width: 51.79vw;
+        width: fit-content;
         height: 54.615vw;
         // padding: 5.128vw;
         border-radius: 4.1vw;
+
+        .TruthOrMythInnerCard {
+            // width: 51.79vw;
+            width: fit-content;
+        }
+        .CardFace {
+            // width: 51.79vw;
+            width: fit-content;
+            height: 54.615vw;
+            border-radius: 4.1vw;
+            padding: 5.128vw;
+        }
     }
 
     //Чек-лист
