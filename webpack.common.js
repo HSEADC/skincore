@@ -189,7 +189,18 @@ module.exports = {
       template: './src/dictionary/serum.html',
       filename: './dictionary/serum.html'
     }),
-    
+    new HtmlWebpackPlugin({
+      template: './src/dictionary/niacinamide.html',
+      filename: './dictionary/niacinamide.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/dictionary/retinol.html',
+      filename: './dictionary/retinol.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/dictionary/lacticacid.html',
+      filename: './dictionary/lacticacid.html'
+    }),
     // Checklists
     new HtmlWebpackPlugin({
       template: './src/checklist/korean.html',

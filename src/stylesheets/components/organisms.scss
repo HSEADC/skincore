@@ -389,8 +389,10 @@ img {
 // Правда или миф
 .O_TruthOrMythCard {
     width: 21.36vw;
+    // width: fit-content;
     height: 20.83vw;
     position: relative;
+    box-sizing: border-box;
 
     .TruthOrMythInnerCard {
         width: 100%;
@@ -918,18 +920,15 @@ img {
     }
 
     .O_TruthOrMythCard {
-        // width: 51.79vw;
-        width: fit-content;
+        background-color: var(--basicblue);
+        width: 51.79vw;
+        // width: fit-content;
         height: 54.615vw;
         // padding: 5.128vw;
         border-radius: 4.1vw;
 
-        .TruthOrMythInnerCard {
-            // width: 51.79vw;
-            width: fit-content;
-        }
         .CardFace {
-            // width: 51.79vw;
+            width: 100%;
             width: fit-content;
             height: 54.615vw;
             border-radius: 4.1vw;
