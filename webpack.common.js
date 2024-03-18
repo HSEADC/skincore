@@ -172,6 +172,18 @@ module.exports = {
       template: './src/article/skinaging.html',
       filename: './article/skinaging.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/article/formula.html',
+      filename: './article/formula.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/article/fastcare.html',
+      filename: './article/fastcare.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/article/devices.html',
+      filename: './article/devices.html'
+    }),
     // Dictionary
     new HtmlWebpackPlugin({
       template: './src/dictionary/serum.html',

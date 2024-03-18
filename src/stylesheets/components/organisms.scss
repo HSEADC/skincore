@@ -131,6 +131,10 @@ img {
         grid-row-end: 2;
     }
 
+    .ATP_8_3 {
+        grid-column-start: 6;
+    }
+
     .ATP_7_2 {
         grid-column-start: 4;
     }
@@ -240,12 +244,12 @@ img {
     }
 
     .CB2_8_2 {
-        grid-column-start: 8;
-        grid-column-end: 10;
+        grid-column-start: 10;
+        grid-column-end: 12;
     }
 
     // Заголовки по статьям
-    .A1T1, .A1T2, .A1T3, .A2T1, .A2T2, .A10T1, .A10T2, .A10T3, .A5T2, .A6T1 {
+    .A1T1, .A1T2, .A1T3, .A2T1, .A2T2, .A10T1, .A10T2, .A10T3, .A4T3, .A5T2, .A6T1, .A7T1 {
         display: inline-block;
         line-height: 0.88;
     }
@@ -272,6 +276,9 @@ img {
     }
     .A6T1 {
         grid-column-end: 5;
+    }
+    .A7T1 {
+        grid-column-end: 7;
     }
 }
 
