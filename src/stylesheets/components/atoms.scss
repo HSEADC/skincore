@@ -53,7 +53,7 @@
 }
 // теги
 .A_Tag {
-    width: fit-content;
+    min-width: fit-content;
     display: inline-block;
     padding: 0.364vw 0.863vw;
     font-size: 1.192vw;
@@ -62,7 +62,7 @@
     border: 0.13vw solid var(--white);
     color: var(--white);
 }
-.TagBlue {
+.ATagBlue, .TagBlue {
     border: 0.13vw solid var(--darkblue);
     color: var(--darkblue);
 }
@@ -70,7 +70,7 @@
     border: 0.13vw solid var(--pinky);
     color: var(--pinky);
 }
-.TagActive {
+.Active {
     background-color: var(--darkblue);
     color: var(--white);
 }
@@ -260,13 +260,13 @@ input[type="checkbox"]:checked{
         padding: 0.54vw 1.03vw;
         font-size: 1.37vw;
     }
-    .TagClickable {
+    .ATagClickable {
         cursor: pointer;
     }
     .TagWhite {
         border: 0.127vw solid var(--white);
     }
-    .TagBlue {
+    .ATagBlue, .TagBlue {
         border: 0.127vw solid var(--darkblue);
     }
     .TagPink {
@@ -376,7 +376,7 @@ input[type="checkbox"]:checked{
         border: 0.15vw solid var(--pinky);
     }
     .A_SecondaryButton {
-        padding: 0.91vw 0vw;
+        padding: 0.6vw 1.2vw;
         font-size: 1.83vw;
     }
 // теги 
@@ -387,7 +387,7 @@ input[type="checkbox"]:checked{
     .TagWhite {
         border: 0.17vw solid var(--white);
     }
-    .TagBlue {
+    .ATagBlue, .TagBlue {
         border: 0.17vw solid var(--darkblue);
     }
     .TagPink {
@@ -491,6 +491,9 @@ input[type="checkbox"]:checked{
         font-size: 4.35vw;
         gap: 3.76vw;
     }
+    .A_ButtonLoad {
+        margin-top: 5vw;
+    }
     .PBBlue {
         border: 0.4vw solid var(--darkblue);
     }
@@ -509,7 +512,7 @@ input[type="checkbox"]:checked{
     .TagWhite {
         border: 0.3vw solid var(--white);
     }
-    .TagBlue {
+    .ATagBlue, .TagBlue {
         border: 0.3vw solid var(--darkblue);
     }
     .TagPink {
