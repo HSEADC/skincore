@@ -7,6 +7,7 @@
     font-family: 'TT Firs Neue Regular';
     font-size: 1.59vw;
     align-items: center;
+    text-decoration: none;
     cursor: pointer;
 }
 .A_PrimaryButton {
@@ -54,6 +55,7 @@
 // теги
 .A_Tag {
     min-width: fit-content;
+    width: fit-content;
     display: inline-block;
     padding: 0.364vw 0.863vw;
     font-size: 1.192vw;
@@ -151,6 +153,7 @@ input[type="checkbox"]:checked{
 // Загрузить еще
 .A_ButtonLoad {
     margin-top: 2vw;
+    text-decoration: none;
     cursor: pointer;
     font-family: 'TT Firs Neue Regular';
     font-size: 1.59vw;
