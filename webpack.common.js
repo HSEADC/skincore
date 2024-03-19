@@ -9,6 +9,9 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
+    all: './src/javascript/all.js',
+    test: './src/javascript/test.js',
+    toggleSwitch: './src/javascript/toggleswitch.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -116,7 +119,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/components.html',
-      filename: './components.html'
+      filename: './components.html',
+      chunks: ['index', 'toggleSwitch']
     }),
     // Section
     new HtmlWebpackPlugin({
@@ -191,15 +195,18 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/dictionary/niacinamide.html',
-      filename: './dictionary/niacinamide.html'
+      filename: './dictionary/niacinamide.html',
+      chunks: ['index', 'toggleSwitch']
     }),
     new HtmlWebpackPlugin({
       template: './src/dictionary/retinol.html',
-      filename: './dictionary/retinol.html'
+      filename: './dictionary/retinol.html',
+      chunks: ['index', 'toggleSwitch']
     }),
     new HtmlWebpackPlugin({
       template: './src/dictionary/lacticacid.html',
-      filename: './dictionary/lacticacid.html'
+      filename: './dictionary/lacticacid.html',
+      chunks: ['index', 'toggleSwitch']
     }),
     // Checklists
     new HtmlWebpackPlugin({

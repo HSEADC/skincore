@@ -73,7 +73,7 @@
         grid-column-start: 1;
         grid-column-end: 6;
     }
-    .C_ArticleText, .Q_ImageTextWidth, .A_PhotoInRow {
+    .C_ArticleText, .Q_ImageTextWidth, .A_PhotoInRow, .O_ToggleSwitchSkin {
         grid-column-start: 7;
         grid-column-end: 25;
     }
@@ -84,6 +84,10 @@
     .Q_ImageTextWidth, .A_PhotoInRow, .Q_ImageFullWidth {
         margin-top: 1.85vw;
         margin-bottom: 1.5vw;
+    }
+
+    .O_ToggleSwitchSkin {
+        margin-top: 1.85vw;
     }
 
     .S_ChecklistPage {
