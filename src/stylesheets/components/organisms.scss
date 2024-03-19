@@ -313,11 +313,10 @@ img {
     display: flex;
     flex-direction: row;
     gap: 2.646vw;
-    background-color: var(--darkblue);
+    background-color: var(--basicblue);
     border-radius: 1.59vw;
 
     .ArticleCardPicture1 {
-        background-color: var(--pinky);
         width: 38.03vw;
         height: 24.14vw;
         border-top-left-radius: 1.59vw;
@@ -399,7 +398,7 @@ img {
 
     .CardFace {
         position: absolute;
-        width: 100%;
+        min-width: 100%;
         height: 100%;
         background-color: var(--basicblue);
         -webkit-backface-visibility: hidden;
@@ -414,13 +413,13 @@ img {
 
     .FrontFace {
         position: absolute;
-        width: 100%;
+        min-width: 100%;
         height: 100%;
     }
     
     .BackFace {
         position: absolute;
-        width: 100%;
+        min-width: 100%;
         height: 100%;
         transform: rotateY(180deg);
     }
@@ -608,7 +607,9 @@ img {
 }
 // Ipad Portrait
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-
+.PortraitNone {
+        display: none;
+    }
     // Менюбар + Подвал
     .O_Header {
         width: 89.06vw;
@@ -663,7 +664,7 @@ img {
 
         .O_ArticleCard1 {
             width: 28.385vw;
-            height: 36.375vw;
+            height: 38.375vw;
             border-radius: 2.08vw;
             gap: 1.46vw;
         
@@ -739,7 +740,7 @@ img {
     .O_Header {
         width: 100%;
         height: fit-content;
-        padding: 2vw 4vw;
+        padding: 2vw 8vw;
         justify-content: space-between;
 
         .M_Header, .M_Search {
@@ -762,7 +763,7 @@ img {
     .O_GridSection {
         display: none;
     }
-
+    
     .O_ArticleGridSection {
         width: 81vw;
         display: grid;
@@ -903,7 +904,7 @@ img {
     }
 
     .O_TruthOrMythCard {
-        width: 51.79vw;
+        min-width: 45.8vw;
         height: 54.615vw;
         // padding: 5.128vw;
         border-radius: 4.1vw;
@@ -943,5 +944,9 @@ img {
         .ABT {
             margin-top: 2vw;
         }
+    }
+    .O_TruthOrMythCard .CardFace { 
+        border-radius: 3vw;
+        padding: 2.5vw;
     }
 }
