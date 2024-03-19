@@ -1,3 +1,172 @@
+body.index {
+  .S_ArticleHeader {
+    .O_ArticleGridSection {
+      width: 89.42vw;
+      height: 51.9vw;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  
+      .MainTitle_1 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 10;
+        z-index: 2;
+      }
+  
+      .MainTitle_2 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 4;
+        grid-column-end: 12;
+      }
+  
+      .MainTitle_3 {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 3;
+        grid-column-end: 12;
+        z-index: 6;
+      }
+    }
+    .A_PrimaryButton {
+      position: absolute;
+      margin: 40.7vw auto;
+    }
+  
+    .Q_2Circles, .Q_3Circles {
+      position: absolute;
+    }
+    .CB2_main_1 {
+      top: 16.07vw;
+      left: 5.62vw;
+      z-index: 1;
+      animation: circle-2 linear 1.4s;
+    }
+    .CB2_main_2 {
+      top: 8.6vw;
+      left: 73.28vw;
+      animation: circle-1 linear 1.4s;
+    }
+    .CB2_main_3 {
+      top: 39.62vw;
+      left: 20.63vw;
+      animation: circle-4 linear 1.4s;
+    }
+    .CB3_main_1 {
+      top: 33.15vw;
+      left: 77.28vw;
+      z-index: 3;      
+      animation: circle-3 linear 1.4s;
+    }
+
+    @keyframes circle-1 {
+      0% {
+        top: -14vw;
+        left: 64vw;
+        transform: scale(0.8);
+      }
+      100% {
+        top: 8.6vw;
+        left: 73.28vw;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes circle-2 {
+      0% {
+        top: 15vw;
+        left: -14vw;
+        transform: scale(0.8);
+      }
+      100% {
+        top: 16.07vw;
+        left: 5.62vw;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes circle-3 {
+      0% {
+        top: 22vw;
+        left: 102vw;
+        transform: scale(0.8);
+      }
+      100% {
+        top: 33.15vw;
+        left: 77.28vw;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes circle-4 {
+      0% {
+        top: 39vw;
+        left: -15vw;
+        transform: scale(0.8);
+      }
+      100% {
+        top: 39.62vw;
+        left: 20.63vw;
+        transform: scale(1);
+      }
+    }
+
+    .A_Tag {
+      position: absolute;
+    }
+    .MainTag1 {
+      top: 10.45vw;
+      left: 9.33vw;
+    }
+    .MainTag2 {
+      top: 11.77vw;
+      left: 57.8vw;
+    }
+    .MainTag3 {
+      top: 35.92vw;
+      left: 9.33vw;
+    }
+    .MainTag4 {
+      top: 51.92vw;
+      left: 69.7vw;
+    }
+  }
+  
+  .S_MainValues {
+    width: 100%;
+    height: 48.54vw;
+    padding:  9vw 5.56vw;
+    background-image: url('/src/images/main/main_background1.webp');
+
+    .ValuesGrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      column-gap: 1.32vw;
+    }
+    .A_ArticleTitle {
+      color: var(--darkblue);
+    }
+
+    .TV1 {
+      grid-column-start: 1;
+      grid-column-end: 10;
+    }
+    .TV2 {
+      grid-column-start: 5;
+      grid-column-end: 12;
+    }
+    .TV3 {
+      grid-column-start: 3;
+      grid-column-end: 13;
+    }
+    .A_ArticleBodyText {
+      margin-top: 3vw;
+      grid-column-start: 5;
+      grid-column-end: 11;
+    }
+  }
+}
 .names{
   background-color: var(--darkblue);
   width: 100%;
@@ -8,8 +177,8 @@
     color: var(--white);
     margin-right: 13.9vw;
   }
-  
 }
+
 .adc {
   background-color: var(--darkblue);
   width: 100%;
@@ -251,58 +420,6 @@ body.index {
         left: 21vw;
         background-image: url('images/circle-4.png');
         animation: circle-4 linear 1.4s;
-      }
-
-      @keyframes circle-1 {
-        0% {
-          top: -14vw;
-          left: 64vw;
-          transform: scale(0.8);
-        }
-        100% {
-          top: 7vw;
-          left: 74vw;
-          transform: scale(1);
-        }
-      }
-
-      @keyframes circle-2 {
-        0% {
-          top: 15vw;
-          left: -14vw;
-          transform: scale(0.8);
-        }
-        100% {
-          top: 16vw;
-          left: 2vw;
-          transform: scale(1);
-        }
-      }
-
-      @keyframes circle-3 {
-        0% {
-          top: 22vw;
-          left: 102vw;
-          transform: scale(0.8);
-        }
-        100% {
-          top: 29vw;
-          left: 76vw;
-          transform: scale(1);
-        }
-      }
-
-      @keyframes circle-4 {
-        0% {
-          top: 39vw;
-          left: -15vw;
-          transform: scale(0.8);
-        }
-        100% {
-          top: 37vw;
-          left: 21vw;
-          transform: scale(1);
-        }
       }
 
       .bubble3 {
