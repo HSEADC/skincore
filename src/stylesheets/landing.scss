@@ -1,0 +1,352 @@
+* {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+body.landing {
+    background-color: var(--white);   
+    
+    .O_Form {
+        width: 89.42vw;
+        margin: 0 auto;
+        height: fit-content;
+        background-color: var(--darkblue);
+        border-radius: 1.59vw;
+        padding: 2.12vw;
+        margin-top: 6vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+
+        .A_ArticleH3 {
+            color: var(--white)
+        }
+
+        .InputBtn {
+        display: flex;
+        flex-direction: row;
+
+            input {
+            width: 29vw;
+            background-color: var(--darkblue);
+            border: 0.2vw var(--white) solid; 
+            border-radius: 40vw;
+            padding: 1vw;
+            padding-left: 2vw;
+            font-family: 'TT Firs Neue Regular';
+            font-size: 1.3vw;
+            color: var(--white);
+            }
+            
+            .A_PrimaryButton {
+            margin-left: 3.44vw;
+            }
+        }
+    }
+
+    .S_ArticleHeader {
+        padding: 5vw 0;
+
+        .O_Header {
+            display: none;
+        }
+
+        .O_ArticleGridSection {
+            width: 89.42vw;
+            height: 46.92vw;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            .Q_1Circle {
+                background-color: var(--white);
+            }
+            img {
+                object-fit: cover;
+            }
+            .A_ArticleTitle {
+                line-height: 0.88;
+            }
+            .LT1_1, .LT1_2 {
+                grid-row-start: 1;
+                grid-row-end: 2;
+                grid-column-start: 3;
+                grid-column-end: 10;
+            }
+            .LT1_2 {
+                margin-left: 3vw;
+                grid-column-start: 9;
+                grid-column-end: 12;
+            }
+            .LT2 {
+                grid-row-start: 2;
+                grid-row-end: 3;
+                grid-column-start: 4;
+                grid-column-end: 11;
+            }
+            .LT3 {
+                grid-row-start: 3;
+                grid-row-end: 4;
+                grid-column-start: 6;
+                grid-column-end: 9;
+            }
+            .CB2_1 {
+                grid-row-start: 2;
+                grid-row-end: 4;
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+            .CB2_2 {
+                grid-row-start: 4;
+                grid-row-end: 6;
+                grid-column-start: 3;
+                grid-column-end: 5;
+            }
+            .CB2_3_1 {
+                grid-row-start: 5;
+                grid-row-end: 7;
+                grid-column-start: 6;
+                grid-column-end: 8;
+            }
+            .CB3_1 {
+                grid-row-start: 3;
+                grid-row-end: 6;
+                grid-column-start: 9;
+                grid-column-end: 12;
+            }
+        }
+    }
+
+    .S_LandingSection1 {
+        width: 100%;
+        height: fit-content;
+        padding: 4.23vw 5.29vw;
+        padding-right: 0;
+        background-color: var(--pinky);
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+
+        .A_ArticleH2 {
+            width: 59vw;
+        }
+
+        .SectionCardsContainer {
+            width: 100%;
+            overflow-x: auto;
+
+            .SectionCards {
+                display: flex;
+                flex-direction: row;
+                width: 125vw;
+                gap: 1.32vw;
+    
+                .LandingCard {
+                    min-width: 28.9vw;
+                    width: 28.9vw;
+                    height: 20.77vw;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    padding: 1.59vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+    
+                    &.ToDictionary {
+                        background-image: url("/src/images/landing/landing_card1.webp");
+                    }
+                    &.ToArticles {
+                        background-image: url("/src/images/landing/landing_card2.webp");
+                    }
+                    &.ToActivity {
+                        background-image: url("/src/images/landing/landing_card3.webp");
+                    }
+                    &.ToChecklist {
+                        background-image: url("/src/images/landing/landing_card4.webp");
+                    }
+    
+                    .A_ArticleH4 {
+                        color: var(--white);
+                    }
+    
+                    .A_SecondaryButton {
+                        width: fit-content;
+                        padding: 0.46vw 3.44vw;
+                    }
+                }
+            }
+        }
+    }
+
+    .S_Mission {
+        width: 100%;
+        padding: 5.29vw;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(24, 1fr);
+        column-gap: 1.32vw;
+        background-image: url("/src/images/landing/landing_mission_background.webp");
+
+        .MissionContainer {
+            grid-column-start: 11;
+            grid-column-end: 25;
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
+
+            .A_ArticleH2 {
+                width: 100%;
+                color: var(--white)
+            }
+    
+            a {
+                grid-column-start: 12;
+                grid-column-end: 18;
+            }
+        }
+    }
+
+    .S_ArticleContent {
+        margin: 0 auto;
+
+        .ArticleHeaderContainer, .O_ArticleCard, .C_DictionaryCards, .TestContainer, .O_Form {
+            grid-column-start: 1;
+            grid-column-end: 25;
+        }
+        .ArticleHeaderContainer {
+            margin-top: 6vw;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+    
+            .A_ArticleH2 {
+                width: 50vw;
+            }
+        
+            .A_ButtonLoad {
+                width: auto;
+            }
+            }
+            .O_ArticleCard, .C_DictionaryCards {
+            margin-top: 2.38vw;
+            }
+            .O_ArticleCard {
+            height: 30.57vw;
+        
+            .ArticleCardPicture1 {
+                height: 100%;
+            }
+        }
+    
+        .TestContainer {
+            margin-top: 6.61vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+    
+            .ArticleHeaderContainer {
+                width: 32.67vw;
+                margin-top: 0;
+                flex-direction: column;
+                gap: 2vw;
+                align-items: baseline;
+        
+                .A_ArticleH2, .A_ArticleBodyText {
+                width: 100%;
+                }
+            }
+        }
+    }
+    
+    .S_LandingFinal {
+        margin-top: 5vw;
+        padding: 5vw 0;
+        background-color: var(--pinky);
+
+        .O_ArticleGridSection {
+            margin: 0vw auto;
+            width: 89.42vw;
+            height: 46.92vw;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            .Q_1Circle {
+                background-color: var(--white);
+            }
+
+            .A_ArticleTitle {
+                color: var(--darkblue);
+                line-height: 0.88;
+            }
+
+            .LT4 {
+                grid-row-start: 1;
+                grid-row-end: 2;
+                grid-column-start: 1;
+                grid-column-end: 6;
+            }
+
+            .LT5 {
+                grid-row-start: 2;
+                grid-row-end: 3;
+                grid-column-start: 4;
+                grid-column-end: 10;
+            }
+
+            .LT6 {
+                grid-row-start: 3;
+                grid-row-end: 4;
+                margin-left: 5vw;
+                grid-column-start: 7;
+                grid-column-end: 13;
+            }
+
+            .BT1 {
+                width: 100%;
+                margin-top: 1.5vw;
+                grid-row-start: 3;
+                grid-row-end: 4;
+                grid-column-start: 4;
+                grid-column-end: 7;
+            }
+
+            .BT2 {
+                width: 100%;
+                margin-top: 1.5vw;
+                grid-row-start: 5;
+                grid-row-end: 6;
+                grid-column-start: 6;
+                grid-column-end: 9;
+            }
+            .CB2_1 {
+                grid-column-start: 11;
+                grid-column-end: 13;
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+            .CB2_2 {
+                grid-column-start: 4;
+                grid-column-end: 6;
+                grid-row-start: 4;
+                grid-row-end: 6;
+            }
+            .CB3_1 {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start: 3;
+                grid-row-end: 6;
+            }
+            .CB3_2 {
+                grid-column-start: 10;
+                grid-column-end: 13;
+                grid-row-start: 4;
+                grid-row-end: 7;
+            }
+        }
+    }
+    .O_Footer {
+        margin-top: 0vw;
+    }
+}

@@ -118,6 +118,10 @@ module.exports = {
       filename: './about.html'
     }),
     new HtmlWebpackPlugin({
+      template: './src/landing.html',
+      filename: './landing.html'
+    }),
+    new HtmlWebpackPlugin({
       template: './src/components.html',
       filename: './components.html',
       chunks: ['index', 'toggleSwitch']
