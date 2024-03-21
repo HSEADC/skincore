@@ -349,4 +349,236 @@ body.landing {
     .O_Footer {
         margin-top: 0vw;
     }
+
+    // Ipad Portrait
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    
+        .S_ArticleContent {
+            .C_DictionaryCards {
+                .O_DictionaryCard:nth-child(4) {
+                display: none;
+                }
+            }
+
+            .O_ArticleCard {
+                .M_ArticleCard {
+                height: 13.06vw;
+
+                .A_ArticleCardP {
+                    display: none;
+                }
+                }
+            }
+
+            .O_Form {
+                height: 14vw;
+            }
+            }
+
+            .S_WordOfTheDay {
+            img {
+                top: 176vw
+            }
+            }
+        }
+
+     // Mobile
+    @media only screen and (max-device-width: 414px) and (orientation: portrait) {
+        .S_ArticleHeader {
+            .O_ArticleGridSection {
+                width: 84vw;
+                height: 193vw;
+                margin-top: 18vw;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                row-gap: 3.846vw;
+                column-gap: 4.1vw;
+
+                .CB2_1, .CB2_3_1, .CB3_1 {
+                    display: none;
+                }
+
+                .LT1_1 {
+                    grid-column-start: 1;
+                    grid-column-end: 5;
+                    grid-row-start: 5;
+                    grid-row-end: 6;
+                }
+                .LT1_2 {
+                    grid-column-start: 2;
+                    grid-column-end: 4;
+                    grid-row-start: 6;
+                    grid-row-end: 7;
+                }
+                .LT2 {
+                    grid-column-start: 1;
+                    grid-column-end: 5;
+                    grid-row-start: 7;
+                    grid-row-end: 8;
+                }
+                .LT3 {
+                    grid-column-start: 2;
+                    grid-column-end: 4;
+                    grid-row-start: 8;
+                    grid-row-end: 9;
+                }
+                .CB2_2 {
+                    grid-column-start: 2;
+                    grid-column-end: 5;
+                    grid-row-start: 2;
+                    grid-row-end: 5;
+                }
+            }
+        }
+        .S_LandingSection1 {
+            padding: 8.2vw;
+
+            .A_ArticleH2 {
+                font-size: 8vw;
+                width: 80vw;
+            }
+            .SectionCardsContainer {
+                
+                .SectionCards {
+                    width: 341vw;
+                    gap: 8.2vw;
+
+                    .LandingCard {
+                        width: 83.59vw;
+                        height: 60vw;
+                        padding: 6.15vw;
+                        
+                        .A_ArticleH4 {
+                            font-size: 6.15vw;
+                        }
+
+                        .A_SecondaryButton {
+                            font-size: 4.61vw;
+                            padding: 2vw 4vw;
+                        }
+                    }
+                }
+            }
+        }
+
+        .S_Mission {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            background-size: cover;
+            padding: 10vw 7vw;
+
+            .MissionContainer {
+                grid-column-start: 1;
+                grid-column-end: 5;
+
+                .A_ArticleH2 {
+                    font-size: 8vw;
+                }
+            }
+        }
+        .S_ArticleContent {
+            .ArticleHeaderContainer {
+            margin-top: 8vw;
+            flex-direction: column;
+            align-items: baseline;
+        
+                .A_ButtonLoad {
+                    text-decoration: underline;
+                }
+            }
+    
+            .O_ArticleCard {
+            height: 38vw;
+            }
+            
+            .TestContainer {
+            flex-direction: column;
+    
+                .ArticleHeaderContainer {
+                    width: 100%;
+                }
+        
+                .O_TestCard {
+                    margin-top: 4vw;
+                }
+            }
+        
+            
+        }
+        .S_LandingFinal {
+            .O_ArticleGridSection {
+                width: 84vw;
+                height: 127vw;
+                margin-top: 18vw;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                row-gap: 3.846vw;
+                column-gap: 4.1vw;
+
+                .LT4 {
+                    grid-column-start: 1;
+                    grid-column-end: 5;
+                }
+                .LT5 {
+                    grid-column-start: 1;
+                    grid-column-end: 5;
+                }
+                .LT6 {
+                    margin: 0;
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                }
+                .CB2_1, .CB2_2, .CB3_2, .CB3_1 {
+                    display: none;
+                }
+                // .CB3_1 {
+                //     grid-column-start: 1;
+                //     grid-column-end: 3;
+                // }
+
+                .BT1 {
+                    grid-column-start: 2;
+                    grid-column-end: 5;
+                    grid-row-start: 4;
+                    grid-row-end: 5;
+                }
+                .BT2 {
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                    grid-row-start: 5;
+                    grid-row-end: 6;
+                }
+            }
+            
+            .O_Form {
+                height: fit-content;
+                padding: 5vw 5vw;
+                border-radius: 4.1vw;
+                gap: 5vw;
+            
+                    .InputBtn {
+                        flex-direction: column;
+            
+                        form {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 3vw;
+            
+                        input {
+                            width: 100%;
+                            padding: 2vw;
+                            font-size: 3vw;
+                            border: 0.5vw solid var(--white)
+                        }
+                        .A_PrimaryButton {
+                            width: 100%;
+                            margin-left: 0;
+                        }
+                        }
+                    }
+                }
+        }
+    }
 }
