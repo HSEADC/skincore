@@ -225,6 +225,34 @@ module.exports = {
       template: './src/checklist/sensitiveskin.html',
       filename: './checklist/sensitiveskin.html'
     }), 
+    new HtmlWebpackPlugin({
+      template: './src/checklist/dryskin.html',
+      filename: './checklist/dryskin.html'
+    }), 
+    new HtmlWebpackPlugin({
+      template: './src/checklist/oliviarodrigo.html',
+      filename: './checklist/oliviarodrigo.html'
+    }), 
+    new HtmlWebpackPlugin({
+      template: './src/checklist/agingskin.html',
+      filename: './checklist/agingskin.html'
+    }), 
+    new HtmlWebpackPlugin({
+      template: './src/checklist/wintercare.html',
+      filename: './checklist/wintercare.html'
+    }), 
+    new HtmlWebpackPlugin({
+      template: './src/checklist/oilyskin.html',
+      filename: './checklist/oilyskin.html'
+    }), 
+    new HtmlWebpackPlugin({
+      template: './src/checklist/teenskincare.html',
+      filename: './checklist/teenskincare.html'
+    }), 
+    new HtmlWebpackPlugin({
+      template: './src/checklist/fortrip.html',
+      filename: './checklist/fortrip.html'
+    }), 
 
     // Tests
     new HtmlWebpackPlugin({
