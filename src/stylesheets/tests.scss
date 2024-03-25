@@ -14,9 +14,15 @@ body.test {
         margin: 2.32vw 0 2.32vw 0;
         width: 40.15vw;
     }
-    .S_TestCard {
+    .S_TestCard, .S_SectionTest {
         width: fit-content;
         margin: 0 auto;
+    }
+    .S_SectionTest{
+        margin-top: 7vw;
+        .A_ArticleH2 {
+            margin-bottom: 1.5vw;
+        }
     }
     .TestCardDecorM {
         background-image: url('./images/basic/A_TestCardDecorM.svg');
@@ -54,6 +60,13 @@ body.test {
         .SectionGridContainer {
             .A_ArticleH2{
                 width: fit-content;
+            }
+        }
+        .S_SectionTest {
+            margin-top: 10vw;
+            .A_ArticleH2 {
+                margin-bottom: 5vw;
+                max-width: 83.59vw;
             }
         }
     } 

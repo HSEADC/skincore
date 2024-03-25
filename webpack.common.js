@@ -11,7 +11,10 @@ module.exports = {
     index: './src/index.js',
     all: './src/javascript/all.js',
     test: './src/javascript/test.js',
-    toggleSwitch: './src/javascript/toggleswitch.js'
+    toggleSwitch: './src/javascript/toggleswitch.js', 
+    toggleSwitchSkin: './src/javascript/toggleswitchskin.js',
+    tags: './src/javascript/tags.js',
+    tagsChecklists: './src/javascript/tagsChecklist.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -124,28 +127,33 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/components.html',
       filename: './components.html',
-      chunks: ['index', 'toggleSwitch']
+      chunks: ['index', 'toggleSwitchSkin']
     }),
     // Section
     new HtmlWebpackPlugin({
       template: './src/article.html',
-      filename: './article.html'
+      filename: './article.html',
+      chunks: ['index', 'tags']
     }),
     new HtmlWebpackPlugin({
       template: './src/dictionary.html',
-      filename: './dictionary.html'
+      filename: './dictionary.html',
+      chunks: ['index', 'all']
     }),
     new HtmlWebpackPlugin({
       template: './src/activity.html',
-      filename: './activity.html'
+      filename: './activity.html',
+      chunks: ['index', 'all']
     }),
     new HtmlWebpackPlugin({
       template: './src/checklist.html',
-      filename: './checklist.html'
+      filename: './checklist.html',
+      chunks: ['index', 'all', 'tagsChecklists']
     }),
     new HtmlWebpackPlugin({
       template: './src/dictionary.html',
-      filename: './dictionary.html'
+      filename: './dictionary.html',
+      chunks: ['index', 'all']
     }),
     // Articles
     new HtmlWebpackPlugin({
@@ -192,25 +200,25 @@ module.exports = {
       template: './src/article/devices.html',
       filename: './article/devices.html'
     }),
-    // Dictionary
     new HtmlWebpackPlugin({
-      template: './src/dictionary/serum.html',
-      filename: './dictionary/serum.html'
+      template: './src/article/hydration.html',
+      filename: './article/hydration.html'
     }),
+    // Dictionary
     new HtmlWebpackPlugin({
       template: './src/dictionary/niacinamide.html',
       filename: './dictionary/niacinamide.html',
-      chunks: ['index', 'toggleSwitch']
+      chunks: ['index', 'toggleSwitchSkin']
     }),
     new HtmlWebpackPlugin({
       template: './src/dictionary/retinol.html',
       filename: './dictionary/retinol.html',
-      chunks: ['index', 'toggleSwitch']
+      chunks: ['index', 'toggleSwitchSkin']
     }),
     new HtmlWebpackPlugin({
       template: './src/dictionary/lacticacid.html',
       filename: './dictionary/lacticacid.html',
-      chunks: ['index', 'toggleSwitch']
+      chunks: ['index', 'toggleSwitchSkin']
     }),
     // Checklists
     new HtmlWebpackPlugin({
@@ -257,7 +265,8 @@ module.exports = {
     // Tests
     new HtmlWebpackPlugin({
       template: './src/tests/typeofskin.html',
-      filename: './tests/typeofskin.html'
+      filename: './tests/typeofskin.html',
+      chunks: ['index', 'test']
     }),
 
     // Partials

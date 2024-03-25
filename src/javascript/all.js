@@ -31,7 +31,7 @@ function card() {
 var oldWidth = window.innerWidth;
 window.onresize = function () {
     var newWidth = window.innerWidth;
-    if (newWidth != oldWidth) {
+    if (((newWidth > 1024) && (oldWidth < 1024)) || ((newWidth < 1024) && (oldWidth > 1024))){
         oldWidth = newWidth;
             window.location.reload();
         }
