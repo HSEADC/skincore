@@ -100,7 +100,7 @@ img {
         display: inline-block;
     }
 
-    .ATP_1, .ATP_2, .ATP_3, .ATP_4_2, .ATP_5_2, .ATP_6_2, .ATP_7_3, .ATP_8_2 {
+    .ATP_1, .ATP_2, .ATP_3, .ATP_4_2, .ATP_5_2, .ATP_6_2, .ATP_7_3, .ATP_8_2, .ATP_7_4 {
         grid-column-start: 5;
         grid-row-start: 3;
         grid-row-end: 4;
@@ -126,11 +126,13 @@ img {
         grid-column-start: 7;
     }
 
-    .ATP_7_1 {
+    .ATP_7_1, .ATP_7_5 {
         grid-row-start: 1;
         grid-row-end: 2;
     }
-
+    .ATP_7_5 {
+        grid-column-start: 2;
+    }
     .ATP_8_3 {
         grid-column-start: 6;
     }
@@ -147,7 +149,13 @@ img {
         grid-row-start: 4;
         grid-row-end: 5;
     }
-
+    .ATP_7_4 {
+        grid-column-start: 9;
+    }
+    // {
+    //     grid-column-start: 9;
+    //     grid-row-start: 3;
+    // }
     .CB3_1, .CB2_1, .CB3_2, .CB2_2, .CB2_3_1, .CB2_3_2, .CB2_4_1, .CB2_4_2, .CB3_5, .CB2_6, .CB3_7, .CB2_7, .CB2_8_1, .CB2_8_2 {
         display: inline-block;
         width: 100%;
@@ -628,6 +636,7 @@ img {
         width: 100vw;
         height: 27.86vw;
         padding: 2.34vw 5.6vw;
+        margin-top: 8.96vw;
     }
 
     // Сетки

@@ -142,7 +142,9 @@
     .S_AllArticle, .S_ChecklistCards, .S_DictionaryPage, .S_TestPage {
         gap: 2vw;
     }
-
+    .S_ChecklistCards {
+        min-height: 66vw;
+    }
     .S_ChecklistPage {
         width: 54.82vw;
         gap: 2.3vw;

@@ -11,7 +11,7 @@
         <div class="O_Header">
             <div class="Q_Logo"></div>
             <div class="M_Header">
-                <a>Словарь</a>
+                <a href = "dictionary.html">Словарь</a>
                 <a href = "article.html">Статьи</a>
                 <a href = "checklist.html">Чек-листы</a>
                 <a href = "activity.html">Проверь себя</a>
@@ -41,54 +41,85 @@
     </div>
     <div class="S_ChecklistCards">
         <div class="M_TagsList">
-            <div id ="tags" class="A_Tag TagBlue TagClickable">тренды</div>
-            <div id ="tags" class="A_Tag TagBlue TagClickable">что купить</div>
-            <div id ="tags" class="A_Tag TagBlue TagClickable">типы кожи</div>
-            <div id ="tags" class="A_Tag TagBlue TagClickable">что собрать</div>
+            <div class="A_Tag ATagBlue ATagClickable All">все</div>
+            <div class="A_Tag ATagBlue ATagClickable Trands">тренды</div>
+            <div class="A_Tag ATagBlue ATagClickable ToBuy">что купить</div>
+            <div class="A_Tag ATagBlue ATagClickable TypesOfSkin">типы кожи</div>
+            <div class="A_Tag ATagBlue ATagClickable ToHave">что собрать</div>
         </div>
         <div class="C_ChecklistCards">
-            <a href="checklist/basicset.html" class="O_ChecklistCard">
+            <a href="checklist/basicset.html" class="O_ChecklistCard FilterCard All ToBuy">
                 <div class="M_ChecklistCard">
                     <div class="A_ChecklistCardH4">Базовый набор для ухода</div>
                     <div class="A_Tag TagBlue">что купить</div>
                 </div>
                 <img class="ChecklistCardImage" src="images/checklist/ChecklistCardImage_BasicSet.webp" alt="">
             </a>
-            <a href="checklist/korean.html" class="O_ChecklistCard">
+            <a href="checklist/korean.html" class="O_ChecklistCard FilterCard All Trands">
                 <div class="M_ChecklistCard">
                     <div class="A_ChecklistCardH4">10 этапов ухода от кореянок</div>
                     <div class="A_Tag TagBlue">тренды</div>
                 </div>
                 <img class="ChecklistCardImage" src="images/checklist/ChecklistCardImage_Korean.webp" alt="">
             </a>
-            <a href="checklist/sensitiveskin.html" class="O_ChecklistCard">
+            <a href="checklist/sensitiveskin.html" class="O_ChecklistCard FilterCard All ToHave">
                 <div class="M_ChecklistCard">
-                    <div class="A_ChecklistCardH4">Уход за чувствительной кожей</div>
+                    <div class="A_ChecklistCardH4">Чувствительная кожа: все про уход</div>
                     <div class="A_Tag TagBlue">типы кожи</div>
                 </div>
                 <img class="ChecklistCardImage" src="images/checklist/ChecklistCardImage_SensitiveSkin.webp" alt="">
             </a>
-            <a href="" class="O_ChecklistCard">
+            <a href="" class="O_ChecklistCard FilterCard All ToHave">
                 <div class="M_ChecklistCard">
                     <div class="A_ChecklistCardH4">Собираем косметичку в дорогу</div>
                     <div class="A_Tag TagBlue">что собрать</div>
                 </div>
                 <img class="ChecklistCardImage" src="images/checklist/ChecklistCardImage_Trip.webp" alt="">
             </a>
-            <a href="" class="O_ChecklistCard">
+            <a href="" class="O_ChecklistCard FilterCard All ToBuy">
                 <div class="M_ChecklistCard">
                     <div class="A_ChecklistCardH4">Уход за кожей для подростков</div>
                     <div class="A_Tag TagBlue">что купить</div>
                 </div>
                 <img class="ChecklistCardImage" src="images/checklist/ChecklistCardImage_TeenSkincare.webp" alt="">
             </a>
-            <a href="" class="O_ChecklistCard">
+            <a href="" class="O_ChecklistCard FilterCard All TypesOfSkin">
                 <div class="M_ChecklistCard">
-                    <div class="A_ChecklistCardH4">Уход за жирной кожей</div>
+                    <div class="A_ChecklistCardH4">Уход за жирной кожей</div>
                     <div class="A_Tag TagBlue">типы кожи</div>
                 </div>
                 <img class="ChecklistCardImage" src="images/checklist/ChecklistCardImage_OilySkin.webp" alt="">
             </a>
+        </div>
+    </div>
+    <!-- футер -->
+    <div class="O_Footer">
+        <div class="FooterMenuContainer">
+            <div class="M_FooterDescription">
+                <div class="Q_Logo"></div>
+                <p>Инфосистема об уходе за кожей</p>
+                <div class="A_FooterSocialMedia">
+                    <div class="Q_Vk"></div>
+                    <div class="Q_Tg"></div>
+                    <div class="Q_Dzen"></div>
+                </div>
+            </div>
+            <div class="M_FooterMenu">
+                <p>Главная</p>
+                <p>О нас</p>
+                <div class="">
+                    <p>Статьи</p>
+                    <p>Чек-листы</p>
+                    <p>Словарик</p>
+                    <p>Проверь себя</p>
+                </div>
+            </div>
+        </div>
+        <div class="M_FooterNames">
+            <div class="A_ArticleBodyText">Полина Ефимова</div>
+            <div class="A_ArticleBodyText">Дария Муракаева</div>
+            <div class="A_ArticleBodyText">Анна Комкова</div>
+            <div class="A_ArticleBodyText">Софья Каем</div>
         </div>
     </div>
 </body>

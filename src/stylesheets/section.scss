@@ -103,4 +103,23 @@ body.articles {
         min-height: 100vw;
     }
     } 
+    body.article {
+        .O_ArticleGridSection {
+            .AAdditionally {
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 6;
+                grid-row-end: 7;
+            }
+            .AAdditionally1 {
+                grid-column-end: 5;
+            }
+            .AAdditionally2 {
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 8;
+                grid-row-end: 9;
+            }
+        }
+    }
 }

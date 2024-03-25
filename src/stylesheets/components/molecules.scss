@@ -431,7 +431,7 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     .M_TagsArticle {
         display: inline-block;
-        width: 25vw;
+        width: 20vw;
         .A_Tag {
             margin-bottom: 0.8vw;
         }
@@ -592,6 +592,7 @@
 
     .M_TagsList {
         width: 83.59vw;
+        gap: 2vw;
     }
     
     .M_FooterDescription {
