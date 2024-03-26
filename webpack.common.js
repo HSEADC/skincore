@@ -208,60 +208,114 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/dictionary/niacinamide.html',
       filename: './dictionary/niacinamide.html',
-      chunks: ['index', 'toggleSwitchSkin']
+      chunks: ['index', 'toggleSwitchSkin', 'all'],
     }),
     new HtmlWebpackPlugin({
       template: './src/dictionary/retinol.html',
       filename: './dictionary/retinol.html',
-      chunks: ['index', 'toggleSwitchSkin']
+      chunks: ['index', 'toggleSwitchSkin', 'all'],
     }),
     new HtmlWebpackPlugin({
       template: './src/dictionary/lacticacid.html',
       filename: './dictionary/lacticacid.html',
-      chunks: ['index', 'toggleSwitchSkin']
+      chunks: ['index', 'toggleSwitchSkin', 'all'],
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/dictionary/salicyllicacid.html',
+      filename: './dictionary/salicyllicacid.html',
+      chunks: ['index', 'toggleSwitchSkin', 'all'],
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/dictionary/collagen.html',
+      filename: './dictionary/collagen.html',
+      chunks: ['index', 'toggleSwitchSkin', 'all'],
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/dictionary/hialuronicacid.html',
+      filename: './dictionary/hialuronicacid.html',
+      chunks: ['index', 'toggleSwitchSkin', 'all'],
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/dictionary/propyleneglycol.html',
+      filename: './dictionary/propyleneglycol.html',
+      chunks: ['index', 'toggleSwitchSkin', 'all'],
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/dictionary/glycerin.html',
+      filename: './dictionary/glycerin.html',
+      chunks: ['index', 'toggleSwitchSkin', 'all'],
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/dictionary/peptides.html',
+      filename: './dictionary/peptides.html',
+      chunks: ['index', 'toggleSwitchSkin', 'all'],
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/dictionary/conservants.html',
+      filename: './dictionary/conservants.html',
+      chunks: ['index', 'toggleSwitchSkin', 'all'],
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/dictionary/vitaminc.html',
+      filename: './dictionary/vitaminc.html',
+      chunks: ['index', 'toggleSwitchSkin', 'all'],
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/dictionary/aloevera.html',
+      filename: './dictionary/aloevera.html',
+      chunks: ['index', 'toggleSwitchSkin', 'all'],
     }),
     // Checklists
     new HtmlWebpackPlugin({
       template: './src/checklist/korean.html',
-      filename: './checklist/korean.html'
+      filename: './checklist/korean.html',
+      chunks: ['index', 'all']
     }),
     new HtmlWebpackPlugin({
       template: './src/checklist/basicset.html',
-      filename: './checklist/basicset.html'
+      filename: './checklist/basicset.html',
+      chunks: ['index', 'all']
     }),
     new HtmlWebpackPlugin({
       template: './src/checklist/sensitiveskin.html',
-      filename: './checklist/sensitiveskin.html'
+      filename: './checklist/sensitiveskin.html',
+      chunks: ['index', 'all']
     }), 
     new HtmlWebpackPlugin({
       template: './src/checklist/dryskin.html',
-      filename: './checklist/dryskin.html'
+      filename: './checklist/dryskin.html',
+      chunks: ['index', 'all']
     }), 
     new HtmlWebpackPlugin({
       template: './src/checklist/oliviarodrigo.html',
-      filename: './checklist/oliviarodrigo.html'
+      filename: './checklist/oliviarodrigo.html',
+      chunks: ['index', 'all']
     }), 
     new HtmlWebpackPlugin({
       template: './src/checklist/agingskin.html',
-      filename: './checklist/agingskin.html'
+      filename: './checklist/agingskin.html',
+      chunks: ['index', 'all']
     }), 
     new HtmlWebpackPlugin({
       template: './src/checklist/wintercare.html',
-      filename: './checklist/wintercare.html'
+      filename: './checklist/wintercare.html',
+      chunks: ['index', 'all']
     }), 
     new HtmlWebpackPlugin({
       template: './src/checklist/oilyskin.html',
-      filename: './checklist/oilyskin.html'
+      filename: './checklist/oilyskin.html',
+      chunks: ['index', 'all']
     }), 
     new HtmlWebpackPlugin({
       template: './src/checklist/teenskincare.html',
-      filename: './checklist/teenskincare.html'
+      filename: './checklist/teenskincare.html',
+      chunks: ['index', 'all']
     }), 
     new HtmlWebpackPlugin({
       template: './src/checklist/fortrip.html',
-      filename: './checklist/fortrip.html'
+      filename: './checklist/fortrip.html',
+      chunks: ['index', 'all']
     }), 
-
     // Tests
     new HtmlWebpackPlugin({
       template: './src/tests/typeofskin.html',
