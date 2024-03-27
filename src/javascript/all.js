@@ -16,16 +16,6 @@ function search() {
 //     card.classList.toggle('Flipped');
 // });
 
-function card() {
-    let cards = document.querySelectorAll(".TruthOrMythInnerCard");
-    cards.forEach((item) => {
-        item.addEventListener('click', () => {
-            item.classList.toggle("Flipped");
-        })
-    })
-    
-}
-// загрузить еще — тесты
 
 
 var oldWidth = window.innerWidth;
@@ -36,55 +26,33 @@ window.onresize = function () {
             window.location.reload();
         }
 };
-
-
-function loadMoreTest() {
-    // let testContainer = document.querySelector('.None');
-    if ((document.documentElement.clientWidth < 1024) && (document.documentElement.clientWidth > 767)) {
-        let theThirdDiv = document.querySelectorAll('.O_TruthOrMythCard');
-        theThirdDiv[3].classList.add('None');
+function menu() {
+    const a = window.innerWidth;
+    if (a <= 480) {
+        console.log(1);
+        let listNone = document.querySelectorAll(".NoneDefault");
+        let burger = document.querySelector(".BurgerMobile");
+        let menuContainer = document.querySelector(".MenuMobile");
+        console.log(burger, listNone);
+        burger.addEventListener('click', () => {
+            listNone.forEach((item) =>{
+                item.classList.toggle("NoneDefault");
+                menuContainer.classList.toggle("PositionFixed");
+            })
+            const windowHeight = window.innerHeight;
+            console.log(menuContainer.style.height);
+            if (menuContainer.style.height != windowHeight +'px') 
+            {
+                menuContainer.style.height = windowHeight +'px';
+            }
+            else {
+                
+                menuContainer.style.height = 'fit-content';
+            }
+        })
     }
-    let testContainer = document.querySelectorAll('.None');
-    let buttonTestMore = document.querySelector('.ButtonTestMore');
-    let count = 4;
-    let count3 = 3;
-
-    buttonTestMore.addEventListener('click', () => {
-        
-        if (document.documentElement.clientWidth >= 1024) {
-            for (item = 0; item < count; item ++) {
-                testContainer[item].style.display = 'flex';
-            }
-            count +=4;
-            if (count == 12) {
-                buttonTestMore.style.display = 'none';
-            }
-
-        }
-        else {
-            for (item = 0; item < count3; item ++) {
-                testContainer[item].style.display = 'flex';
-            }
-            count3 +=3;
-            if (count3 == 12) {
-                buttonTestMore.style.display = 'none';
-            }
-
-        }
-        // if (count <2) {
-        //     testContainer[count].style.display = 'flex';
-        //     count +=1;
-        // }
-        // if (count ==2){
-            
-        // }
-    })
-
 }
-
 document.addEventListener('DOMContentLoaded', () => {
-    search()
-    card()
-    loadMoreTest()
-    
+    search(),
+    menu()
 })

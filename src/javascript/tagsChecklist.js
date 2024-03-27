@@ -1,5 +1,4 @@
 function tag() {
-    console.log('yeaaah');
     let tags = document.querySelectorAll(".ATagClickable");
     let a = document.querySelector(".All");
     tags.forEach((tagItem) => {

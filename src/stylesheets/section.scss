@@ -1,3 +1,7 @@
+.ExistMobile {
+    display: none;
+}
+
 // проверь себя
 body.activity {
     background-color: var(--white);
@@ -52,6 +56,76 @@ body.articles {
         transform: 5s;
     }
 }
+body.dictionary {
+    .S_DictionaryCard {
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 4vw;
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+    }
+    .ButtonTestMore {
+        margin-top: 0vw;
+    }
+    .None {
+        display: none;
+    }
+}
+
+
+body.error404 {
+    background-color: var(--darkblue);
+    height: fit-content;
+    .S_SectionHeader {
+        padding: 2.31vw 0 0 0;
+    }
+    .O_Header .Q_Logo {
+        margin: 0 auto;
+    }
+    .S_Section404 {
+        
+        width: 100%;
+        height:  48.878vw;
+        background-image: url('./images/error404.svg');
+        background-size: contain;
+    }
+    .O_ArticleGridSection {
+        width: 89.42vw;
+        height: 51.9vw;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .A1_404 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .A2_404 {
+        grid-column-start: 4;
+        grid-column-end: 8;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .A3_404 {
+        grid-column-start: 3;
+        grid-column-end: 11;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .A4_404 {
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        margin: 0 auto;
+    }
+    .ExistMobile {
+        display: none;
+    }
+}
 // Ipad Landscape
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     body.activity {
@@ -74,14 +148,45 @@ body.articles {
             min-height: 35vw;
         }
     }
-
+    body.error404 {
+        display: flex;
+        flex-direction: column;
+        gap: 21vw;
+    }
 }
 // Mobile
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .S_ArticleHeader {
+        padding: 2vw 0;
+    }
+    .S_SectionHeader, .S_ArticleHeader {
+        .ExistMobile {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            align-content: space-between;
+            z-index: 10;
+            height: fit-content;
+        }
+        .Mobile {
+            display: none;
+            z-index: -1;
+        }
+        .NoneDefault{
+            display: none;
+            
+        }
+        .ExistMobile {
+            display: flex;
+        }
+    }
     
     body.activity{
         .S_SectionHeader {
             height: fit-content;
+            .Mobile {
+                display: none;
+            }
         }
         .S_SectionTest, .S_SectionTruthOrMyth {
             .A_ArticleH2{
@@ -120,6 +225,47 @@ body.articles {
                 grid-row-start: 8;
                 grid-row-end: 9;
             }
+        }
+    }
+    body.error404 {
+        .Mobile {
+            display: none;
+        }
+        .ExistMobile {
+            display: grid;
+        }
+        .O_ArticleGridSection {
+            width: 89.42vw;
+            height: 60vw;
+            margin: 0 auto;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            row-gap: 0vw;
+        }
+        .A1_404 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .A2_404 {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .A3_404 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .A4_404 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            margin: 0 auto;
         }
     }
 }
