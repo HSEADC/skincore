@@ -1,10 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
 body.index {
   background-color: var(--white);
-
+  
   .A_ArticleTitle, .A_ArticleH2 {
     color: var(--darkblue);
   }
-
   .S_ArticleHeader {
     .O_ArticleGridSection {
       width: 89.42vw;
