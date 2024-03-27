@@ -148,7 +148,7 @@ body.about {
             margin-top: -5vw;
         }
 
-        .A_Tag {
+        .AboutTag1, .AboutTag2, .AboutTag3, .AboutTag4 {
             position: absolute;
         }
 
@@ -166,42 +166,158 @@ body.about {
         }
         .AboutTag4 {
             top: 108vw;
-            left: 87vw;
+            left: 85vw;
+        }
+
+        .C_ArticleCards, .ForWhomContainer {
+            margin-top: 5vw;
+            grid-column-start: 1;
+            grid-column-end: 25;
+        }
+
+        .ForWhomContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .ForWhomText {
+                width: 39.75vw;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                gap: 3vw;
+
+                .A_ArticleBodyText {
+                    margin-top: -2vw;
+                }
+            }
+
+            img {
+                width: 44.11vw;
+            }
         }
     }
+    .S_LandingFinal {
+        margin-top: 5vw;
+        padding: 5vw 0;
+        background-color: var(--basicblue);
 
-    .S_Articles {
+        .O_ArticleGridSection {
+            margin: 0vw auto;
+            width: 89.42vw;
+            height: 46.92vw;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            .Q_1Circle {
+                background-color: var(--darkblue);
+            }
+
+            .A_ArticleTitle {
+                color: var(--white);
+                line-height: 0.88;
+            }
+
+            .A_ArticleBodyText {
+                color: var(--white);
+            }
+            .LT4 {
+                grid-row-start: 1;
+                grid-row-end: 2;
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+
+            .LT5 {
+                grid-row-start: 2;
+                grid-row-end: 3;
+                grid-column-start: 3;
+                grid-column-end: 8;
+            }
+
+            .LT6 {
+                grid-row-start: 2;
+                grid-row-end: 3;
+                margin-left: 3vw;
+                grid-column-start: 7;
+                grid-column-end: 13;
+            }
+
+            .BT1 {
+                width: 100%;
+                grid-row-start: 3;
+                grid-row-end: 5;
+                grid-column-start: 4;
+                grid-column-end: 7;
+            }
+
+            .CB2_1 {
+                grid-column-start: 2;
+                grid-column-end: 4;
+                grid-row-start: 3;
+                grid-row-end: 5;
+            }
+            .CB3_1 {
+                grid-column-start: 10;
+                grid-column-end: 13;
+                grid-row-start: 3;
+                grid-row-end: 6;
+            }
+        }
+    }
+    .O_Form {
         width: 89.42vw;
         margin: 0 auto;
         height: fit-content;
+        background-color: var(--darkblue);
+        border-radius: 1.59vw;
+        padding: 2.12vw;
         display: flex;
-        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 2vw;
+
+        .A_ArticleH3 {
+            color: var(--white)
+        }
+
+        .InputBtn {
+        display: flex;
         flex-direction: row;
-        justify-content: space-between;
 
-        .O_ArticleCard {
-            width: 59.12vw;
-
-            .ArticleCardPicture1 {
-                width: 21.56vw;
-                height: 18.12vw;
+            input {
+            width: 29vw;
+            background-color: var(--darkblue);
+            border: 0.2vw var(--white) solid; 
+            border-radius: 40vw;
+            padding: 1vw;
+            padding-left: 2vw;
+            font-family: 'TT Firs Neue Regular';
+            font-size: 1.3vw;
+            color: var(--white);
             }
-
-            .M_ArticleCard {
-                scale: 0.66;
+            
+            .A_PrimaryButton {
+            margin-left: 3.44vw;
             }
         }
-
-        .O_ArticleCard1 {
-            width: 13.82vw;
-        }
-
-        .O_ArticleCard, .O_ArticleCard1 {
-            height: 18.12vw;
-        }
+    }
+    .O_Footer {
+        margin-top: 0vw;
     }
 
     // Ipad Landscape
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+        .S_AboutContent {
+            .C_ArticleCards {
+                background-color: var(--basicblue);
+                .O_ArticleCard:nth-child(4) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    // Mobile
     @media only screen and (max-device-width: 414px) and (orientation: portrait) {
         .S_ArticleHeader {
 
