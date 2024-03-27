@@ -115,7 +115,7 @@
     color: var(--darkblue);
 }
 
-input[type=radio], input[type=checkbox] {
+input[type=radio] {
     appearance: none;
     border-radius: 100%;
     width: 1.6vw;
@@ -126,14 +126,20 @@ input[type=radio], input[type=checkbox] {
     vertical-align: text-bottom;
 }
 input[type=checkbox] {
-    border-radius: 0.4vw;
-    // vertical-align: top;
+    appearance: none;
+    width: 1.6vw;
+    height: 1.6vw;
+    background-image: url('./images/basic/Q_Checkbox0.svg');
+    background-size: contain;
+    cursor: pointer;
+    vertical-align: text-bottom;
 }
 input[type="radio"]:checked{
     background: var(--basicblue);
 }
 input[type="checkbox"]:checked{
-    background: var(--basicblue);
+    background-image: url('./images/basic/Q_Checkbox.svg');
+    background-size: contain;
 }
 // // соц сети
 .A_FooterSocialMedia {
@@ -299,10 +305,14 @@ input[type="checkbox"]:checked{
         margin-top: 0.5vw;
         font-size: 1.76vw;
     }
-    input[type=radio], input[type=checkbox] {
+    input[type=radio]{
         width: 1.96vw;
         height: 1.96vw;
         border: 0.14vw solid var(--darkblue);
+    }
+    input[type=checkbox] {
+        width: 1.96vw;
+        height: 1.96vw;
     }
     // // соц сети
     .A_FooterSocialMedia {
@@ -420,13 +430,14 @@ input[type="checkbox"]:checked{
         margin-top: 0.9vw;
         font-size: 2.35vw;
     }
-    input[type=radio], input[type=checkbox] {
+    input[type=radio] {
         width: 2.62vw;
         height: 2.62vw;
         border: 0.15vw solid var(--darkblue);
     }
     input[type=checkbox] {
-        border-radius: 0.6vw;
+        width: 2.62vw;
+        height: 2.62vw;
     }
     // соц сети
     .A_FooterSocialMedia {
@@ -545,14 +556,12 @@ input[type="checkbox"]:checked{
         font-size: 3.87vw;
         margin-top: 1.5vw;
     }
-    input[type=checkbox] {
-        border-radius: 1vw;
-        // vertical-align: bottom;
+    input[type=radio] {
+        border: 0.35vw solid var(--darkblue);
     }
-    input[type=radio], input[type=checkbox] {
+    input[type=checkbox] {
         width: 4.84vw;
         height: 4.84vw;
-        border: 0.35vw solid var(--darkblue);
     }
     // соц сети
     .A_FooterSocialMedia {
