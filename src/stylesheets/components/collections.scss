@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+// Desktop
+
+.C_ChecklistCards, .C_TestCards, .C_DictionaryCards, .C_TruthOrMythCards, .C_ArticleCards {
+    width: 89.42vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.323vw;
+}
+.C_ChecklistCards {
+    gap: 1.32vw;
+}
+.C_ArticleText {
+    // width: 55.36vw;
+    width: 47.82vw;
+    display: inline-block;
+
+    .A_ArticleH2 {
+        margin-top: 3.2vw;
+    }
+    .A_ArticleH3, .A_ArticleH4 {
+        margin-top: 2.5vw;
+    }
+    .A_ArticleH4 {
+        margin-top: 1.5vw;
+    }
+    .A_ArticleBodyText {
+        margin-top: 1.59vw;
+        width: 100%;
+    }
+    .A_ArticleBodyText:nth-child(1) {
+        margin-top: 0;
+    }
+}
+
+// Ipad Landscape
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .C_ChecklistCards, .C_TestCards, .C_DictionaryCards, .C_TruthOrMythCards, .C_ArticleCards {
+        width: 91.9vw;
+        gap: 1.2vw;
+    }
+}
+
+// Ipad Portrait
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .C_ChecklistCards, .C_TestCards, .C_DictionaryCards, .C_TruthOrMythCards, .C_ArticleCards {
+        width: 90.625vw;
+        gap: 1.96vw;
+    }
+}
+
+// Mobile
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .C_ChecklistCards, .C_TestCards, .C_DictionaryCards, .C_TruthOrMythCards, .C_ArticleCards {
+        width: 83.59vw;
+        gap: 4.1vw;
+    }
+
+    // .C_TruthOrMythCards {
+    //     flex-wrap: nowrap;
+    //     overflow-x: auto;
+    //     gap: 4.1vw;
+    // }
+
+    .C_ArticleCards, .C_TruthOrMythCards {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 4vw;
+        width: 83.59vw;
+        // margin-left: 0;
+    }
+
+    .C_ArticleText {
+        width: 83.59vw;
+
+        .A_ArticleH2 {
+            margin-top: 6vw;
+        }
+
+        .A_ArticleH3 {
+            margin-top: 4vw;
+        }
+
+        .A_ArticleBodyText {
+            margin-top: 2vw;
+            width: 100%;
+        }
+
+        .A_ArticleBodyText:nth-child(1) {
+            margin-top: 5vw;
+        }
+    }
+}

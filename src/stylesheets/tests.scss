@@ -1,0 +1,76 @@
+body.test {
+    background-color: var(--white);
+    // .A_ArticleBodyText {
+    //     width: 40.15vw;
+    //     margin-top: 2.32vw;
+        
+    // }
+    .SectionGridContainer {
+        .A_ArticleH2{
+            width: 30vw;
+        }
+    }
+    .ABTLeft {
+        margin: 2.32vw 0 2.32vw 0;
+        width: 40.15vw;
+    }
+    .S_TestCard, .S_SectionTest {
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .S_SectionTest{
+        margin-top: 7vw;
+        .A_ArticleH2 {
+            margin-bottom: 1.5vw;
+        }
+    }
+    .TestCardDecorM {
+        background-image: url('./images/basic/A_TestCardDecorM.svg');
+    }
+}
+// Ipad Landscape
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    body.test{
+        .ABTLeft {
+            width: 56.94vw;
+        }
+    } 
+}
+
+// Ipad Portrait
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+   body.test{
+        .TestCardDecorM {
+            background-image: url('./images/basic/A_TestCardDecorMPortrait.svg');
+        }
+        .ABTLeft {
+            width: 54.87vw;
+        }
+        
+    } 
+
+}
+// Mobile
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    body.test{
+        .ABTLeft {
+            margin: 5vw 0 5vw 0;
+            width: 83.59vw;
+        }
+        .SectionGridContainer {
+            .A_ArticleH2{
+                width: fit-content;
+            }
+        }
+        .S_SectionTest {
+            margin-top: 10vw;
+            .A_ArticleH2 {
+                margin-bottom: 5vw;
+                max-width: 83.59vw;
+            }
+        }
+        .A_ArticleBodyText {
+            width: 72.75vw;
+        }
+    } 
+}

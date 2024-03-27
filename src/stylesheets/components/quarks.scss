@@ -1,0 +1,359 @@
+* {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+body {
+    background-color: var(--white);
+}
+// Desktop
+
+// Иконки
+.Q_Logo {
+    width: 9.79vw;
+    height: 2.18vw;
+    background-image: url('./images/basic/Q_Logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Q_Arrow {
+    width: 3.11vw;
+    height: 3.11vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+    cursor: pointer;
+    &.ArrowWhite {
+        background-image:url('./images/basic/Q_ArrowWhite.svg') ;
+    }
+
+    &.ArrowBlue {
+        background-image:url('./images/basic/Q_ArrowBlue.svg') ;
+    }
+}
+.Q_DropInCircleM, .Q_DropInCircleK {
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.Q_DropInCircleM {
+    background-image: url('./images/basic/Q_DropInCircleM.svg');
+}
+.Q_DropInCircleK {
+    background-image: url('./images/basic/Q_DropInCircleK.svg');
+
+}
+.A_Primary-Button:hover .Q_Arrow {
+    background-image: url('./images/basic/Q_ArrowHover.svg');
+}
+
+.Q_Cancel, .Q_Burger, .Q_Search {
+    width: 3.11vw;
+    height: 3.11vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+    cursor: pointer;
+
+}
+
+.Q_Cancel {
+    background-image: url('./images/basic/Q_Cancel.svg');
+}
+
+.Q_Burger {
+    background-image: url('./images/basic/Q_Burger.svg');
+}
+
+.Q_Search {
+    background-image: url('./images/basic/Q_SearchDefault.svg');
+}
+.Q_Search:hover, .SearchActive {
+    background-color: var(--darkblue);
+    background-image: url('./images/basic/Q_SearchHover.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+// соц сети
+.Q_Vk, .Q_Tg, .Q_Dzen {
+    width: 2.12vw;
+    height: 2.12vw;
+    border-radius: 0.6vw;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: cover;
+}
+.Q_Vk {
+    background-image:url('./images/basic/A_Vk.svg') ;
+}
+.Q_Tg {
+    background-image:url('./images/basic/A_Tg.svg') ;
+}
+.Q_Dzen {
+    background-image:url('./images/basic/A_Dzen.svg') ;
+}
+
+// Картинки
+//Кружки
+.Q_1Circle, .Q_2Circles, .Q_3Circles {
+    border-radius: 50%;
+    background-color: var(--basicblue);
+}
+.Q_1Circle {
+    display: inline-block;
+    width: 6.28vw;
+    height: 6.28vw;
+    background-size: cover;
+}
+
+.Empty {
+    opacity: 0%;
+}
+
+.Q_2Circles {
+    width: 13.76vw;
+    height: 13.76vw;
+}
+
+.Q_3Circles {
+    width: 21.36vw;
+    height: 21.36vw;
+}
+
+.Q_CB_M {
+    background-image: url('./images/basic/Q_CB_M.svg');
+}
+
+.Q_CB_J {
+    background-image: url('./images/basic/Q_CB_J.svg');
+}
+
+.Q_CB_K {
+    background-image: url('./images/basic/Q_CB_K.svg');
+}
+
+.Q_CB_U {
+    background-image: url('./images/basic/Q_CB_U.svg');
+}
+
+//Картинки в статьях
+.Q_ImageTextWidth, .Q_ImageFullWidth, .Q_2ImagesFirst, .Q_2ImagesSecond {
+    object-fit: cover;
+}
+
+.Q_ImageTextWidth {
+    width: 47.82vw;
+    height: 33.52vw;
+    border-radius: 1vw;
+}
+
+.Q_2ImagesFirst {
+    width: 17.53vw;
+    height: 31.48vw;
+    border-radius: 1vw;
+}
+
+.Q_2ImagesSecond {
+    width: 28.97vw;
+    height: 31.48vw;
+    border-radius: 1vw;
+}
+
+.Q_ImageFullWidth {
+    width: 100%;
+    // height: auto;
+    border-radius: 1vw;
+}
+
+// Ipad Landscape
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+// Иконки
+    .Q_Logo {
+        width: 10.16vw;
+        height: 2.246vw;
+    }
+
+    .Q_Arrow, .Q_Cancel, .Q_Burger, .Q_Search {
+            width: 3.13vw;
+            height: 3.13vw;
+    }
+     // соц сети
+    .Q_Vk, .Q_Tg, .Q_Dzen {
+        width: 2.35vw;
+        height: 2.35vw;
+        border-radius: 0.6vw;
+    }
+
+    // Картинки
+    //Кружки
+    .Q_1Circle {
+        width: 5.96vw;
+        height: 5.96vw;
+    }
+
+    .Q_2Circles {
+        width: 13.67vw;
+        height: 13.67vw;
+    }
+
+    .Q_3Circles {
+        width: 21.58vw;
+        height: 21.58vw;
+    }
+
+    //Картинки в статьях
+    .Q_ImageTextWidth {
+        width: 60.84vw;
+        height: 36.62vw;
+        border-radius: 1vw;
+    }
+
+    .Q_2ImagesFirst {
+        width: 21.58vw;
+        height: 36.62vw;
+        border-radius: 1vw;
+    }
+
+    .Q_2ImagesSecond {
+        width: 37.31vw;
+        height: 36.62vw;
+        border-radius: 1vw;
+    }
+
+    .Q_ImageFullWidth {
+        width: 100%;
+        // height: 100%;
+        border-radius: 1vw;
+    }
+}
+
+
+// Ipad Portrait
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+// Иконки
+    .Q_Logo {
+        width: 13.541vw;
+        height: 3vw;
+    }
+
+    .Q_Arrow, .Q_Cancel, .Q_Burger, .Q_Search {
+        width: 4.17vw;
+        height: 4.17vw;
+    }
+
+    // соц сети
+    .Q_Vk, .Q_Tg, .Q_Dzen {
+        width: 3.13vw;
+        height: 3.13vw;
+        border-radius: 0.8vw;
+    }
+
+// Картинки
+//Кружки
+    .Q_1Circle {
+        width: 5.6vw;
+        height: 5.6vw;
+    }
+
+    .Q_2Circles {
+        width: 13.15vw;
+        height: 13.15vw;
+    }
+
+    .Q_3Circles {
+        width: 20.83vw;
+        height: 20.83vw;
+    }
+
+    //Картинки в статьях
+    .Q_ImageTextWidth {
+        width: 62.76vw;
+        height: 35.81vw;
+    }
+
+    .Q_2ImagesFirst {
+        width: 23.18vw;
+        height: 25.78vw;
+    }
+
+    .Q_2ImagesSecond {
+        width: 34.11vw;
+        height: 25.79vw;
+    }
+
+    .Q_ImageFullWidth {
+        width: 100%;
+        // height: 100%;
+    }
+}
+
+
+// Mobile
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    // Иконки
+    .Q_Logo {
+        width: 35.75vw;
+        height: 8vw;
+    }
+
+    .Q_Arrow, .Q_Cancel, .Q_Burger, .Q_Search {
+        width: 7.73vw;
+        height: 7.73vw;
+    }
+    // Соцсети
+    .Q_Vk, .Q_Tg, .Q_Dzen {
+        width: 10.87vw;
+        height: 10.87vw;
+        border-radius: 2.5vw;
+    }
+    
+// Картинки
+//Кружки
+    .Q_1Circle {
+        width: 17.19vw;
+        height: 17.19vw;
+    }
+
+    .Q_2Circles {
+        width: 39.23vw;
+        height: 39.23vw;
+    }
+
+    .Q_3Circles {
+        width: 61.3vw;
+        height: 61.3vw;
+    }
+
+    .Mobile {
+        display: none;
+    }
+
+    //Картинки в статьях
+    .Q_ImageTextWidth {
+        width: 78.74vw;
+        height: 42.27vw;
+        border-radius: 5vw;
+    }
+
+    .Q_2ImagesFirst {
+        display: none;
+        border-radius: 5vw;
+    }
+
+    .Q_2ImagesSecond {
+        width: 78.74vw;
+        height: 42.27vw;
+        border-radius: 5vw;
+    }
+
+    .Q_ImageFullWidth {
+        width: 100%;
+        // height: 100%;
+        border-radius: 5vw;
+    }
+
+    .CircleNone {
+        display: none;
+    }
+}

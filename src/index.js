@@ -1,2 +1,1 @@
-import './index.css'
-import './javascript/all.js'
+import './index.css';

@@ -1,0 +1,616 @@
+// Desktop
+
+// Кнопки
+.A_PrimaryButton, .A_SecondaryButton, .A_Tag, .A_Form {
+    border-radius: 50vw;
+    transition: all 0.2s;
+    font-family: 'TT Firs Neue Regular';
+    font-size: 1.59vw;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.A_PrimaryButton {
+    width: fit-content;
+    display: inline-flex;
+    padding: 0.25vw 0.334vw 0.25vw 1.63vw;
+    gap: 1.2vw;
+    height: fit-content;
+}
+.PBPink {
+    border: 0.2vw solid var(--pinky);
+    background-color: var(--pinky);
+    color: var(--darkblue);
+}
+.PBPink:hover {
+    background-color: #ECD5DB00;
+    color: var(--pinky);
+}
+.PBBlue {
+    border: 0.2vw solid var(--darkblue);
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+.PBBlue:hover {
+    background-color: #2A3A5E00;
+    color: var(--darkblue);
+}
+.A_SecondaryButton {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7vw 3.38vw;
+}
+.SBBlue {
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+.SBPink {
+    background-color: var(--pinky);
+    color: var(--darkblue);
+}
+.A_SecondaryButton:hover{
+    background-color: var(--basicblue);
+    color: var(--white);
+}
+// теги
+.A_ATag {
+    min-width: fit-content;
+    width: fit-content;
+    display: inline-block;
+    padding: 0.364vw 0.863vw;
+    font-size: 1.192vw;
+}
+.A_Tag {
+    width: fit-content;
+    display: inline-block;
+    padding: 0.364vw 0.863vw;
+    font-size: 1.192vw;
+}
+.TagWhite {
+    border: 0.13vw solid var(--white);
+    color: var(--white);
+}
+.ATagBlue, .TagBlue {
+    border: 0.13vw solid var(--darkblue);
+    color: var(--darkblue);
+}
+.TagPink {
+    border: 0.13vw solid var(--pinky);
+    color: var(--pinky);
+}
+.Active {
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+// форма
+.A_Form {
+    padding: 0.65vw 0 0.65vw 1vw;
+    width: 19.52vw;
+    background-color: var(--white);
+    border: 0.13vw solid var(--darkblue);
+    font-size: 1.06vw;
+    border-radius: 0.5vw;
+    color: var(--darkblue);
+}
+.A_FormText {
+    font-family: 'TT Firs Neue Regular';
+    font-size: 2.12vw;
+    color: var(--darkblue);
+}
+// тесты
+.A_Response {
+    display: flex;
+    flex-direction: row;
+    gap: 1.058vw;
+}
+
+.A_ResponseText {
+    margin-top: 0.4vw;
+    width: 90%;
+    cursor: pointer;
+    width: 90%;
+    font-family: 'TT Firs Neue Regular';
+    font-size: 1.456vw;
+    color: var(--darkblue);
+}
+
+input[type=radio], input[type=checkbox] {
+    appearance: none;
+    border-radius: 100%;
+    width: 1.6vw;
+    height: 1.6vw;
+    background-color: var(--white);
+    border: 0.13vw solid var(--darkblue);
+    cursor: pointer;
+    vertical-align: text-bottom;
+}
+input[type=checkbox] {
+    border-radius: 0.4vw;
+    // vertical-align: top;
+}
+input[type="radio"]:checked{
+    background: var(--basicblue);
+}
+input[type="checkbox"]:checked{
+    background: var(--basicblue);
+}
+// // соц сети
+.A_FooterSocialMedia {
+    display: inline-flex;
+    gap: 0.66vw;
+}
+// .A_Vk, .A_Tg, .A_Dzen {
+//     width: 2.12vw;
+//     height: 2.12vw;
+//     border-radius: 0.6vw;
+//     background-repeat: no-repeat;
+//     cursor: pointer;
+//     background-size: cover;
+// }
+// .A_Vk {
+//     background-image:url('./images/basic/A_Vk.svg') ;
+// }
+// .A_Tg {
+//     background-image:url('./images/basic/A_Tg.svg') ;
+// }
+// .A_Dzen {
+//     background-image:url('./images/basic/A_Dzen.svg') ;
+// }
+// Загрузить еще
+.A_ButtonLoad {
+    margin-top: 2vw;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'TT Firs Neue Regular';
+    font-size: 1.59vw;
+    color: var(--darkblue);
+    text-align: center;
+    width: 100%;
+}
+// Текст для статей и карточек
+.A_ArticleTitle, .A_ArticleH2, .A_ArticleH3, .A_ArticleH4, .A_ArticleBodyText, .A_TestCardH4, .A_TestCardBodyText, .A_ChecklistCardH4, .A_ArticleCardH3, .A_ArticleCardz, .A_ArticleCardH4, .A_TruthOrMythCardH4, .A_TruthOrMythCardlietruth, .A_TruthOrMythCardP, .A_ChecklistTitle, .A_ArticleCardP  {
+    font-family: 'TT Firs Neue Regular';
+}
+.Bold {
+    font-family: 'TT Firs Neue DemiBold';
+}
+.A_ArticleH2, .A_ArticleH3, .A_ArticleH4, .A_ArticleBodyText, .A_TestCardH4, .A_TestCardBodyText, .A_ChecklistCardH4 {
+    color: var(--darkblue);
+}
+.A_ArticleTitle, .A_ArticleCardH3, .A_ArticleCardp, .A_ArticleCardH4, .A_TruthOrMythCardH4, .A_TruthOrMythCardlietruth, .A_TruthOrMythCardP, .A_ChecklistTitle {
+    color: var(--white);
+}
+.A_ArticleTitle {
+    width: fit-content;
+    display: inline-block;
+    font-size: 7.144vw;
+}
+.A_ArticleH2, .A_ChecklistTitle {
+    font-size: 4.234vw;
+}
+.A_ArticleH3, .A_ArticleCardH3 {
+    font-size: 2.92vw;
+}
+.A_ArticleH4, .A_TestCardH4, .A_ChecklistCardH4, .A_ArticleCardH4, .A_TruthOrMythCardH4, .A_TruthOrMythCardlietruth {
+    font-size: 2.387vw;
+}
+.A_ArticleBodyText, .A_TestCardBodyText, .A_ArticleCardP, .A_TruthOrMythCardP {
+    font-size: 1.46vw;
+    width: 55.292vw;
+
+    a {
+        color: var(--darkblue)
+    }
+}
+.A_TestCardH4, .A_TestCardBodyText, .A_ChecklistCardH4, .A_ArticleCardH3, .A_ArticleCardH4, .A_TruthOrMythCardH4 {
+    line-height: 98%;
+}
+.A_TestCardH4, .A_TestCardBodyText {
+    width: 19.38vw;
+}
+.A_ChecklistCardH4 {
+    width: 23.29vw;
+}
+.A_ArticleCardH3 {
+    width: 43.66vw;
+}
+.A_ArticleCardP {
+    width: 43.67vw;
+}
+.A_ArticleCardH4 {
+    width: 25.73vw;
+}
+.A_TruthOrMythCardH4, .A_TruthOrMythCardP {
+    width: 17.66vw;
+    max-height: 13.23vw;
+}
+.A_TruthOrMythCardP {
+    height: 14.49vw;
+}
+.A_ChecklistTitle {
+    width: 40.28vw;
+}
+.A_PhotoInRow {
+    display: inline-flex;
+    gap: 1.33vw;
+}
+// декор для теста
+.A_TestCardDecor {
+    width: 18.987vw;
+    height: 36.773vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.DM {
+    background-image:url('./images/basic/A_TestCard-Decor-M.svg');
+}
+
+// Ipad Landscape
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+//кнопки
+    .A_PrimaryButton {
+        padding: 0.4vw 0.334vw 0.4vw 1.65vw;
+        font-size: 1.954vw;
+        gap: 1.2vw;
+    }
+    .PBBlue {
+        border: 0.15vw solid var(--darkblue);
+    }
+    .PBPink {
+        border: 0.15vw solid var(--pinky);
+    }
+    .A_SecondaryButton {
+        padding: 0.7vw 0vw;
+        font-size: 1.37vw;
+    }
+// теги
+    .A_Tag {
+        padding: 0.54vw 1.03vw;
+        font-size: 1.37vw;
+    }
+    .ATagClickable {
+        cursor: pointer;
+    }
+    .TagWhite {
+        border: 0.127vw solid var(--white);
+    }
+    .ATagBlue, .TagBlue {
+        border: 0.127vw solid var(--darkblue);
+    }
+    .TagPink {
+        border: 0.127vw solid var(--pinky);
+    }
+    // форма
+    .A_Form {
+        padding: 0.71vw 0 0.71vw 1vw;
+        width: 21.6vw;
+        border: 0.14vw solid var(--darkblue);
+        font-size: 1.18vw;
+        border-radius: 0.7vw;
+    }
+    .A_FormText {
+        font-size: 2.35vw;
+    }
+    // тесты
+    .A_ResponseText {
+        margin-top: 0.5vw;
+        font-size: 1.76vw;
+    }
+    input[type=radio], input[type=checkbox] {
+        width: 1.96vw;
+        height: 1.96vw;
+        border: 0.14vw solid var(--darkblue);
+    }
+    // // соц сети
+    .A_FooterSocialMedia {
+        display: inline-flex;
+        gap: 0.97vw;
+    }
+    // .A_Vk, .A_Tg, .A_Dzen {
+    //     width: 2.35vw;
+    //     height: 2.35vw;
+    //     border-radius: 0.6vw;
+    // }
+    
+    // Загрузить еще
+    .A_ButtonLoad {
+        font-size: 1.76vw;
+    }
+    // текст для статей и карточек
+    .A_ArticleTitle {
+        font-size: 6.74vw;
+    }
+    .A_ArticleH2, .A_ChecklistTitle {
+        font-size: 4.11vw;
+    }
+    .A_ArticleH3, .A_Article-CardH3 {
+        font-size: 3.13vw;
+    }
+    .A_ArticleH4, .A_TestCardH4, .A_ChecklistCardH4, .A_ArticleCardH4, .A_TruthorMythCardH4, .A_TruthOrMythCardLieTruth {
+        font-size: 2.74vw;
+    }
+    .A_ArticleBodyText, .A_TestCardBodyText, .A_ArticleCardP, .A_TruthOrMythCardP {
+        font-size: 1.47vw;
+        width: 56.94vw;
+    }
+    .A_TestCardH4, .A_TestCardBodyText {
+        width: 19.34vw;
+    }
+    .A_ChecklistCardH4 {
+        width: 23.64vw;
+    }
+    .A_ArticleCardH3 {
+        width: 43.76vw;
+    }
+    .A_ArticleCardP {
+        width: 45.71vw;
+    }
+    .A_ArticleCardH4 {
+        width: 26vw;
+    }
+    .A_TruthOrMythCardH4, .A_TruthOrMythCardP {
+        width: 18.17vw;
+        max-height: 13.48vw;
+    }
+    .A_TruthOrMythCardP {
+        height: 14.56vw;
+    }
+    .A_ChecklistTitle {
+        width: 48.83vw;
+    }
+    .A_PhotoInRow {
+        gap: 1.96vw;
+    }
+    // декор в тесте
+    .A_TestCardDecor {
+        width: 21vw;
+        height: 42.1vw;
+    }
+
+}
+
+// Ipad Portrait
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+// кнопки
+    .A_PrimaryButton {
+        padding: 0.4vw 0.334vw 0.4vw 1.65vw;
+        font-size: 1.954vw;
+        gap: 1.2vw;
+    }
+    .PBBlue {
+        border: 0.15vw solid var(--darkblue);
+    }
+    .PBPink {
+        border: 0.15vw solid var(--pinky);
+    }
+    .A_SecondaryButton {
+        padding: 0.6vw 1.2vw;
+        font-size: 1.83vw;
+    }
+// теги 
+    .A_Tag {
+        padding: 0.85vw 1.5vw;
+        font-size: 1.83vw;
+    }
+    .TagWhite {
+        border: 0.17vw solid var(--white);
+    }
+    .ATagBlue, .TagBlue {
+        border: 0.17vw solid var(--darkblue);
+    }
+    .TagPink {
+        border: 0.17vw solid var(--pinky);
+    }
+    // форма
+    .A_Form {
+        padding: 0.95vw 0 0.95vw 1.2vw;
+        width: 28.8vw;
+        border: 0.16vw solid var(--darkblue);
+        font-size: 1.57vw;
+        border-radius: 1vw;
+    }
+    .A_FormText {
+        font-size: 3.13vw;
+    }
+    // тесты
+    .A_ResponseText {
+        margin-top: 0.9vw;
+        font-size: 2.35vw;
+    }
+    input[type=radio], input[type=checkbox] {
+        width: 2.62vw;
+        height: 2.62vw;
+        border: 0.15vw solid var(--darkblue);
+    }
+    input[type=checkbox] {
+        border-radius: 0.6vw;
+    }
+    // соц сети
+    .A_FooterSocialMedia {
+        display: inline-flex;
+        gap: 1.3vw;
+    }
+    // .A_Vk, .A_Tg, .A_Dzen {
+    //     width: 3.13vw;
+    //     height: 3.13vw;
+    //     border-radius: 0.8vw;
+    // }
+    // Загрузить еще
+    .A_ButtonLoad {
+        font-size: 2.35vw;
+    }
+    // текст для статей и карточек
+    .A_ArticleTitle {
+        font-size: 6.25vw;
+    }
+    .A_ArticleH2, .A_ChecklistTitle {
+        font-size: 4.17vw;
+    }
+    .A_ArticleH3, .A_ArticleCardH3 {
+        font-size: 3.13vw;
+    }
+    .A_ArticleH, .A_TestCardH4, .A_ChecklistCardH4, .A_ArticleCardH4, .A_TruthOrMythCardH4, .A_TruthOrMythCardLieTruth {
+        font-size: 3.13vw;
+    }
+    .A_ArticleBodyText, .A_TestCardBodyText, .A_ArticleCardP, .A_TruthOrMythCardP {
+        font-size: 1.96vw;
+        width: 54.83vw;
+    }
+    .A_TestCardH4, .A_TestCardBodyText {
+        width: 36.2vw;
+    }
+    .A_ChecklistCardH4 {
+        width: 23.18vw;
+    }
+    .A_ArticleCardH3 {
+        width: 42.72vw;
+    }
+    .A_ArticleCardP {
+        width: 42.71vw;
+    }
+    .A_ArticleCardH4 {
+        width: 32.56vw;
+    }
+    .A_TruthorMythCardH4, .A_TruthOrMythCardP {
+        width: 23.69vw;
+        height: 17.2vw;
+    }
+    .A_TruthOrMythCardP {
+        height: 19.02vw;
+    }
+    .A_ChecklistTitle {
+        width: 66.67vw;
+    }
+    .A_PhotoInRow {
+        gap: 1.57vw;
+    }
+    // декор в тесте
+    .A_TestCardDecor {
+        width: 12.64vw;
+        height: 52.87vw;
+    }
+}
+
+// Mobile
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+// кнопки
+    .A_PrimaryButton {
+        padding: 1.1vw 1.5vw 1.1vw 4.5vw;
+        font-size: 4.35vw;
+        gap: 3.76vw;
+    }
+    .A_ButtonLoad {
+        margin-top: 5vw;
+    }
+    .PBBlue {
+        border: 0.4vw solid var(--darkblue);
+    }
+    .PBPink {
+        border: 0.4vw solid var(--pinky);
+    }
+    .A_SecondaryButton {
+        padding: 1.82vw 0vw;
+        font-size: 4.35vw;
+    }
+// теги
+    .A_Tag {
+        padding: 1.1vw 1.7vw;
+        font-size: 2.9vw;
+    }
+    .TagWhite {
+        border: 0.3vw solid var(--white);
+    }
+    .ATagBlue, .TagBlue {
+        border: 0.3vw solid var(--darkblue);
+    }
+    .TagPink {
+        border: 0.3vw solid var(--pinky);
+    }
+    // форма
+    .A_Form {
+        padding: 2.3vw 0 2.3vw 3vw;
+        width: 63.3vw;
+        border: 0.25vw solid var(--darkblue);
+        font-size: 3.9vw;
+        border-radius: 1vw;
+    }
+    .A_FormText {
+        font-size: 5.8vw;
+    }
+    // тесты
+    .A_ResponseText {
+        font-size: 3.87vw;
+        margin-top: 1.5vw;
+    }
+    input[type=checkbox] {
+        border-radius: 1vw;
+        // vertical-align: bottom;
+    }
+    input[type=radio], input[type=checkbox] {
+        width: 4.84vw;
+        height: 4.84vw;
+        border: 0.35vw solid var(--darkblue);
+    }
+    // соц сети
+    .A_FooterSocialMedia {
+        display: inline-flex;
+        gap: 2.42vw;
+    }
+    // .A_Vk, .A_Tg, .A_Dzen {
+    //     width: 10.87vw;
+    //     height: 10.87vw;
+    //     border-radius: 2.5vw;
+    // }
+    // Загрузить еще
+    .A_ButtonLoad {
+        font-size: 4.35vw;
+    }
+    // текст для статей и карточек
+    .A_ArticleTitle {
+        font-size: 11.6vw;
+    }
+    .A_ArticleH, .A_ChecklistTitle {
+        font-size: 7.25vw;
+    }
+    .A_ArticleH3, .A_ArticleCardH3 {
+    font-size: 6.78vw;
+    }
+    .A_ArticleH4, .A_TestCardH4, .A_ChecklistCardH4, .A_ArticleCardH4, .A_TruthOrMythCardH4, .A_TruthOrMythCardLieTruth {
+        font-size: 4.85vw;
+    }
+    .A_ArticleBodyText, .A_TruthOrMythCardP {
+        font-size: 3.87vw;
+        width: 78.75vw;
+    }
+    .A_TestCardH4 {
+        width: 33.34vw;
+    }
+    .A_TestCardBodyText, .A_ArticleCardP, .A_TestCardDecor {
+        display: none;
+    }
+    .A_ChecklistCardH4 {
+        width: 43vw;
+    }
+    .A_ArticleCardH3 {
+        width: 71.02vw;
+    }
+    .A_ArticleCardH4 {
+        width: 60.4vw;
+    }
+    .A_TruthOrMythCardH4, .A_TruthOrMythCardP {
+        width: 39.15vw;
+        max-height: 29vw;
+    }
+    .A_TruthOrMythCardP {
+        height: 34.56vw;
+    }
+    .A_ChecklistTitle {
+        width: 78.75vw;
+    }
+    .A_ArticleH2, .A_ChecklistTitle {
+        font-size: 11.6vw;
+    }
+}

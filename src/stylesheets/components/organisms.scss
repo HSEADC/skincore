@@ -1,0 +1,1021 @@
+// Desktop
+* {
+    box-sizing: border-box;
+}
+img {
+    object-fit: cover;
+}
+
+.O_Header, .O_Footer, .O_TestCard, .O_TruthOrMythCard, .O_ChecklistCard {
+    display: flex;
+    justify-content: space-between;
+}
+
+.O_ArticleCard, .O_ArticleCard1, .O_ChecklistCard, .O_TestCard, .O_TruthOrMythCard, .O_DictionaryCard {
+    text-decoration: none;
+}
+
+// Менюбар + Подвал
+.O_Header {
+    width: 89.42vw;
+    align-items: center;
+    background-color: var(--darkblue);
+
+    .Q_Burger {
+        display: none;
+    }
+}
+
+.O_Footer {
+    width: 100vw;
+    height: 25.26vw;
+    box-sizing: border-box;
+    background-color: var(--darkblue);
+    flex-direction: column;
+    padding: 2.78vw 5.56vw;
+    margin-top: 5.96vw;
+    margin-top: 5.96vw;
+
+    .FooterMenuContainer {
+        display: inline-flex;
+        justify-content: space-between;
+    }
+}
+
+// Сетки
+.O_GridSection {
+    min-width: 51.786vw;
+    max-width: 51.9vw;
+    height: 13.76vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1.32vw;
+    row-gap: 1.32vw;
+
+    .CB2_1, .CB2_2, .CB2_3, .CB2_4, .CB2_5, .CB2_6 {
+        width: 100%;
+        height: 100%;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .CB2_1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .CB2_2 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .CB2_3 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .CB2_4 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+    }
+    .CB2_5 {
+        grid-column-start: 5;
+        grid-column-end: 7;
+    }
+    .CB2_6 {
+        grid-column-start: 6;
+        grid-column-end: 8;
+    }
+}
+
+.O_ArticleGridSection {
+    width: 89.42vw;
+    height: 29.1vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 1.32vw;
+    row-gap: 1.32vw;
+
+    .ATP_7_1, .ATP_7_2, .ATP_7_3 {
+        display: inline-block;
+    }
+
+    .ATP_1, .ATP_2, .ATP_3, .ATP_4_2, .ATP_5_2, .ATP_6_2, .ATP_7_3, .ATP_8_2, .ATP_7_4, .ATP_7_6 {
+        grid-column-start: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .ATP_2, .ATP_3, .ATP_4_1, .ATP_6_1 {
+        grid-column-start: 2;
+    }
+    .ATP4_1, .ATP_5_1, .ATP_6_1, .ATP_7_2, .ATP_8_1, .ATP_4_1, .ATP_6_3 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .ATP_5_1, .ATP_7_3, .ATP_8_2 {
+        grid-column-start: 5;
+    }
+
+    .ATP_8_1, .ATP_7_1 {
+        grid-column-start: 3;
+    }
+
+    .ATP_5_2, .ATP_6_2 {
+        grid-column-start: 7;
+    }
+
+    .ATP_7_1, .ATP_7_5 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .ATP_7_5, .ATP_7_6 {
+        grid-column-start: 2;
+    }
+    .ATP_8_3 {
+        grid-column-start: 6;
+    }
+
+    .ATP_7_2 {
+        grid-column-start: 4;
+    }
+
+    .ATP_7_3 {
+        grid-column-start: 5;
+    }
+
+    .ATP_8_3 {
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .ATP_7_4 {
+        grid-column-start: 9;
+    }
+    .ATP_6_3 {
+        grid-column-start: 1;
+        grid-column-end: 10;
+    }
+    // {
+    //     grid-column-start: 9;
+    //     grid-row-start: 3;
+    // }
+    .CB3_1, .CB2_1, .CB3_2, .CB2_2, .CB2_3_1, .CB2_3_2, .CB2_4_1, .CB2_4_2, .CB3_5, .CB2_6, .CB3_7, .CB2_7, .CB2_8_1, .CB2_8_2 {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .CB3_1 {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }
+
+    .CB2_1 {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .CB3_2 {
+        grid-column-start: 9;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    .CB2_2 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .CB2_3_1 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .CB2_3_2, .CB2_8_3 {
+        grid-column-start: 11;
+        grid-column-end: 13;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    .CB2_4_1{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    .CB2_4_2, .CB2_8_1, .CB2_8_2 {
+        grid-column-start: 10;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .CB2_4_1, .CB2_6{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    .CB3_5, .CB3_7 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    .CB3_7 {
+        grid-column-start: 10;
+        grid-column-end: 13;
+    }
+
+    .CB2_7 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    .CB2_8_1 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .CB2_8_2 {
+        grid-column-start: 10;
+        grid-column-end: 12;
+    }
+
+    // Заголовки по статьям
+    .A1T1, .A1T2, .A1T3, .A2T1, .A2T2, .A10T1, .A10T2, .A10T3, .A4T3, .A5T2, .A6T1, .A7T1 {
+        display: inline-block;
+        line-height: 0.88;
+    }
+    .A1T1 {
+        grid-column-end: 6;
+    }
+    .A1T2, .A2T2 {
+        grid-column-end: 10;
+    }
+    .A1T3, .A2T1 {
+        grid-column-end: 9;
+    }
+    .A4T3 {
+        grid-column-end: 12;
+    }
+    .A10T1, .A10T2 {
+        grid-column-end: 8;
+    }
+    .A10T3 {
+        grid-column-end: 13;
+    }
+    .A5T2 {
+        grid-column-end: 11;
+    }
+    .A6T1 {
+        grid-column-end: 5;
+    }
+    .A7T1 {
+        grid-column-end: 7;
+    }
+}
+
+// Статья
+.O_ArticleTags {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.66vw;
+
+    .A_ArticleBodyText {
+        width: auto;
+    }
+}
+
+.O_ArticleHighlight {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--basicblue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.323vw;
+
+    .HighlightImage {
+        width: 26.65vw;
+        height: 19.047vw;
+        background-image: url('./images/basic/A_HighlightImage.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.O_ArticleCard {
+    width: 89.42vw;
+    height: fit-content;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 2.646vw;
+    background-color: var(--basicblue);
+    border-radius: 1.59vw;
+
+    &.DarkBlue {
+        background-color: var(--darkblue);
+    }
+
+    .ArticleCardPicture1 {
+        width: 38.03vw;
+        height: 24.14vw;
+        border-top-left-radius: 1.59vw;
+        border-bottom-left-radius: 1.59vw;
+    }
+
+    .A_ArticleCardP {
+        color: var(--white);
+    }
+}
+
+.O_ArticleCard1 {
+    width: 21.36vw;
+    height: 27.91vw;
+    padding-bottom: 1.653vw;
+    background-color: var(--pinky);
+    border-radius: 1.59vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.653vw;
+    text-decoration: none;
+
+    .ArticleCardImage {
+        width: 100%;
+        height: 14.286vw;
+        border-top-left-radius: 1.59vw;
+        border-top-right-radius: 1.59vw;
+        object-fit: cover;
+    }
+}
+
+// Тест
+.O_TestQuestion {
+    width: 89.42vw;
+    height: fit-content;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1.59vw;
+    background-color: var(--pinky);
+    border-radius: 1.59vw;
+}
+
+.O_TestCard {
+    width: 44.04vw;
+    height: 22.09vw;
+    padding-left: 1.85vw;
+    background-color: var(--pinky);
+    flex-direction: row;
+    border-radius: 1.59vw;
+
+    .TestCardImage {
+        object-fit: cover;
+        width: 21.693vw;
+        height: 22.09vw;
+        border-top-right-radius: 1.59vw;
+        border-bottom-right-radius: 1.59vw;
+    }
+}
+
+
+// Правда или миф
+.O_TruthOrMythCard {
+    width: 21.36vw;
+    // width: fit-content;
+    height: 20.83vw;
+    position: relative;
+    box-sizing: border-box;
+
+    .TruthOrMythInnerCard {
+        width: 100%;
+        height: 100%;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+        cursor: pointer;
+        position: absolute;
+    }
+    .Flipped {
+        transform: rotateY(180deg);
+    }
+
+    .CardFace {
+        position: absolute;
+        min-width: 100%;
+        height: 100%;
+        background-color: var(--basicblue);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        overflow: hidden;
+        border-radius: 1.59vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.32vw;
+    }
+
+    .FrontFace {
+        position: absolute;
+        min-width: 100%;
+        height: 100%;
+    }
+    
+    .BackFace {
+        position: absolute;
+        min-width: 100%;
+        height: 100%;
+        transform: rotateY(180deg);
+    }
+
+    .A_SecondaryButton:hover {
+        background-color: var(--darkblue);
+    }
+}
+
+//Чек-лист
+.O_ChecklistCard {
+    width: 44.05vw;
+    height: 16vw;
+    flex-direction: row;
+    padding-left: 1.322vw;
+    background-color: var(--pinky);
+    border-radius: 1.59vw;
+
+    .ChecklistCardImage {
+        width: 17.59vw;
+        height: 16vw;
+        border-top-right-radius: 1.59vw;
+        border-bottom-right-radius: 1.59vw;
+    }
+}
+
+.O_Checklist {
+    width: 55.291vw;
+    height: fit-content;
+    background-color: var(--pinky);
+    padding: 2.38vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.79vw;
+    border-radius: 1.59vw;
+}
+
+// Карточка в словаре
+.O_DictionaryCard {
+    width: 21.296vw;
+    height: 13.492vw;
+    background-color: var(--pinky);
+    padding: 1.323vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1.59vw;
+}
+// Toggle Switch Skin
+.O_ToggleSwitchSkin {
+    .ABT {
+        margin-top: 1.59vw;
+    }
+    .None {
+        display: none;
+    }
+}
+// Ipad Landscape
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+    // Менюбар + Подвал
+    .O_Header {
+        width: 91.9vw;
+    }
+
+    .O_Footer {
+        width: 100vw;
+        height: 27.73vw;
+        padding: 2.34vw 5.57vw;
+    }
+
+    // Сетки
+    .O_GridSection, .O_GridArticle_Section {
+        width: 53.22vw;
+        height: 13.67vw;
+        column-gap: 1.953vw;
+        row-gap: 1.758vw;
+    }
+
+    .O_ArticleGridSection {
+        width: 91.9vw;
+        height: 29.1vw;
+    }
+
+    // Статья
+    .O_ArticleTags {
+        gap: 0.78vw;
+    }
+
+    .O_ArticleHighlight {
+        gap: 1.953vw;
+    
+        .HighlightImage {
+            width: 25.73vw;
+            height: 22.36vw;
+            background-image: url("./images/basic/A_HighlightImageLandscape.png");
+        }
+    }
+
+    .O_ArticleCard {
+        width: 91.9vw;
+        gap: 3.125vw;
+        border-radius: 1.953vw;
+    
+        .ArticleCardPicture1 {
+            width: 39.06vw;
+            height: 24.8vw;
+            border-top-left-radius: 1.953vw;
+            border-bottom-left-radius: 1.953vw;
+        }
+    }
+
+    .O_ArticleCard1 {
+        width: 29.39vw;
+        height: 36.375vw;
+        border-radius: 1.953vw;
+        gap: 1.46vw;
+    
+        .ArticleCardImage {
+            height: 21.48vw;
+            background-color: var(--darkblue);
+            border-top-left-radius: 1.953vw;
+            border-top-right-radius: 1.953vw;
+        }
+    }
+
+    // Тест
+    .O_TestQuestion {
+        width: 91.9vw;
+        gap: 1.95vw;
+        border-radius: 1.953vw;
+    }
+
+    .O_TestCard {
+        width: 44.92vw;
+        height: 22.46vw;
+        padding-left: 2.344vw;
+        border-radius: 1.953vw;
+    
+        .TestCardImage {
+            object-position: 1vw;
+            width: 20.215vw;
+            height: 22.46vw;
+            border-top-right-radius: 1.953vw;
+            border-bottom-right-radius: 1.953vw;
+        }
+    }
+
+    .O_TruthOrMythCard {
+        width: 22.07vw;
+        height: 23.05vw;
+        // padding: 1.953vw;
+        border-radius: 1.953vw;
+    }
+
+    //Чек-лист
+    .O_ChecklistCard {
+        width: 45.12vw;
+        height: 16.4vw;
+        padding-left: 1.953vw;
+        border-radius: 1.953vw;
+
+        .ChecklistCardImage {
+            width: 19.336vw;
+            height: 16.4vw;
+            border-top-right-radius: 1.953vw;
+            border-bottom-right-radius: 1.953vw;
+        }
+    }
+
+    .O_Checklist {
+        width: 56.93vw;
+        padding: 2.344vw;
+        gap: 1.17vw;
+        border-radius: 1.953vw;
+    }
+    
+    //Карточка в словаре
+    .O_DictionaryCard {
+        width: 21.875vw;
+        height: 16vw;
+        padding: 2.343vw;
+        border-radius: 1.953vw;
+    }
+}
+// Ipad Portrait
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+.PortraitNone {
+        display: none;
+    }
+    // Менюбар + Подвал
+    .O_Header {
+        width: 89.06vw;
+    }
+
+    .O_Footer {
+        width: 100vw;
+        height: 27.86vw;
+        padding: 2.34vw 5.6vw;
+        margin-top: 8.96vw;
+    }
+
+    // Сетки
+    .O_GridSection, .O_ArticleGridSection {
+        width: 51.56vw;
+        height: 13.15vw;
+        column-gap: 2.083vw;
+        row-gap: 1.953vw;
+    }
+
+    .O_ArticleGridSection {
+        width: 89.06vw;
+        height: 28.26vw;
+    }
+
+        // Статья
+        .O_ArticleTags {
+            gap: 1.041vw;
+        }
+
+        .O_ArticleHighlight {
+            gap: 2.083vw;
+        
+            .HighlightImage {
+                width: 25.38vw;
+                height: 21.875vw;
+                background-image: url('./images/basic/A_HighlightImagePortrait.png');
+            }
+        }
+
+        .O_ArticleCard {
+            width: 89.06vw;
+            gap: 2.6vw;
+            border-radius: 2.08vw;
+        
+            .ArticleCardPicture1 {
+                width: 38.02vw;
+                height: 28.65vw;
+                border-top-left-radius: 2.08vw;
+                border-bottom-left-radius: 2.08vw;
+            }
+        }
+
+        .O_ArticleCard1 {
+            width: 28.385vw;
+            height: 38.375vw;
+            border-radius: 2.08vw;
+            gap: 1.46vw;
+        
+            .ArticleCardImage {
+                height: 18.49vw;
+                border-top-left-radius: 2.08vw;
+                border-top-right-radius: 2.08vw;
+            }
+        }
+
+    // Тест
+    .O_TestQuestion {
+        width: 89.06vw;
+        gap: 2.6vw;
+        border-radius: 3.125vw;
+    }
+
+    .O_TestCard {
+        width: 100%;
+        height: 28.385vw;
+        padding-left: 3.125vw;
+        border-radius: 2.08vw;
+    
+        .TestCardImage {
+            width: 34.51vw;
+            height: 28.385vw;
+            border-top-right-radius: 2.08vw;
+            border-bottom-right-radius: 2.08vw;
+        }
+    }
+
+    .O_TruthOrMythCard {
+        width: 28.9vw;
+        height: 28.65vw;
+        // padding: 2.6vw;
+        border-radius: 1.953vw;
+    }
+
+    //Чек-лист
+    .O_ChecklistCard {
+        width: 43.75vw;
+        height: 18.75vw;
+        padding-left: 2.6vw;
+        border-radius: 2.083vw;
+
+        .ChecklistCardImage {
+            width: 15.756vw;
+            height: 18.75vw;
+            border-top-right-radius: 2.083vw;
+            border-bottom-right-radius: 2.083vw;
+        }
+    }
+
+    .O_Checklist {
+        width: 54.82vw;
+        padding: 3.125vw;
+        gap: 1.56vw;
+        border-radius: 2.083vw;
+    }
+
+    //Карточка в словаре
+    .O_DictionaryCard {
+        width: 28.52vw;
+        height: 20.573vw;
+        padding: 2.083vw;
+        border-radius: 2.083vw;
+    }
+}
+// Mobile
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+
+    // Менюбар + Подвал
+    .PositionFixed {
+        position: fixed;
+    }
+    .O_Header {
+        width: 100%;
+        height: 100%;
+        padding: 2vw 8vw;
+        justify-content: space-between;
+
+        .M_Search {
+            width: 72.43vw;
+            height: 10.15vw;
+            margin: 7vw 0 7vw;
+        }
+            .FlexMenu {
+                display: flex;
+                align-items: center;
+                gap: 39vw;
+            }
+        .M_Header {
+            margin-top: 13vw;
+            gap: 5.4vw;
+            a{
+                font-size: 6.78vw;
+            }
+        }
+        .Q_Burger {
+            display: inline-block;
+        }
+        .A_FooterSocialMedia {
+            margin-bottom: 7vw;
+        }
+    }
+
+    .O_Footer {
+        width: 100vw;
+        height: 87.18vw;
+        padding: 7.18vw 8.2vw;
+        margin-top: 10vw;
+    }
+
+    // Сетки
+    .O_GridSection {
+        display: none;
+    }
+    
+    .O_ArticleGridSection {
+        width: 81vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 3.846vw;
+        column-gap: 4.1vw;
+
+        .ATP_1, .ATP_2, .ATP_3, .ATP_4_1, .ATP_4_2, .ATP_5_1, .ATP_5_2, .ATP_6_1, .ATP_6_2, .ATP_7_1, .ATP_7_2, .ATP_7_3, .ATP_8_1, .ATP_8_2, .ATP_8_3 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        .ATP_1, .ATP_7_1 {
+            grid-row-start: 6;
+            grid-row-end: 7;
+        }
+        .ATP_2, .ATP_3, .ATP_4_1 {
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .ATP_4_2 {
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        .ATP_7_2 {
+            grid-row-start: 7;
+            grid-row-end: 8;
+        }
+        .ATP_7_3 {
+            grid-row-start: 8;
+            grid-row-end: 9;
+        }
+        .AllMobile {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        .CB3_1, .CB3_5, .CB2_6, .CB2_8_1 {
+            width: 100%;
+            height: 100%;
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+        .CB3_5 {
+            grid-row-start: 4;
+            grid-row-end: 7;
+        }
+        .CB2_6 {
+            grid-row-start: 5;
+            grid-row-end: 8;
+        }
+        .CB2_1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 7;
+            grid-row-end: 9;
+        }
+        .CB3_2 {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 6;
+            grid-row-end: 9;
+        }
+        .CB2_2, .CB2_3_1, .CB2_4_1, .CB2_7 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .CB2_3_2, .CB2_4_2 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 5;
+            grid-row-end: 7;
+        }
+        .CB3_7 {
+            grid-row-start: 6;
+            grid-row-end: 9;
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+        .CB2_8_2, .CB2_8_3, .CB2_4_2 {
+            display: none;
+        }
+    }
+
+    // Статья
+    .O_ArticleTags {
+        gap: 2.05vw;
+    }
+
+    .O_ArticleHighlight {
+        box-sizing: border-box;
+        padding: 6.154vw 7.69vw;
+        gap: 1.953vw;
+    
+        .HighlightImage {
+            display: none;
+        }
+    }
+
+    .O_ArticleCard {
+        padding: 6.41vw 6.41vw;
+        width: 83.59vw;
+        border-radius: 4.1025vw;
+    
+        .ArticleCardPicture1 {
+            display: none;
+        }
+
+        .A_ArticleCardP {
+            display: none;
+        }
+    }
+
+    .O_ArticleCard1 {
+        width: 71.79vw;
+        height: 74.36vw;
+        border-radius: 4.1vw;
+        gap: 3.846vw;
+    
+        .ArticleCardImage {
+            height: 48.71vw;
+            border-top-left-radius: 4.1vw;
+            border-top-right-radius: 4.1vw;
+        }
+    }
+
+    // Тест
+    .O_TestQuestion {
+        width: 83.59vw;
+        justify-content: center;
+        padding-top: 5.13vw;
+        padding-bottom: 5.13vw;
+        gap: 2.6vw;
+        border-radius: 6.15vw;
+    }
+
+    .O_TestCard {
+        width: 83.59vw;
+        height: 42.051vw;
+        padding-left: 3.846vw;
+        border-radius: 4.1vw;
+    
+        .TestCardImage {
+            object-position: 1vw;
+            width: 34.51vw;
+            height: 42.051vw;
+            border-top-right-radius: 4.1vw;
+            border-bottom-right-radius: 4.1vw;
+        }
+    }
+
+    .O_TruthOrMythCard {
+        min-width: 45.8vw;
+        height: 54.615vw;
+        // padding: 5.128vw;
+        border-radius: 4.1vw;
+
+        .CardFace {
+            width: 100%;
+            width: fit-content;
+            height: 54.615vw;
+            border-radius: 4.1vw;
+            padding: 5.128vw;
+        }
+    }
+
+    //Чек-лист
+    .O_ChecklistCard {
+        width: 83.59vw;
+        height: 35.897vw;
+        padding-left: 4.103vw;
+        border-radius: 4.103vw;
+
+        .ChecklistCardImage {
+            width: 30.77vw;
+            height: 35.897vw;
+            border-top-right-radius: 4.103vw;
+            border-bottom-right-radius: 4.103vw;
+        }
+    }
+
+    .O_Checklist {
+        width: 83.59vw;
+        padding: 5.128vw;
+        gap: 3.077vw;
+        border-radius: 4.1vw;
+    }
+
+    //Карточка в словаре
+    .O_DictionaryCard {
+        width: 83.59vw;
+        height: 24.62vw;
+        padding: 4.1vw;
+        border-radius: 4.1vw;
+    }
+    // Toggle Switch Skin
+    .O_ToggleSwitchSkin {
+        .ABT {
+            margin-top: 2vw;
+        }
+    }
+    .O_TruthOrMythCard .CardFace { 
+        border-radius: 3vw;
+        padding: 2.5vw;
+    }
+}
