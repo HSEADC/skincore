@@ -6,8 +6,6 @@
     <title>Skincore — статьи</title>
     <meta name="title" content="Skincore — чек-листы" />
     <meta name="description" content="В нашем разделе «Чек-листы» мы поделимся списками уходовых средств для каждого типа кожи и разных возрастов, а также бьюти чек-листами с рекомендациями от селебрити."/>
-    <script src="./index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -27,8 +25,8 @@
 </head>
 <body class="checklist_section">
     <div class="S_SectionHeader">
-        <div class="O_Header">
-            <a href = "/index.html" class="Q_Logo"></a>
+        <div class="O_Header Mobile">
+            <a href="/" class="Q_Logo"></a>
             <div class="M_Header">
                 <a href = "dictionary.html">Словарь</a>
                 <a href = "article.html">Статьи</a>
@@ -40,6 +38,29 @@
                 <button class = "Q_Search"></button>
             </search>
             <div class="Q_Burger"></div>
+        </div>
+        <div class="O_Header MenuMobile ExistMobile">
+            <div class="Content">
+                <div class ="FlexMenu">
+                    <div class="Q_Logo"></div>
+                    <div class="Q_Burger BurgerMobile"></div>
+                </div>
+                <search class = "M_Search NoneDefault">
+                    <input class = "SearchInput SearchInputDefault SearchInputActive" type="search" placeholder="поиск">
+                    <button class = "Q_Search SearchActive"></button>
+                </search>
+                <div class="M_Header NoneDefault">
+                    <a href = "dictionary.html">Словарь</a>
+                    <a href = "article.html">Статьи</a>
+                    <a href = "checklist.html">Чек-листы</a>
+                    <a href = "activity.html">Проверь себя</a> 
+                </div>
+            </div>
+            <div class="A_FooterSocialMedia NoneDefault">
+                    <a href="https://t.me/skincore_media" class="Q_Tg"></a>
+                    <a href="https://vk.com/skincore_media?from=search" class="Q_Vk"></a>
+                    <a href="https://dzen.ru/id/65f2eaff8d785e6622c998cf" class="Q_Dzen"></a>
+            </div>
         </div>
         <div class="SectionGridContainer">
             <div class="A_ArticleTitle">ЧЕК-ЛИСТЫ</div>
@@ -155,10 +176,10 @@
                 <a href = "/index.html">Главная</a>
                 <a href = "/about.html">О нас</a>
                 <div class="">
-                    <p>Статьи</p>
-                    <p>Чек-листы</p>
-                    <p>Словарик</p>
-                    <p>Проверь себя</p>
+                    <a href = "/article.html">Статьи</a>
+                    <a href = "/checklist.html">Чек-листы</a>
+                    <a href = "/dictionary.html">Словарик</a>
+                    <a href = "/activities.html">Проверь себя</a>
                 </div>
             </div>
         </div>

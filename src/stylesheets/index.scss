@@ -221,6 +221,8 @@ body.index {
       }
 
       .A_ButtonLoad {
+        text-decoration: underline;
+        text-underline-offset: 0.26vw;
         width: auto;
       }
     }
@@ -232,6 +234,16 @@ body.index {
 
       .ArticleCardPicture1 {
         height: 100%;
+      }
+    }
+
+    .PinkyCard {
+      background-color: var(--pinky);
+
+      .M_ArticleCard {
+        .A_ArticleCardH3, .A_ArticleCardP {
+          color: var(--darkblue);
+        }
       }
     }
 
