@@ -227,12 +227,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/dictionary/niacinamide.html',
       filename: './dictionary/niacinamide.html',
-      chunks: ['index', 'toggleSwitchSkin', 'all']
+      chunks: ['index', 'toggleSwitchSkin', 'all', 'all'],
     }),
     new HtmlWebpackPlugin({
       template: './src/dictionary/retinol.html',
       filename: './dictionary/retinol.html',
-      chunks: ['index', 'toggleSwitchSkin', 'all']
+      chunks: ['index', 'toggleSwitchSkin', 'all', 'all'],
     }),
     new HtmlWebpackPlugin({
       template: './src/dictionary/lacticacid.html',
@@ -304,9 +304,13 @@ module.exports = {
       template: './src/checklist/korean.html',
       filename: './checklist/korean.html',
       chunks: ['index', 'all']
+      filename: './checklist/korean.html',
+      chunks: ['index', 'all']
     }),
     new HtmlWebpackPlugin({
       template: './src/checklist/basicset.html',
+      filename: './checklist/basicset.html',
+      chunks: ['index', 'all']
       filename: './checklist/basicset.html',
       chunks: ['index', 'all']
     }),
@@ -314,14 +318,20 @@ module.exports = {
       template: './src/checklist/sensitiveskin.html',
       filename: './checklist/sensitiveskin.html',
       chunks: ['index', 'all']
+      filename: './checklist/sensitiveskin.html',
+      chunks: ['index', 'all']
     }), 
     new HtmlWebpackPlugin({
       template: './src/checklist/dryskin.html',
       filename: './checklist/dryskin.html',
       chunks: ['index', 'all']
+      filename: './checklist/dryskin.html',
+      chunks: ['index', 'all']
     }), 
     new HtmlWebpackPlugin({
       template: './src/checklist/oliviarodrigo.html',
+      filename: './checklist/oliviarodrigo.html',
+      chunks: ['index', 'all'],
       filename: './checklist/oliviarodrigo.html',
       chunks: ['index', 'all']
     }), 
@@ -329,9 +339,13 @@ module.exports = {
       template: './src/checklist/agingskin.html',
       filename: './checklist/agingskin.html',
       chunks: ['index', 'all']
+      filename: './checklist/agingskin.html',
+      chunks: ['index', 'all']
     }), 
     new HtmlWebpackPlugin({
       template: './src/checklist/wintercare.html',
+      filename: './checklist/wintercare.html',
+      chunks: ['index', 'all']
       filename: './checklist/wintercare.html',
       chunks: ['index', 'all']
     }), 
@@ -339,9 +353,13 @@ module.exports = {
       template: './src/checklist/oilyskin.html',
       filename: './checklist/oilyskin.html',
       chunks: ['index', 'all']
+      filename: './checklist/oilyskin.html',
+      chunks: ['index', 'all']
     }), 
     new HtmlWebpackPlugin({
       template: './src/checklist/teenskincare.html',
+      filename: './checklist/teenskincare.html',
+      chunks: ['index', 'all']
       filename: './checklist/teenskincare.html',
       chunks: ['index', 'all']
     }), 
@@ -349,8 +367,9 @@ module.exports = {
       template: './src/checklist/fortrip.html',
       filename: './checklist/fortrip.html',
       chunks: ['index', 'all']
+      filename: './checklist/fortrip.html',
+      chunks: ['index', 'all']
     }), 
-
     // Tests
     new HtmlWebpackPlugin({
       template: './src/tests/typeofskin.html',

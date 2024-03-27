@@ -44,7 +44,8 @@ img {
 
 // Сетки
 .O_GridSection {
-    width: 51.786vw;
+    min-width: 51.786vw;
+    max-width: 51.9vw;
     height: 13.76vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -852,6 +853,10 @@ img {
             grid-column-end: 5;
             grid-row-start: 2;
             grid-row-end: 5;
+        }
+        .CB3_5 {
+            grid-row-start: 4;
+            grid-row-end: 7;
         }
         .CB2_6 {
             grid-row-start: 5;

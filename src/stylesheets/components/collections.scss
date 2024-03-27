@@ -16,7 +16,8 @@
     gap: 1.32vw;
 }
 .C_ArticleText {
-    width: 55.36vw;
+    // width: 55.36vw;
+    width: 47.82vw;
     display: inline-block;
 
     .A_ArticleH2 {
@@ -24,6 +25,9 @@
     }
     .A_ArticleH3, .A_ArticleH4 {
         margin-top: 2.5vw;
+    }
+    .A_ArticleH4 {
+        margin-top: 1.5vw;
     }
     .A_ArticleBodyText {
         margin-top: 1.59vw;
