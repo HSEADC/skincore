@@ -2,9 +2,22 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
+const SitemapPlugin = require('sitemap-webpack-plugin').default
+const StaticSourceData = require("static-source-data")
 
 const webpack = require('webpack')
 const path = require('path')
+
+const paths = [
+  '/',
+  '/article.ejs/',
+  '/dictionary.html/',
+  '/landing.html/',
+  '/activity.html/',
+  '/about.html/',
+  '/checklist.html/',
+  '/search.html/'
+];
 
 module.exports = {
   entry: {
@@ -18,7 +31,9 @@ module.exports = {
     toggleSwitchSkin: './src/javascript/toggleswitchskin.js',
     tags: './src/javascript/tags.js',
     tagsChecklists: './src/javascript/tagsChecklist.js',
-    truthOrMyth: './src/javascript/truthormyth.js'
+    truthOrMyth: './src/javascript/truthormyth.js',
+    menuBar: './src/menuBar.jsx',
+    search: './src/search.jsx'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -106,6 +121,16 @@ module.exports = {
     ]
   },
   plugins: [
+    // new StaticSourceData({
+    //   indexData: {
+    //     url: 'https://api.airtable.com/v0/appePrphSXY2TX8TD/teasers',
+    //     headers: {
+    //       Authorization:
+    //         'Bearer pat7rZ3bNn1doX7yx.e3a053db849dbc90266ee4437df084f90e6a245c626138ea6a63c9859661b5c9'
+    //     }
+    //   }
+    // }),
+    new SitemapPlugin({ base: 'https://hseadc.github.io/skincore/index.html', paths }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
       chunkFilename: '[id].[contenthash].css'
@@ -113,9 +138,9 @@ module.exports = {
 
     // Index
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './src/index.ejs',
       filename: './index.html',
-      chunks: ['index', 'all']
+      chunks: ['index', 'all', 'search', 'menuBar']
     }),
     new HtmlWebpackPlugin({
       template: './src/404.html',
@@ -139,7 +164,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/components.html',
       filename: './components.html',
-      chunks: ['index', 'toggleSwitchSkin', 'all']
+      chunks: ['index', 'toggleSwitchSkin', 'all', 'menuBar', 'search']
     }),
     // Section
     new HtmlWebpackPlugin({
@@ -148,9 +173,9 @@ module.exports = {
       chunks: ['index', 'tags', 'all']
     }),
     new HtmlWebpackPlugin({
-      template: './src/dictionary.html',
+      template: './src/dictionary.ejs',
       filename: './dictionary.html',
-      chunks: ['index', 'all', 'dictionary']
+      chunks: ['index', 'all', 'dictionary', 'menuBar']
     }),
     new HtmlWebpackPlugin({
       template: './src/activity.html',
@@ -307,7 +332,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/dictionary/aloevera.html',
       filename: './dictionary/aloevera.html',
-      chunks: ['index', 'toggleSwitchSkin','all']
+      chunks: ['index', 'toggleSwitchSkin','all', 'menuBar']
     }),
     new HtmlWebpackPlugin({
       template: './src/dictionary/collagen.html',
@@ -426,11 +451,24 @@ module.exports = {
       filename: './tests/knowledge.html',
       chunks: ['index', 'knowledge']
     }),
+    new HtmlWebpackPlugin({
+      template: './src/search.html',
+      filename: './search.html',
+      chunks: ['index', 'menuBar', 'search']
+    }),
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
         path: path.join(__dirname, './src/partials/analytics.html'),
         location: 'analytics',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/menubar.html'),
+        location: 'menubar',
         template_filename: '*',
         priority: 'replace'
       }

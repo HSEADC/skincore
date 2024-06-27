@@ -1,0 +1,23 @@
+.A_Button {
+    width: 2.431vw;
+    height: 2.431vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+    cursor: pointer;
+    background-image: url('../../images/basic/Q_SearchHover.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    &.primary {
+        &.disabled {
+            cursor: default;
+                background-image: url('../../images/basic/Q_SearchHover.svg');
+        }
+    }
+    &.resetField {
+        background-image: url('../../images/basic/Q_CancelBlue.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: translateX(-24px);
+    }
+}

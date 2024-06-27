@@ -1,0 +1,25 @@
+.M_SearchForm {
+    width: 16.01vw;
+    height: 3.13vw;
+    position: relative;
+    .A_Input{
+        width: 100%;
+        height: 100%;
+        border: 0.13vw solid var(--darkblue);
+        background-color: var(--white);
+        font-family: 'TT Firs Neue Regular';
+        font-size: 1.112vw;
+        align-items: center;
+        color: var(--darkblue);
+        border-radius: 50vw;
+        padding: 0 1.5vw;
+    }
+    .A_Button {
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        right: 0.45vw;
+        top: 0.32vw;
+        border-radius: 100vw;
+    }
+}
