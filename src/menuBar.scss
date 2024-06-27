@@ -30,6 +30,7 @@
         }
     }
     .C_PostTeaserTags {
+        margin-top: auto;
         display: flex;
         gap: 0.4vw 0.4vw;
         flex-wrap: wrap;
@@ -90,20 +91,25 @@
 }
 
 .M_PostTeaser {
+  text-decoration: none;
   .A_Text {
       font-family: 'TT Firs Neue Regular';
       color: var(--darkblue);
       width: auto;
+      
       padding: 0 1vw 0 1vw;
       &.h3{
           font-size: 2.387vw;
           line-height: 98%;
+          text-decoration: none;
       }
       &.p {
           font-size: 1.46vw;
+          text-decoration: none;
       }
       &.tag {
-          font-size: 1.46vw;
+          font-size: 1.19vw;
+          text-decoration: none;
       }
   }
 }
@@ -134,13 +140,6 @@
   }
 
 }
-
-.A_Text {
-  &.h3 {
-      text-transform: capitalize;
-  }
-}
-
 .A_Button {
   width: 2.431vw;
   height: 2.431vw;
@@ -162,5 +161,103 @@
       background-size: contain;
       background-repeat: no-repeat;
       transform: translateX(-2.5vw);
+  }
+}
+
+// Ipad Landscape
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+}
+
+
+// Ipad Portrait
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .C_MainMenu {
+    scale: 1.2;
+    gap: 1.5vw;
+  }
+  .M_SearchForm {
+    scale: 1.2;
+  }
+  .S_SearchContent {
+    .M_PostTeaser {
+      border-radius: 2.08vw;
+      gap: 1.46vw;
+      height: 45vw;
+      width: 28.385vw;
+      .A_Text {
+        margin-left: 0.6vw;
+
+        &.p {
+          width: 90%;
+          font-size: 2vw;
+        }
+        &.h3 {
+          font-size: 2.5vw;
+        }
+        &.tag {
+          font-size: 1.5vw;
+        }
+      }
+
+      .C_PostTeaserTags {
+        gap: 0.6vw 0.6vw;
+        margin-bottom: 0.6vw;
+        .A_Text {
+          border: 0.17vw solid var(--darkblue);
+          padding: 0.85vw 1.5vw;
+          font-size: 1.83vw;
+        }
+      }
+    }
+  }
+}
+
+// Mobile
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .S_Header {
+    display: none;
+  }
+  .S_SearchContent {
+    flex-direction: column;
+    gap: 5vw;
+    .M_PostTeaser {
+      gap: 2vw;
+      width: 100%;
+      border-radius: 5vw;
+      height: 85vw;
+      padding-bottom: 3vw;
+
+      .A_Image {
+        border-top-left-radius: 5vw;
+        border-top-right-radius: 5vw;
+        height: 50vw;
+      }
+
+      .A_Text, .C_PostTeaserTags {
+        padding: 0 3vw;
+      }
+      .A_Text {
+        &.h3 {
+          font-size: 4.85vw;
+        }
+        &.p {
+          font-size: 3.5vw;
+          width: 90%;
+        }
+        &.tag {
+          font-size: 2.9vw;
+        }
+      }
+
+      .C_PostTeaserTags {
+        gap: 1vw;
+        .A_Text {
+          border: 0.3vw solid var(--darkblue);
+          padding: 1.1vw 1.7vw;
+          
+        }
+      }
+    }
   }
 }

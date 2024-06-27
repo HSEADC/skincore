@@ -1,7 +1,7 @@
 // Desktop
 
 // Кнопки
-.A_PrimaryButton, .A_SecondaryButton, .A_Tag, .A_Form {
+.A_PrimaryButton, .A_SecondaryButton, .A_Tag, .A_Form, .A_Letter {
     border-radius: 50vw;
     transition: all 0.2s;
     font-family: 'TT Firs Neue Regular';
@@ -61,7 +61,7 @@
     padding: 0.364vw 0.863vw;
     font-size: 1.192vw;
 }
-.A_Tag {
+.A_Tag, .A_Letter {
     width: fit-content;
     display: inline-block;
     padding: 0.364vw 0.863vw;
@@ -267,7 +267,7 @@ input[type="checkbox"]:checked{
         font-size: 1.37vw;
     }
 // теги
-    .A_Tag {
+    .A_Tag, .A_Letter {
         padding: 0.54vw 1.03vw;
         font-size: 1.37vw;
     }
@@ -391,7 +391,7 @@ input[type="checkbox"]:checked{
         font-size: 1.83vw;
     }
 // теги 
-    .A_Tag {
+    .A_Tag, .A_Letter {
         padding: 0.85vw 1.5vw;
         font-size: 1.83vw;
     }
@@ -516,7 +516,7 @@ input[type="checkbox"]:checked{
         font-size: 4.35vw;
     }
 // теги
-    .A_Tag {
+    .A_Tag, .A_Letter {
         padding: 1.1vw 1.7vw;
         font-size: 2.9vw;
     }

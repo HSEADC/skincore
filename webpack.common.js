@@ -31,6 +31,7 @@ module.exports = {
     toggleSwitchSkin: './src/javascript/toggleswitchskin.js',
     tags: './src/javascript/tags.js',
     tagsChecklists: './src/javascript/tagsChecklist.js',
+    tagsDictionary: './src/javascript/tagsDictionary.js',
     truthOrMyth: './src/javascript/truthormyth.js',
     menuBar: './src/menuBar.jsx',
     search: './src/search.jsx'
@@ -175,7 +176,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/dictionary.ejs',
       filename: './dictionary.html',
-      chunks: ['index', 'all', 'dictionary', 'menuBar']
+      chunks: ['index', 'all', 'dictionary', 'menuBar', 'tagsDictionary']
     }),
     new HtmlWebpackPlugin({
       template: './src/activity.html',
@@ -454,7 +455,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/search.html',
       filename: './search.html',
-      chunks: ['index', 'menuBar', 'search']
+      chunks: ['index', 'menuBar', 'search', 'all']
     }),
     // Partials
     new HtmlWebpackPartialsPlugin([

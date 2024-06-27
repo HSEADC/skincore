@@ -279,6 +279,19 @@
     }
 }
 
+// алфавит
+.M_Alphabet {
+    margin-top: 2vw;
+    padding: 0 5.56vw;
+    .A_Letter {
+        font-size: 2.152vw;
+        border: none;
+        padding: 0.6vw 0.6vw;
+        border-radius: 0.7vw;
+    }
+}
+
+
 // Ipad Landscape
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .M_TagsArticle {
@@ -424,6 +437,12 @@
     .M_TagsList {
         width: 60%;
         flex-wrap: wrap;
+    }
+    // Alphabet
+    .M_Alphabet {
+        .A_Letter {
+            font-size: 2vw;
+        }
     }
 }
 
@@ -581,6 +600,13 @@
         width: 80%;
         flex-wrap: wrap;
     }
+    // Alphabet
+    .M_Alphabet {
+        .A_Letter {
+            padding: 0.4vw 0.4vw;
+            font-size: 2.37vw;
+        }
+    }
 }
 
 // Mobile
@@ -722,6 +748,16 @@
         }
         .A_ArticleBodyText::after {
             content: none;
+        }
+    }
+    // Alphabet
+    .M_Alphabet {
+        margin-top: 5vw;
+        margin-left: 2.116vw;
+        .A_Letter {
+            margin-bottom: 1vw;
+            padding: 0.4vw 0.4vw;
+            font-size: 5.6vw;
         }
     }
 }

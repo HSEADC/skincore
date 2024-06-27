@@ -18,10 +18,10 @@ const menu = [
   }
 ]
 
-const props = {
-  prerender: true,
-  homeURL,
-  menu
-}
+// const props = {
+//   prerender: true,
+//   homeURL,
+//   menu
+// }
 
-export { props }
+export { homeURL, menu };
