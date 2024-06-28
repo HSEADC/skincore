@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .ExistMobile {
     display: none;
 }
@@ -57,13 +61,38 @@ body.articles {
     }
 }
 body.dictionary {
-    .S_DictionaryCard {
-        width: fit-content;
-        margin: 0 auto;
-        margin-top: 4vw;
-        display: flex;
-        flex-direction: column;
-        gap: 3vw;
+    // .S_DictionaryCard {
+    //     width: fit-content;
+    //     margin: 0 auto;
+    //     margin-top: 4vw;
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 3vw;
+    // }
+    .S_ArticleContent {
+        .M_TagsList {
+            flex-direction: column;
+            grid-column-end: 6;
+            grid-column-start: 1;
+            .A_Tag {
+                font-size: 1.7vw;
+            }
+        }
+        .C_DictionaryCards {
+            width: 100%;
+            flex-direction: column;
+            grid-column-start: 7;
+            grid-column-end: 22;
+            gap: 1.323vw;
+            .O_DictionaryCard {
+                width: 100%;
+                height: 6vw;
+                background-color: var(--pinky);
+                padding: 1.323vw;
+                align-items: center;
+                flex-direction: row;
+                border-radius: 1.59vw;
+        }
     }
     .ButtonTestMore {
         margin-top: 0vw;
@@ -72,7 +101,7 @@ body.dictionary {
         display: none;
     }
 }
-
+}
 
 body.error404 {
     background-color: var(--darkblue);
@@ -126,6 +155,23 @@ body.error404 {
         display: none;
     }
 }
+
+
+body.search {
+    background-color: var(--white);
+    .A_ArticleH3, .W_ContentReactModule {
+        padding: 0vw 5.56vw;
+    }
+    .A_ArticleH3 {
+        color: var(--darkblue);
+        margin-top: 4vw;
+        margin-bottom: 1.5vw;
+    }
+    .S_ArticleHeader {
+        display: none;
+    }
+    
+}
 // Ipad Landscape
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     body.activity {
@@ -152,6 +198,21 @@ body.error404 {
         display: flex;
         flex-direction: column;
         gap: 21vw;
+    }
+    body.search {
+        .O_Footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    body.dictionary {
+        .S_ArticleContent {
+            min-height: 62vw;
+            .M_TagsList {
+                gap: 1vw;
+            }
+        }
     }
 }
 // Mobile
@@ -266,6 +327,31 @@ body.error404 {
             grid-row-start: 4;
             grid-row-end: 5;
             margin: 0 auto;
+        }
+    }
+    body.search {
+        .S_ArticleHeader{
+            height: auto;
+            display: block;
+        }
+        .A_ArticleH3 {
+            margin-top: 8vw;
+            margin-bottom: 4vw;
+        }
+    }
+    body.dictionary {
+        .S_ArticleContent {
+            min-height: 70vw;
+            .M_TagsList {
+                flex-direction: row;
+            }
+            .C_DictionaryCards {
+                gap: 2.5vw;
+                .O_DictionaryCard {
+                    height: 12vw;
+                    padding: 3vw;
+                }
+            }
         }
     }
 }

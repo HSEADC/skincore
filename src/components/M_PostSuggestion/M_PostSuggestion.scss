@@ -1,0 +1,14 @@
+.M_PostSuggestion {
+    font-family: 'TT Firs Neue Regular';
+    font-size: 1.112vw;
+    align-items: center;
+    color: var(--white);
+   
+    
+    .A_Text {
+        &.h3{
+            margin-top: 1.5vw;
+            font-size: 1.1vw;
+        }
+    }
+}

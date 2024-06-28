@@ -19,12 +19,14 @@ function search() {
 
 
 var oldWidth = window.innerWidth;
+var oldHeight = window.innerHeight;
+console.log(oldHeight);
 window.onresize = function () {
     var newWidth = window.innerWidth;
     if (((newWidth > 1024) && (oldWidth < 1024)) || ((newWidth < 1024) && (oldWidth > 1024))){
         oldWidth = newWidth;
             window.location.reload();
-        }
+    }
 };
 function menu() {
     const a = window.innerWidth;
@@ -33,7 +35,6 @@ function menu() {
         let listNone = document.querySelectorAll(".NoneDefault");
         let burger = document.querySelector(".BurgerMobile");
         let menuContainer = document.querySelector(".MenuMobile");
-        console.log(burger, listNone);
         burger.addEventListener('click', () => {
             listNone.forEach((item) =>{
                 item.classList.toggle("NoneDefault");

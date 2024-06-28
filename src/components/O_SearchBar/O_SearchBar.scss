@@ -1,0 +1,14 @@
+.O_SearchBar {
+    .C_PostSuggestions {
+        margin-top: 0.1vw;
+        position: absolute;
+        overflow: scroll;
+        width: 16vw;
+        max-height: 40vw;
+        // margin-left: 1.5vw;
+        background-color: var(--basicblue);
+        padding: 0vw 1.5vw 1.5vw 1.5vw;
+        border-radius: 8%;
+        z-index: 5;
+    }
+}

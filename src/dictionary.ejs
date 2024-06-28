@@ -1,0 +1,245 @@
+<% 
+  const { menubar } = require('./menubar.js')
+%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Словарик</title>
+    <link rel="icon" type="image/x-icon" href="/src/images/favicon.ico" />
+    <link rel="icon" type="image/png" href="/src/images/favicon.png" />
+    <analytics></analytics>
+</head>
+<body class = "dictionary">
+    <!-- хэдер -->
+    <div class="S_SectionHeader">
+        <!-- <div class="O_Header Mobile">
+            <a href="/" class="Q_Logo"></a>
+            <div class="M_Header">
+                <a href = "dictionary.html">Словарь</a>
+                <a href = "article.html">Статьи</a>
+                <a href = "checklist.html">Чек-листы</a>
+                <a href = "activity.html">Проверь себя</a>
+            </div>
+            <search class = "M_Search">
+                <input class = "SearchInput SearchInputDefault " type="search" placeholder="поиск">
+                <button class = "Q_Search"></button>
+            </search>
+            <div class="Q_Burger"></div>
+        </div> -->
+        <div class="S_Header"><%=menubar %></div>
+        <div class="O_Header MenuMobile ExistMobile">
+            <div class="Content">
+                <div class ="FlexMenu">
+                    <div class="Q_Logo"></div>
+                    <div class="Q_Burger BurgerMobile"></div>
+                </div>
+                <search class = "M_Search NoneDefault">
+                    <input class = "SearchInput SearchInputDefault SearchInputActive" type="search" placeholder="поиск">
+                    <button class = "Q_Search SearchActive"></button>
+                </search>
+                <div class="M_Header NoneDefault">
+                    <a href = "dictionary.html">Словарь</a>
+                    <a href = "article.html">Статьи</a>
+                    <a href = "checklist.html">Чек-листы</a>
+                    <a href = "activity.html">Проверь себя</a> 
+                </div>
+            </div>
+            <div class="A_FooterSocialMedia NoneDefault">
+                <a href="https://t.me/skincore_media" class="Q_Tg"></a>
+                <a href="https://vk.com/skincore_media?from=search" class="Q_Vk"></a>
+                <a href="https://dzen.ru/id/65f2eaff8d785e6622c998cf" class="Q_Dzen"></a>
+            </div>
+        </div>
+        <div class="SectionGridContainer">
+            <div class="A_ArticleTitle">СЛОВАРЬ</div>
+            <div class="O_GridSection">
+                <div class="Empty"></div>
+                <div class="Q_1Circle"></div>
+                <div class="Q_1Circle"></div>
+                <div class="CB2_3 Q_DropInCircleK"></div>
+                <div class="Q_1Circle"></div>
+            </div>
+        </div>
+    </div>
+    <!-- алфавит-->
+    <div class="M_Alphabet">
+        <div class="A_Letter ATagBlue ATagClickable L L1">А</div>
+        <div class="A_Letter ATagBlue ATagClickable L L2">Б</div>
+        <div class="A_Letter ATagBlue ATagClickable L L3">В</div>
+        <div class="A_Letter ATagBlue ATagClickable L L4">Г</div>
+        <div class="A_Letter ATagBlue ATagClickable L L5">Д</div>
+        <div class="A_Letter ATagBlue ATagClickable L L6">Е</div>
+        <div class="A_Letter ATagBlue ATagClickable L L7">Ё</div>
+        <div class="A_Letter ATagBlue ATagClickable L L8">Ж</div>
+        <div class="A_Letter ATagBlue ATagClickable L L9">З</div>
+        <div class="A_Letter ATagBlue ATagClickable L L10">И</div>
+        <div class="A_Letter ATagBlue ATagClickable L L11">Й</div>
+        <div class="A_Letter ATagBlue ATagClickable L L12">К</div>
+        <div class="A_Letter ATagBlue ATagClickable L L13">Л</div>
+        <div class="A_Letter ATagBlue ATagClickable L L14">М</div>
+        <div class="A_Letter ATagBlue ATagClickable L L15">Н</div>
+        <div class="A_Letter ATagBlue ATagClickable L L16">О</div>
+        <div class="A_Letter ATagBlue ATagClickable L L17">П</div>
+        <div class="A_Letter ATagBlue ATagClickable L L18">Р</div>
+        <div class="A_Letter ATagBlue ATagClickable L L19">С</div>
+        <div class="A_Letter ATagBlue ATagClickable L L20">Т</div>
+        <div class="A_Letter ATagBlue ATagClickable L L21">У</div>
+        <div class="A_Letter ATagBlue ATagClickable L L22">Ф</div>
+        <div class="A_Letter ATagBlue ATagClickable L L23">Х</div>
+        <div class="A_Letter ATagBlue ATagClickable L L24">Ц</div>
+        <div class="A_Letter ATagBlue ATagClickable L L25">Ш</div>
+        <div class="A_Letter ATagBlue ATagClickable L L26">Щ</div>
+        <div class="A_Letter ATagBlue ATagClickable L L27">Э</div>
+        <div class="A_Letter ATagBlue ATagClickable L L28">Ю</div>
+        <div class="A_Letter ATagBlue ATagClickable L L29">Я</div>
+
+    </div>
+    <div class="S_ArticleContent">
+        <div class="M_TagsList">
+            <div class="A_Tag ATagBlue ATagClickable A All Active">все</div>
+            <div class="A_Tag ATagBlue ATagClickable Subst Substance">вещества</div>
+            <div class="A_Tag ATagBlue ATagClickable Prod Product">средства</div>
+        </div>
+        <div class="C_DictionaryCards">
+            <a href="./dictionary/salicyllicacid.html" class="O_DictionaryCard FilterCard LetterCard All Substance L19">
+                <div class="A_ArticleH4">Салициловая кислота</div>
+                <div class="A_Tag TagBlue">вещества</div>
+            </a>
+            <a href ="./dictionary/niacinamide.html" class="O_DictionaryCard FilterCard LetterCard All Substance L15">
+                <div class="A_ArticleH4">Ниацинамид</div>
+                <div class="A_Tag TagBlue">вещества</div>
+            </a>
+            <a href = "./dictionary/serum.html" class="O_DictionaryCard FilterCard LetterCard All Product L19">
+                <div class="A_ArticleH4">Сыворотка для лица</div>
+                <div class="A_Tag TagBlue">средства</div>
+            </a>
+            <a href = "./dictionary/retinol.html" class="O_DictionaryCard FilterCard LetterCard All Substance L18">
+                <div class="A_ArticleH4">Ретинол</div>
+                <div class="A_Tag TagBlue">вещества</div>
+            </a>
+            <a href = "./dictionary/foam.html" class="O_DictionaryCard FilterCard LetterCard All Product L17">
+                <div class="A_ArticleH4">Пенка для умывания</div>
+                <div class="A_Tag TagBlue">средства</div>
+            </a>
+            <a href = "./dictionary/lacticacid.html" class="O_DictionaryCard FilterCard LetterCard All Substance L14">
+                <div class="A_ArticleH4">Молочная кислота</div>
+                <div class="A_Tag TagBlue">вещества</div>
+            </a>
+            <a href="./dictionary/hialuronicacid.html" class="O_DictionaryCard FilterCard LetterCard All Substance L4">
+                <div class="A_ArticleH4">Гиалуроновая кислота</div>
+                <div class="A_Tag TagBlue">вещества</div>
+            </a>
+            <a href = "./dictionary/toner.html" class="O_DictionaryCard FilterCard LetterCard All Product L20">
+                <div class="A_ArticleH4">Тонер</div>
+                <div class="A_Tag TagBlue">средства</div>
+            </a>
+            <a href ="./dictionary/hydrophilic.html" class="O_DictionaryCard FilterCard LetterCard All Product L4">
+                <div class="A_ArticleH4">Гидрофильное масло</div>
+                <div class="A_Tag TagBlue">средства</div>
+            </a>
+            <a href ="./dictionary/patch.html" class="O_DictionaryCard FilterCard LetterCard All Product L17">
+                <div class="A_ArticleH4">Патчи для глаз</div>
+                <div class="A_Tag TagBlue">средства</div>
+            </a>
+            <a href="./dictionary/collagen.html" class="O_DictionaryCard FilterCard LetterCard All Substance L12">
+                <div class="A_ArticleH4">Коллаген</div>
+                <div class="A_Tag TagBlue">вещества</div>
+            </a>
+            <a href="./dictionary/gel.html" class="O_DictionaryCard FilterCard LetterCard All Product L4">
+                <div class="A_ArticleH4">Гель для умывания</div>
+                <div class="A_Tag TagBlue">средства</div>
+            </a>
+            <a href="./dictionary/cream.html" class="O_DictionaryCard FilterCard LetterCard All Product L21">
+                <div class="A_ArticleH4">Увлажняющий крем</div>
+                <div class="A_Tag TagBlue">средства</div>
+            </a>
+            <a href="./dictionary/propyleneglycol.html" class="O_DictionaryCard FilterCard LetterCard All Substance L17">
+                <div class="A_ArticleH4">Пропилен гликоль</div>
+                <div class="A_Tag TagBlue">вещества</div>
+            </a>
+            <a href="./dictionary/glycerin.html" class="O_DictionaryCard FilterCard LetterCard All Substance L4">
+                <div class="A_ArticleH4">Глицерин</div>
+                <div class="A_Tag TagBlue">вещества</div>
+            </a>
+            <a href="./dictionary/spf.html" class="O_DictionaryCard FilterCard LetterCard All Product L19">
+                <div class="A_ArticleH4">Солнцезащитный крем</div>
+                <div class="A_Tag TagBlue">средства</div>
+            </a>
+            <a href="./dictionary/mask.html" class="O_DictionaryCard FilterCard LetterCard All Product L4">
+                <div class="A_ArticleH4">Глиняная маска</div>
+                <div class="A_Tag TagBlue">средства</div>
+            </a>
+
+            <a href="./dictionary/peptides.html" class="O_DictionaryCard FilterCard LetterCard All Substance L17">
+                <div class="A_ArticleH4">Пептиды</div>
+                <div class="A_Tag TagBlue">вещества</div>
+            </a>
+
+            <a href="./dictionary/conservants.html" class="O_DictionaryCard FilterCard LetterCard All Substance L12">
+                <div class="A_ArticleH4">Консерванты</div>
+                <div class="A_Tag TagBlue">вещества</div>
+            </a>
+
+            <a href="./dictionary/scrub.html" class="O_DictionaryCard FilterCard LetterCard All Product L19">
+                <div class="A_ArticleH4">Скраб для лица</div>
+                <div class="A_Tag TagBlue">средства</div>
+            </a>
+            <a href="./dictionary/vitaminc.html" class="O_DictionaryCard FilterCard LetterCard All Substance L3">
+                <div class="A_ArticleH4">Витамин С</div>
+                <div class="A_Tag TagBlue">вещества</div>
+            </a>
+
+            <a href="./dictionary/powder.html" class="O_DictionaryCard FilterCard LetterCard All Product L27">
+                <div class="A_ArticleH4">Энзимная пудра</div>
+                <div class="A_Tag TagBlue">средства</div>
+            </a>
+
+            <a href="./dictionary/aloevera.html" class="O_DictionaryCard FilterCard LetterCard All Substance L1">
+                <div class="A_ArticleH4">Алоэ Вера</div>
+                <div class="A_Tag TagBlue">вещества</div>
+            </a>
+
+            <a href="./dictionary/peeling.html" class="O_DictionaryCard FilterCard LetterCard All Product L17">
+                <div class="A_ArticleH4">Пилинг</div>
+                <div class="A_Tag TagBlue">средства</div>
+            </a>
+
+        </div>
+    <!-- <div class="A_ButtonLoad ButtonTestMore">Загрузить еще</div> -->
+    </div> 
+
+    <!-- подвал -->
+    <div class="O_Footer">
+        <div class="FooterMenuContainer">
+            <div class="M_FooterDescription">
+                <div class="Q_Logo"></div>
+                <p>Инфосистема об уходе за кожей</p>
+                <div class="A_FooterSocialMedia">
+                    <a href="https://t.me/skincore_media" class="Q_Tg"></a>
+                    <a href="https://vk.com/skincore_media?from=search" class="Q_Vk"></a>
+                    <a href="https://dzen.ru/id/65f2eaff8d785e6622c998cf" class="Q_Dzen"></a>
+                </div>
+            </div>
+            <div class="M_FooterMenu">
+                <a href = "/index.html">Главная</a>
+                <a href = "/about.html">О нас</a>
+                <div class="">
+                    <a href = "/article.html">Статьи</a>
+                    <a href = "/checklist.html">Чек-листы</a>
+                    <a href = "/dictionary.html">Словарик</a>
+                    <a href = "/activities.html">Проверь себя</a>
+                </div>
+            </div>
+        </div>
+        <div class="M_FooterNames">
+            <div class="A_ArticleBodyText">Полина Ефимова</div>
+            <div class="A_ArticleBodyText">Дария Муракаева</div>
+            <div class="A_ArticleBodyText">Анна Комкова</div>
+            <div class="A_ArticleBodyText">Софья Каем</div>
+        </div>
+    </div>
+</body>
+</html>
