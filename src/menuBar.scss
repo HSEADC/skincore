@@ -49,22 +49,23 @@
 
 .O_SearchBar {
   .C_PostSuggestions {
-      margin-top: 0.1vw;
-      position: absolute;
-      overflow: scroll;
-      width: 16vw;
-      max-height: 40vw;
-      // margin-left: 1.5vw;
-      background-color: var(--basicblue);
-      padding: 0vw 1.5vw 1.5vw 1.5vw;
-      border-radius: 12%;
-      z-index: 5;
+    margin-top: -1.7vw;
+    position: absolute;
+    overflow: scroll;
+    padding-top: 1.7vw;
+    width: 16vw;
+    max-height: 40vw;
+    background-color: var(--basicblue);
+    padding: 1.8vw 1.5vw 1.8vw 1.5vw;
+    border-radius: 0;
+    z-index: 5;
   }
 }
 
 
 .M_SearchForm {
   width: 16.01vw;
+  z-index: 6;
   height: 3.13vw;
   position: relative;
   .A_Input{

@@ -1,4 +1,4 @@
-const homeURL = 'http://localhost:8080/'
+const homeURL = 'https://hseadc.github.io/skincore/'
 const menu = [
   {
     text: 'Словарь',
