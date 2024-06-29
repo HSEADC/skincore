@@ -551,7 +551,7 @@ body.styleguide {
 }
 
 // адаптив_мобильная версия
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 767px) {
     body.styleguide {   
         // background: url('images/styleguide-mobile.png');
         background-size: cover;

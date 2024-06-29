@@ -383,7 +383,7 @@ body.landing {
         }
 
      // Mobile
-    @media only screen and (max-device-width: 414px) and (orientation: portrait) {
+    @media only screen and (max-device-width: 767px) and (orientation: portrait) {
         .S_ArticleHeader {
             .O_ArticleGridSection {
                 width: 84vw;
